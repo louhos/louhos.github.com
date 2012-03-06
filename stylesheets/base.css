@@ -343,18 +343,25 @@
 /* #Louhos
 ================================================== */
 
-div#attribution {
-	color: #4d4d4d;
-	margin: 0px auto 20px auto;
-	text-align: center;
-}
+	div#attribution {
+		color: #4d4d4d;
+		margin: 0px auto 20px auto;
+		text-align: center;
+	}
 
-div.imgbanner {
-	width: 80%;
-	display: block;
-    margin-left: 20%;
-}
+	div.imgbanner {
+		width: 80%;
+		display: block;
+	    margin-left: 20%;
+	}
 
-div.imgbanner a {
-	text-decoration: none;
-}
+	div.imgbanner a {
+		text-decoration: none;
+	}
+	
+	hr.invisible {
+		border: solid #ddd; 
+		border-width: 0px 0 0; 
+		clear: both; 
+		height: 20px;
+	}
