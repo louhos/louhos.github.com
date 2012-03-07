@@ -343,6 +343,10 @@
 /* #Louhos
 ================================================== */
 
+	div a h1.remove-bottom {
+		text-decoration: none;
+	}
+
 	div#attribution {
 		color: #4d4d4d;
 		margin: 0px auto 20px auto;
