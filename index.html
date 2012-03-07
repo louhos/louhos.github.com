@@ -1,158 +1,187 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en   "> 
- 
-  <head> 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-	<title> 
-	  soRvi
-	</title> 
-	<link href="http://r-forge.r-project.org/themes/rforge/styles/estilo1.css" rel="stylesheet" type="text/css" /> 
-  </head> 
- 
-<style type="text/css"> 
-div.h2{
-	margin:19px 0px 19px 0px;
-	font-size:16pt;
-	font-weight:bold;
-	background-color:#135CAE;
-	color:white;
-	padding:10px;
-}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-div.h3{
-	margin:19px 0px 19px 0px;
-	font-size:12pt;
-	font-weight:bold;
-}
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Louhos</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- REMOVE THIS WHEN GOING ONLINE-->
 
-h3, div.h3{
-	background-color:#dddddd;
-	padding:2px;
-}
-</style> 
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
 
-<body> 
- 
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-<table width="100%"> 
-<tr> 
-<td valign="top" width="70%"> 
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-<!--<div id="wrapper">--> 
-<div class="h2">soRvi - avoimen datan työkalupakki R-kielelle</div>
-
-Julkisten tietoaineistojen määrä on ollut voimakkaassa
-kasvussa. <a href="http://www.stat.fi/tup/tilastotietokannat/index.html">Talouteen
-ja yhteiskuntaan</a>, säähän,
-liikenteeseen, <a href="http://www.maanmittauslaitos.fi/aineistot-palvelut/digitaaliset-tuotteet/ilmaiset-
-aineistot/hankinta">paikkatietoon</a>, koulutukseen ja muihin
-alueisiin
-liittyvissä <a href="http://www.suomi.fi/suomifi/tyohuone/yhteiset_palvelut/avoin_data/">avoimen
-datan hankkeissa</a> dataa on alettu avaamaan julkishallinnon toimesta
-<a href="http://www.julkinendata.fi/">Suomessa</a> ja
-<a href="http://data.gov.uk/">muualla</a>. Aineistojen pöyhintä voi
-avata uusia näkökulmia ja avoimuus mahdollistaa yhdistämisen toisiin
-tietolähteisiin, jolloin voidaan vastata kysymyksiin joihin
-yksittäisillä aineistoilla ei päästä käsiksi. Laaja saatavuus ja
-käyttö on omiaan nostamaan yhteisten tietovarantojemme arvoa.
-<p></p> Laskennallisten työkalujen saatavuus on osoittautunut
-pullonkaulaksi avointen datojen laajemmalle käytölle. 
-
-Tämä projekti yhdistää voimavaroja tarjoamalla keskitetyn kokoelman
-yleiskäyttöisiä avoimen lähdekoodin välineitä yhteiskunnan avointen
-tietovarantojen keskitettyyn hakuun, putsaamiseen, analysointiin,
-yhdistelyyn ja visualisointiin. Projekti keskittyy erityisesti
-suomalaiseen avoimeen dataan ja sen tarjoamat välineet helpottavat
-tehokkaiden tiedonlouhinta-algoritmien soveltamista julkisiin
-tietolähteisiin ammattimaisessa laskentaympäristössä. Valmiiden
-hakurutiinien ansiosta monipuoliset aineistot ja tehokkaat
-analyysimenetelmät ovat välittömästi yhdistettävissä ilman hankalia
-esikäsittelyvaiheita. Projekti perustuu
-laskennalliseen <a href="http://www.r-project.org/">R-kieleen</a>,
-jota käytetään laajalti tutkimus- ja yritysmaailmassa.
-<p></p> 
-
-Projekti palkittiin vuoden
-2011 <a href="http://apps4finland.fi/fi/osallistu-avoimen-datan-kilpailuun-23-10-2011-mennessa/fi/ajankohtaista/kovatasoinen-apps4finland-finaali-merkittava-loikka-avoimelle-datalle-suomessa">Apps4Finland-kisassa</a>
-Datan avaus-sarjassa sekä virallisen kisan että yleisöäänestyksen
-ykköspalkinnolla
-(<a href="http://apps4finland.fi/fi/kilpailutyot/datan-avaus-sorvi-avoimen-datan-tyokalupakki-r-kielelle">kilpailutyö</a>).
-
-</td> 
-
-<td>
-<!--<img src="Rlogo.png" alt="" />-->
-<img width="100%" src="suomenkunnat.jpeg" alt="" />
-
-</td> 
-</tr>
-
-</table> 
-
-<table width="100%"><tr> 
-<td valign="top" width="35%"> 
-
-<div class="h3">Käyttöönotto</div> 
-
-<ul>
-
-<li><a href="asennus.html">Asennusohjeet</a> (Windows / Mac / Linux)
-<li><a href="http://r-forge.r-project.org/projects/sorvi/">Lähdekoodi</a> (R-Forgen kotisivulta)
-<li><a href="http://louhos.wordpress.com/">Käyttöesimerkkejä Louhos-blogissa</a>
-
-</ul>
-
-Koodi on lisensoitu
-avoimella <a href="http://en.wikipedia.org/wiki/BSD_licenses">FreeBSD</a>-lisenssillä,
-joka sallii lähdekoodin vapaan käytön, muokkaamisen ja levittämisen,
-kunhan samat oikeudet jatkokäytölle taataan uusissakin tuotoksissa.
+</head>
+<body>
 
 
-<div class="h3">Yhteisö</div> 
 
-Suomalaisen avoimen datan käsittelyyn liittyvät kontribuutiot,
-ehdotukset, ja uudet tekijät ovat tervetulleita. Joitakin
-kehitystarpeita on listattuna
-<a href="https://github.com/louhos/soRvi-dev/wiki/Devel">TODO-sivulla</a>. Projektin
-pääkehittäjiä ovat
-<a href="http://www.iki.fi/Leo.Lahti">Leo Lahti</a>, Juuso Parkkinen
-ja Joona Lehtom&auml;ki. Ylläpitäjät tavoitat sähköpostilla sorvi-commits .. at
-.. lists.r-forge.r-project.org tai IRCnetin kanavalta !louhos
+	<!-- Primary Page Layout
+	================================================== -->
 
-<div class="h3">Linkkejä</div> 
+	<!-- Delete everything in this .container and get started on your own site! -->
 
-<ul>
+	<div class="container">
+		<div class="sixteen columns">
+			<h1 class="remove-bottom" style="margin-top: 40px">Louhos</h1>
+			<h3 style="color: #999999">Lähdekoodia avointen suomalaisten datavirtojen seulontaan</h3>
+			<h5>Versio 0.1</h5> 
+			<hr />
+		</div>
+		<div class="two-thirds column">
+			<p>
+			  Julkisesti saatavien tietoaineistojen määrä
+			  kasvaa kiihtyvää tahtia. Hallintoon,
+			  talouteen, liikenteeseen, paikkatietoon ja
+			  muihin alueisiin liittyvien datavirtojen
+			  pöyhintä avaa uusia näkökulmia
+			  yhteiskuntaan. Laaja saatavuus ja käyttö on
+			  omiaan nostamaan yhteisten tietovarantojemme
+			  arvoa.
 
-<li><a href="http://www.slideshare.net/Louhos/">SlideShare</a>-sivustolta
-löytyvä esitysmateriaali
+			</p> 
+			<p>
+			  Aineistojen sujuva saatavuus ja käyttö
+			  edellyttää tehokkaita välineitä. Louhos
+			  edistää näitä päämääriä seuraavin toimin:
 
-<li><a href="http://en.opasnet.org/w/Population_of_Finland#Formula">Opasnet</a>-sivustolta
-löytyy esimerkki soRvin lähdekoodin vuorovaikutteisesta käytöstä
-pilvipalvelimella suoraan selaimesta käsin.
+			</p>
+			<ol>
+				<li>
+				  Tarjoamme keskitetyn koodivaraston
+				  voimavarojen keskittämiseen ja
+				  koordinointiin. 
+				</li>
+				
+				<li>
+				  Edistämme julkisten tietovirtojen tehokasta saatavuutta ja käyttöä.
+				</li>
 
-<li><a href="http://apps4finland.fi/fi/kilpailutyot/datan-avaus-sorvi-avoimen-datan-tyokalupakki-r-kielelle">Apps4Finland
-2011 - kilpailutyö</a>. Yksityinen Datan avaus-sarjan ja
-yleisöäänestyksen voittaja.
+				<li>
+				  Kehitämme ja käytämme uusia välineitä yhteiskunnan tietovirtojen analysointiin. 
+				</li>
+				
+			</ol>
+		</div>
+				
+		<div class="one-third column">
+			<blockquote>
+				<p>If you asked me what a data scientist was, I would say someone who can
+				bridge the raw data and the analysis - and make it accessible. It's a
+				democratising role; by bringing the data to the people, you make the
+				world just a little bit better</p>
+				<cite style="text-align: right">Simon Rogers, <a href="http://www.guardian.co.uk/news/datablog/2012/mar/02/data-scientist">Guardian</a>.</cite>
+			</blockquote>
+		</div>
+		
+		<hr class="invisible">
+				
+		<div class="two-thirds column">
+			<h3>Projects</h3>                         
 
-</ul>
+			<p><i>Louhos</i> on yhteisövetoinen kokoelma
+			  avointa lähdekoodia ja välineitä
+			  suomalaiselle avoimelle datalle.  Projektia
+			  ylläpidetään
+			<a href="https://github.com/louhos">githubissa</a>.
+			Kaikki kontribuutiot avoimen datan hakuun,
+			esikäsittelyyn, analyysiin ja visualisointiin
+			liittyen ovat tervetulleita.</p>
+    
+			<p>Yksi Louhoksen projekteista on suomalainen avoimen datan R-kirjasto 
+			<a href="sorvi.html"><i>soRvi</i></a>,
+			joka helpottaa pääsyä satojen suomalaisten
+			tietoaineistojen äärelle ja mahdollistaa niiden yhdistelyn uusin tavoin. 
+			<a href="http://www.r-project.org/">R-ympäristö</a>
+			edistää eri lähteistä saatavien aineistojen
+			sujuvaa yhdistämistä ammattimaisiin analyysi-
+			ja visualisointimenetelmiin. Projekti vei tuplavoiton 
+			vuoden 2011 <a href="http://apps4finland.fi/fi/kilpailutyot/datan-avaus-sorvi-avoimen-datan-tyokalupakki-r-kielelle">Apps4Finland</a>-kisan datan avaus-sarjassa
+			(<a href="http://apps4finland.fi/fi/ajankohtaista/kovatasoinen-apps4finland-finaali-merkittava-loikka-avoimelle-datalle-suomessa">lehdistötiedote</a>).</p>
+		</div>	
 
-</body> 
+		<div class="one-third column">
+			<h3>Yhteisö</h3>
+			<p>
+			  Louhos on vahvasti yhteisövetoinen avoimen
+			  lähdekoodin projekti. Palaute ja materiaali
+			  uusilta tekijöiltä on
+			  tervetullutta. </p> 
+			<p align="center"><strong>Ollaan yhteydessä!</strong></p>
 
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-8790224-5']);
-  _gaq.push(['_trackPageview']);
+			<div class="imgbanner">
+				<a href="http://contact.html" title="Yhteystiedot">
+					<img src="images/mail.png" alt="Yhteystiedot">
+				</a>
+				<a href="https://github.com/louhos" title="GitHub">
+					<img src="images/github.png" alt="GitHub " />
+				</a>
+				<a href="https://louhos.wordpress.com/" title="Blogi">
+					<img src="images/wordpress.png" alt="Blogi" />
+				</a>
+			</div>
+			
+		</div>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+		<hr>
+		
+		<div id="attribution">
+			<p class="remove-bottom">
 
-</script>
 
-</html> 
+				<small>
+					<p>
+					  <a href="index_eng.html">English summary</a>
+					  <br/>
+						Created by Louhos Team &copy 2012.
+						<br />
+						Page based on <a href="http://www.getskeleton.com">
+						Skeleton</a> by Dave Gamache released under
+						<a href="http://www.opensource.org/licenses/mit-license.php">
+						MIT license</a>.
+						<br>
+						Web icons by Bartosz Kaszubowski released under 	
+						<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC Attribution-NonCommercial-ShareAlike 3.0 Unported</a>.
+					</p>
+				</small>
+			</p>
+		</div>
+
+	</div><!-- container -->
+
+
+
+	<!-- JS
+	================================================== -->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="javascripts/tabs.js"></script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
