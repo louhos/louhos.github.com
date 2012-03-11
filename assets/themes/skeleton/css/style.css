@@ -54,7 +54,7 @@ body {
 	overflow: visible;
 }
 .topbar a {
-	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 14px/21px "Droid sans", Helvetica, Arial, sans-serif;
 	color: #bfbfbf;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -68,11 +68,12 @@ body {
 	position: relative;
 }
 .topbar h3 a, .topbar .brand {
+	font: 14px/21px "Droid sans", Helvetica, Arial, sans-serif;
 	float: left;
 	display: block;
 	padding: 8px 20px 12px;
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 200;
 	line-height: 1;
 	text-decoration: none;
