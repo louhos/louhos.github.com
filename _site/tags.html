@@ -32,6 +32,42 @@
 		<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/themes/skeleton/javascripts/fancybox-2.0.5/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/assets/themes/skeleton/javascripts/fancybox-2.0.5/jquery.fancybox.pack.js"></script>
+		
+<link rel="stylesheet" type="text/css" href="/assets/themes/skeleton/javascripts/fancybox-2.0.5/helpers/jquery.fancybox-thumbs.css?v=2.0.4" />
+<script type="text/javascript" src="/assets/themes/skeleton/javascripts/fancybox-2.0.5/helpers/jquery.fancybox-thumbs.js?v=2.0.4"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+			Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+		*/
+
+		$('.fancybox-thumbs').fancybox({
+			prevEffect : 'none',
+			nextEffect : 'none',
+
+			closeBtn  : false,
+			arrows    : false,
+			nextClick : true,
+			loop      : true,
+			margin    : [40,0,0,0],
+			padding	  : 0,
+
+			helpers : { 
+				thumbs : {
+					width  : 50,
+					height : 50
+				}
+			}
+		});
+
+	});
+</script>
+		
 	</head>
 	<body>
 		<div class="topbar">
@@ -108,13 +144,13 @@
 
   
      
-    	<li><a href="/tags.html#jekyll-ref">jekyll <span>1</span></a></li>
-     
     	<li><a href="/tags.html#intro-ref">intro <span>1</span></a></li>
      
-    	<li><a href="/tags.html#beginner-ref">beginner <span>1</span></a></li>
+    	<li><a href="/tags.html#jekyll-ref">jekyll <span>1</span></a></li>
      
     	<li><a href="/tags.html#tutorial-ref">tutorial <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#beginner-ref">beginner <span>1</span></a></li>
     
   
 
@@ -123,24 +159,6 @@
 </ul>
 
 
- 
-  <h2 id="jekyll-ref">jekyll</h2>
-  <ul>
-      
-    
-
-
-  
-    
-    	
-    	<li><a href="/lessons/2011/12/29/jekyll-introduction">Jekyll Introduction</a></li>
-    	
-    
-  
-
-
-
-  </ul>
  
   <h2 id="intro-ref">intro</h2>
   <ul>
@@ -160,7 +178,7 @@
 
   </ul>
  
-  <h2 id="beginner-ref">beginner</h2>
+  <h2 id="jekyll-ref">jekyll</h2>
   <ul>
       
     
@@ -179,6 +197,24 @@
   </ul>
  
   <h2 id="tutorial-ref">tutorial</h2>
+  <ul>
+      
+    
+
+
+  
+    
+    	
+    	<li><a href="/lessons/2011/12/29/jekyll-introduction">Jekyll Introduction</a></li>
+    	
+    
+  
+
+
+
+  </ul>
+ 
+  <h2 id="beginner-ref">beginner</h2>
   <ul>
       
     
