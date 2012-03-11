@@ -41,18 +41,25 @@
 		<div class="topbar">
 			<div class="fill">
 				<div class="header-container">
+					<div id="project-nav">
 					
-			    	{% if page.category == "root" %}
-			    		<a class="brand" href="">Projects</a>
-			    	{% else %}
-			    		<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-			    	{% endif %}
-								
-					<ul class="nav">
-						{% assign pages_list = site.pages %}
-						{% assign group = 'project' %}
-						{% include JB/pages_list %}
-					</ul>
+				    	{% if page.category == "root" %}
+				    		<a class="brand" href="">Projects</a>
+				    	{% else %}
+				    		<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+				    	{% endif %}
+									
+						<ul class="nav">
+							{% assign pages_list = site.pages %}
+							{% assign group = 'project' %}
+							{% include JB/pages_list %}
+						</ul>
+					</div>
+					<div id="site-nav">
+						<a class="brand" href="">Contact</a>
+						<a class="brand" href="">Wiki</a>
+						<a class="brand" href="">Blog</a>
+					</div>
 				</div>
 			</div>
 		</div>

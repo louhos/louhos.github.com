@@ -362,6 +362,18 @@
 		clear: both;
 	}
 	
+	#project-nav {
+		display: block;
+		float: left;
+		width: 65%;
+	}	
+	
+	#site-nav {
+		display: block;
+		float: right;
+		width: 35%;
+	}	
+	
 
 	div a h1.remove-bottom {
 		text-decoration: none;
