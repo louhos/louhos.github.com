@@ -37,7 +37,7 @@
 	body {
 		line-height: 1; }
 	ol, ul {
-		list-style: none; }
+		list-style: disc; }
 	blockquote, q {
 		quotes: none; }
 	blockquote:before, blockquote:after,
@@ -74,6 +74,7 @@
 	h5 { font-size: 17px; line-height: 24px; }
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
+	.contrast { background-color: #222; color: #FFFFFF; padding: 2px 0 2px 5px; margin-bottom: 14px;}
 
 	p { margin: 0 0 20px 0; }
 	p img { margin: 0; }
@@ -102,7 +103,7 @@
 /* #Lists
 ================================================== */
 	ul, ol { margin-bottom: 20px; }
-	ul { list-style: none outside; }
+	ul { list-style: disc inside; }
 	ol { list-style: decimal; }
 	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
 	ul.square { list-style: square outside; }
@@ -381,7 +382,7 @@
 
 	div#attribution {
 		color: #4d4d4d;
-		margin: 0px auto 20px auto;
+		margin: 40px auto 20px auto;
 		text-align: center;
 	}
 
@@ -395,52 +396,11 @@
 		text-decoration: none;
 	}
 	
-	hr.invisible {
-		border: solid #ddd; 
-		border-width: 0px 0 0; 
-		clear: both; 
-		height: 20px;
+	div.demoimgs {
+		margin: 30px auto 30px auto;
 	}
 	
-	div.badge {
-		width: 64px;
-	    height: 64px;
-	    display: block;
-	    float: left;
-	    vertical-align: bottom;
-	    margin: 14px 14px 14px 14px;
+	div.demoimgs a img {
+		border:1px solid #4d4d4d;
+		margin: 0 15px 0 15px;
 	}
-	
-	div.badge:hover {
-		cursor: pointer;
-	}
-	
-	.contact {
-    	background-image: url('../images/mail.png');
-    	background-repeat: no-repeat;
-    	background-position: center;
-  	}
-  	
-  	.contact:hover {
-    	background-image: url('../images/mail_pressed.png');
-  	}
-  	
-  	.github {
-    	background-image: url('../images/github.png');
-    	background-repeat: no-repeat;
-    	background-position: center;
-  	}
-  	
-  	.github:hover {
-    	background-image: url('../images/github_pressed.png');
-  	}
-  	
-  	.wordpress {
-    	background-image: url('../images/wordpress.png');
-    	background-repeat: no-repeat;
-    	background-position: center;
-  	}
-
-	.wordpress:hover {
-    	background-image: url('../images/wordpress_pressed.png');
-  	}
