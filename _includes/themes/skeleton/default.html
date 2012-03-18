@@ -19,14 +19,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<!-- CSS
 		================================================== -->
-		<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-		<link href="{{ ASSET_PATH }}/css/layout.css?body=1" rel="stylesheet" type="text/css" media="all">
-		<link href="{{ ASSET_PATH }}/css/base.css?body=1" rel="stylesheet" type="text/css" media="all">
 		<link href="{{ ASSET_PATH }}/css/skeleton.css?body=1" rel="stylesheet" type="text/css" media="all">
+		<link href="{{ ASSET_PATH }}/css/layout.css?body=1" rel="stylesheet" type="text/css" media="all">
+		<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+		<link href="{{ ASSET_PATH }}/javascripts/fancybox-2.0.5/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="{{ ASSET_PATH }}/javascripts/fancybox-2.0.5/helpers/jquery.fancybox-thumbs.css?v=2.0.4" rel="stylesheet" type="text/css"  />
+		
 		<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		
 		<!-- Favicons
 		================================================== -->
 		<link rel="shortcut icon" href="{{ ASSET_PATH }}/images/favicon.ico">
@@ -34,6 +36,12 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
 		
+		<!-- JS libraries
+		================================================== -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script type="text/javascript" src="{{ ASSET_PATH }}/javascripts/fancybox-2.0.5/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="{{ ASSET_PATH }}/javascripts/fancybox-2.0.5/helpers/jquery.fancybox-thumbs.js?v=2.0.4"></script>
+
 		{% include louhos/jsfancybox %}
 		
 	</head>
