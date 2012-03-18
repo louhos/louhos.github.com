@@ -19,11 +19,13 @@ Windows-ympäristöissä. Alla tiivis ohjeistus kehitysversion
 käyttöönotosta. Pyydämme raportoimaan havaituista puutteista
 osoitteeseen sorvi-commits at lists.r-forge.r-project.org
 
-1. Asenna [R-laskentaympäristö](http://www.r-project.org). Tuemme uusinta
-versiota (R-2.14.0), joskin saattaa toimia myös
+##### 1. Asenna [R-laskentaympäristö](http://www.r-project.org). 
+Tuemme uusinta versiota (R-2.14.2), joskin saattaa toimia myös
 aikaisemmilla. Graafisista R-käyttöliittymistä suosittelemme
 ohjelmistoa [RStudio](http://rstudio.org/).
-2. Asenna riippuvuudet:
+
+##### 2. Asenna riippuvuudet:    
+
 - **Windows:** Suurin osa riippuvuuksista asentuu tarvittaessa
 automaattisesti. Asenna lisäksi [PERL](http://www.perl.org/get.html)
 - **Mac:**
@@ -41,3 +43,25 @@ ja [freeglut](http://freeglut.sourceforge.net/)). Jos
 asennusskriptin ajamisessa tulee ongelmia, voit kokeilla mainittujen
 pakettien manuaalista asentamista.  
 
+##### 3. Asenna soRvi: 
+Käynnistä R ja aja 
+[sorvin asennusskripti](http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R) R:stä käsin komennolla
+
+{% highlight r %}  
+source("http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R")  
+{% endhighlight %}  
+  
+##### 4. Kokeile asennuksen onnistumista: 
+
+Lataa soRvi käyttöön R:ssä komennolla   
+
+{% highlight r %}
+library("sorvi") 
+{% endhighlight %}
+
+Jos asennus onnistui, ruudulle tulostuu tietoa paketista. Seuraavaksi voit
+kokeilla vaikkapa seuraavaa esimerkkiä:
+
+{% highlight r %}
+source("http://sorvi.r-forge.r-project.org/examples/helloworld.R")
+{% endhighlight %}

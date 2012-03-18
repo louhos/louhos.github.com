@@ -1,184 +1,97 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
+---
+layout: page
+root: true
+title: Louhos
+tagline: Open Source Code Repository for Open Data in Finland
+version: 0.1
+ghurl: https://github.com/louhos/louhos.github.com
+language: en
+translation: index.html
+---
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Louhos</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="../stylesheets/base.css">
-	<link rel="stylesheet" href="../stylesheets/skeleton.css">
-	<link rel="stylesheet" href="../stylesheets/layout.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="../images/favicon.ico">
-	<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
-
-</head>
-<body>
-
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
-
-	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Louhos</h1>
-			<h3 style="color: #999999">Open Source Code Repository for Open Data in Finland</h3>
-			<h5>Version 0.1</h5> 
-			<hr />
-		</div>
-		<div class="two-thirds column">
-			<p>
-
-			  With open data on governance, economics,
-			  traffic, geographic information rapidly
-			  increasing, there is a clear need for free
-			  and open tools for analyzing it. A variety
-			  of public and private organizations, such as
-			  the <a href="http://www.maanmittauslaitos.fi/en/node/6567">National
-			  Land Survey of Finland</a> and
-			   <a href="http://www.stat.fi/tup/tilastotietokannat/index_en.html">
-			   Statistics Finland</a>, are taking steps
-			  towards better access to publicly funded
-			  data. Making the analytical tools widely
-			  available and facilitating their use will
-			  increase the value of the public data
-			  resources.
-
-			</p> 
-			<p>
-				Here at Louhos we aim at:
-			</p>
-			<ol>
-				<li>
-					Providing a central hub that facilitates efficient 
-					access and utilization of public data resources
-				</li>
-				<li>
-					Developing analytical tools and using them for new insights
-					into how the society works
-				</li>
-				
-				<li>Actually, we think Simon Rogers said it better we ever
-					could, so read the quote on the right
-				</li>
-			</ol>
-		</div>
-				
-		<div class="one-third column">
-			<blockquote>
-				<p>If you asked me what a data scientist was, I would say someone who can
-				bridge the raw data and the analysis - and make it accessible. It's a
-				democratising role; by bringing the data to the people, you make the
-				world just a little bit better</p>
-				<cite style="text-align: right">Simon Rogers, <a href="http://www.guardian.co.uk/news/datablog/2012/mar/02/data-scientist">Guardian</a>.</cite>
-			</blockquote>
-		</div>
-		
-		<hr class="invisible">
-				
-		<div class="two-thirds column">
-			<h3>Projects</h3>                         
-
-			<p><i>Louhos</i> is a community-driven collection of open source code and
-			tools for open data in Finland. The Louhos repository is hosted
-			at <a href="https://github.com/louhos">github</a>.  Contributions to
-			facilitate the downloading, preprocessing, analysis, and
-			visualization, written in any language, are welcome.</p>
-    
-			<p>One of the projects hosted by Louhos is the comprehensive R
-			library for Open Data in Finland,
-			coined <a href="http://louhos.github.com/sorvi/index.html"><i>soRvi</i></a>
-			(Eng. 'turning machine'), which provides programmatic access to
-			hundreds of Finnish data
-			resources. The <a href="http://www.r-project.org/">R environment</a>
-			enables seamless integration of open data streams from various sources
-			with professional data analysis and visualization tools. The toolkit
-			received a double award in Private Data opening category in the
-			national Apps4Finland 2011 competition
-			(<a href="http://apps4finland.fi/fi/ajankohtaista/high-quality-entries-in-the-apps4finland-contest-signal-a-major-leap-in-open-data-applications-in-finland">press
-			release</a>).</p>
-		</div>	
-
-		<div class="one-third column">
-			<h3>Community</h3>
-			<p>
-			   Louhos is a community-driven project all the way. We welcome 
-			   feedback and material from new contributors. While our focus is 
-			   on Finnish open data and tools, we call the open data community 
-			   to launch a network of similar initiatives, suited for local 
-			   standards and needs and to share the efforts, code and fun!</p> 
-			<p align="center"><strong>Let's stay connected.</strong></p>
+{% include JB/setup %}
 
 
-			<div class="imgbanner">
-				<a href="contact.html" title="Contact">
-					<img src="../images/mail.png" alt="Contact">
-				</a>
-				<a href="https://github.com/louhos" title="GitHub">
-					<img src="../images/github.png" alt="GitHub " />
-				</a>
-				<a href="https://louhos.wordpress.com/" title="Blog">
-					<img src="../images/wordpress.png" alt="Blog" />
-				</a>
-			</div>
-			
-		</div>
+<div class="two-thirds column">
+	<p>
+		With open data on governance, economics,
+		traffic, geographic information rapidly
+		increasing, there is a clear need for free
+		and open tools for analyzing it. A variety
+		of public and private organizations, such as
+		the <a href="http://www.maanmittauslaitos.fi/en/node/6567">National
+		Land Survey of Finland</a> and <a href="http://www.stat.fi/tup/tilastotietokannat/index_en.html"> Statistics Finland</a>, are taking steps
+		towards better access to publicly funded
+		data. Making the analytical tools widely
+		available and facilitating their use will
+		increase the value of the public data
+		resources.
+	</p>
+	<p>
+		Here at Louhos we aim at:
+	</p>
+	<ol>
+		<li>
+			Providing a central hub that facilitates efficient
+			access and utilization of public data resources
+		</li>
+		<li>
+			Developing analytical tools and using them for new insights
+			into how the society works
+		</li>
+		<li>
+			Actually, we think Simon Rogers said it better we ever
+			could, so read the quote on the right
+		</li>
+	</ol>
+</div>
+<div class="one-third column">
+	<blockquote>
+		<p>
+			If you asked me what a data scientist was, I would say someone who can
+			bridge the raw data and the analysis - and make it accessible. It's a
+			democratising role; by bringing the data to the people, you make the
+			world just a little bit better
+		</p>
+		<cite style="text-align: right">Simon Rogers, <a href="http://www.guardian.co.uk/news/datablog/2012/mar/02/data-scientist">Guardian</a>.</cite>
+	</blockquote>
+</div>
+<hr class="invisible">
+<div class="two-thirds column">
+	<h3>Projects</h3>
+	<p>
+		<i>Louhos</i> is a community-driven collection of open source code and
+		tools for open data in Finland. The Louhos repository is hosted
+		at <a href="https://github.com/louhos">github</a>.  Contributions to
+		facilitate the downloading, preprocessing, analysis, and
+		visualization, written in any language, are welcome.
+	</p>
+	<p>
+		One of the projects hosted by Louhos is the comprehensive R
+		library for Open Data in Finland,
+		coined <a href="http://louhos.github.com/sorvi/index.html"><i>soRvi</i></a>
+		(Eng. 'turning machine'), which provides programmatic access to
+		hundreds of Finnish data
+		resources. The <a href="http://www.r-project.org/">R environment</a>
+		enables seamless integration of open data streams from various sources
+		with professional data analysis and visualization tools. The toolkit
+		received a double award in Private Data opening category in the
+		national Apps4Finland 2011 competition
+		(<a href="http://apps4finland.fi/fi/ajankohtaista/high-quality-entries-in-the-apps4finland-contest-signal-a-major-leap-in-open-data-applications-in-finland">press
+		release</a>).
+	</p>
+</div>
+<div class="one-third column">
+	<h3>Community</h3>
+	<p>
+		Louhos is a community-driven project all the way. We welcome
+		feedback and material from new contributors. While our focus is
+		on Finnish open data and tools, we call the open data community
+		to launch a network of similar initiatives, suited for local
+		standards and needs and to share the efforts, code and fun!
+	</p>
+	<p align="center">
+		<strong>Let's stay connected.</strong>
+	</p>
 
-		<hr>
-		
-		<div id="attribution">
-			<p class="remove-bottom">
-
-
-				<small>
-					<p>
-						<a href="../index.html">Suomeksi</a>
-						<br/>
-						Created by Louhos Team &copy 2012.
-						<br />
-						Page based on <a href="http://www.getskeleton.com">
-						Skeleton</a> by Dave Gamache released under
-						<a href="http://www.opensource.org/licenses/mit-license.php">
-						MIT license</a>.
-						<br>
-						Web icons by Bartosz Kaszubowski released under 	
-						<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC Attribution-NonCommercial-ShareAlike 3.0 Unported</a>.
-					</p>
-				</small>
-			</p>
-		</div>
-
-	</div><!-- container -->
-
-
-
-	<!-- JS
-	================================================== -->
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="javascripts/tabs.js"></script>
-
-<!-- End Document
-================================================== -->
-</body>
-</html>
+</div>

@@ -22,6 +22,7 @@
 		<link href="{{ ASSET_PATH }}/css/skeleton.css?body=1" rel="stylesheet" type="text/css" media="all">
 		<link href="{{ ASSET_PATH }}/css/layout.css?body=1" rel="stylesheet" type="text/css" media="all">
 		<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+		<link href="{{ ASSET_PATH }}/css/code.css?body=1" rel="stylesheet" type="text/css" media="all">
 		<link href="{{ ASSET_PATH }}/javascripts/fancybox-2.0.5/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
 		<link href="{{ ASSET_PATH }}/javascripts/fancybox-2.0.5/helpers/jquery.fancybox-thumbs.css?v=2.0.4" rel="stylesheet" type="text/css"  />
 		
@@ -50,9 +51,24 @@
 			<div class="fill">
 				<div class="header-container">
 					<div id="project-nav">
+		
 					
+						{% case page.language %}
+					
+							{% when 'fi' %}
+								{% assign title_projects = 'Projektit' %}
+								{% assign title_blog = 'Blogi' %}
+								{% assign title_contact = 'Ota yhteyttä' %}
+								{% assign title_other_lang = 'In English' %}
+							{% when 'en' %}
+								{% assign title_projects = 'Projects' %}
+								{% assign title_blog = 'Blog' %}
+								{% assign title_contact = 'Contact' %}
+								{% assign title_other_lang = 'Suomeksi' %}
+						{% endcase %}
+						
 				    	{% if page.root == true %}
-				    		<a class="brand" href="">Projektit</a>
+				    		<a class="brand" href="">{{ title_projects }}</a>
 				    	{% else %}
 				    		<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 				    	{% endif %}
@@ -64,15 +80,17 @@
 						</ul>
 					</div>
 					<div id="site-nav">
-						<a class="brand" href="https://louhos.wordpress.com/">Blogi</a>
-						<a class="brand" href="{{ HOME_PATH }}contact.html">Ota yhteyttä</a>
-						<a class="brand" href="{{ HOME_PATH }}index_en.html">In English</a>
+						<a class="brand" href="https://louhos.wordpress.com/">{{ title_blog }}</a>
+						<a class="brand" href="{{ HOME_PATH }}contact.html">{{ title_contact }}</a>
+						{% if page.translation %}
+							<a class="brand" href="{{ HOME_PATH }}{{ page.translation }}">{{ title_other_lang }}</a>
+						{% endif %}
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="container">
+		<div class="container"><br />
 			{{ content }}
 		</div>
 		
