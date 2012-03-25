@@ -64,17 +64,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: none;
 }
 
-code {
-	overflow:auto;
-	background-color: #F8F8F8;
-	border: 1px solid #CCC;
-	font-family:"Courier New",Courier,mono;
-	margin:0;
-	width:90%;
-	padding: 6px 10px;
-	border-radius: 3px;
-}
-
 /* #Basic Styles
  ================================================== */
 
@@ -123,12 +112,13 @@ h3 {
 h4 {
 	font-size: 21px;
 	line-height: 30px;
-	margin-bottom: 4px;
+	margin-bottom: 8px;
 }
 
 h5 {
 	font-size: 17px;
 	line-height: 24px;
+	margin-bottom: 8px;
 }
 
 h6 {
@@ -280,6 +270,7 @@ ul.large li {
 li p {
 	line-height: 21px;
 }
+
 
 /* #Images
  ================================================== */

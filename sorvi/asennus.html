@@ -36,6 +36,8 @@ language: fi
 					<b>Windows:</b> Suurin osa riippuvuuksista asentuu tarvittaessa
 					automaattisesti. Asenna
 					lisäksi <a href="http://www.perl.org/get.html">PERL</a>.
+					Jos haluat asentaa soRvi:n kehitysversion, asenna myös
+					<a href="http://cran.r-project.org/bin/windows/Rtools/">RTools</a>.
 				</li>
 				<li>
 					<b>Mac:</b>
@@ -58,6 +60,16 @@ language: fi
 		<li>
 			<h5>Asenna soRvi</h5> 
 			<p>
+				soRvi:n voi asentaa joko julkaisu- tai kehitysversion. 
+				Julkaisuversio on vaakaampi ja yleensä saatavilla kaikille
+				alustoille (Win, Mac ja Linux). Kehitysversio sisältää uusimmat
+				työkalut ja ajantasaisimmat aineistot, mutta on epävakaampi ja
+				koodi saattaa muuttua paljonkin ennen julkaisua. soRvi:n 
+				kehitystyöstä kiinnostuneille kehitysversio on suositeltava
+				versio.
+			</p>
+			<strong>Julkaisuversio</strong>
+			<p>
 				Käynnistä R ja
 				aja <a href="http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R">sorvin asennusskripti</a>
 				R:stä käsin komennolla
@@ -65,7 +77,20 @@ language: fi
 source("http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R")
 {% endhighlight %}
 			</p>
-			
+			<strong>Kehitysversio</strong>
+			<p>
+				Asenna ensin paketti <a href="https://github.com/hadley/devtools">devtools</a>:
+{% highlight r %}
+install.packages(devtools)
+library(devtools)
+{% endhighlight %}
+			</p>
+			<p>
+				Asenna soRvi:n kehitysversio suoraan GitHubista.
+{% highlight r %}
+install_github(repo = "soRvi-dev", username = "louhos", type = "source")
+{% endhighlight %}
+			</p>
 		</li>
 		<li>
 			<h5>Kokeile asennuksen onnistumista</h5> 
@@ -95,7 +120,7 @@ source("http://sorvi.r-forge.r-project.org/examples/helloworld.R")
 		mukaan.
 	</p>
 	
-	<h5 class="contrast">Yhteisö ja tuki</h5>
+	<h4>Yhteisö ja tuki</h4>
 	<p>
 		Projektin pääkehittäjiä ovat <a href="http://www.iki.fi/Leo.Lahti">Leo 
 		Lahti</a>, Juuso Parkkinen ja Joona Lehtomäki. Uudet tekijät, 
@@ -104,7 +129,7 @@ source("http://sorvi.r-forge.r-project.org/examples/helloworld.R")
 		IRCnetin kanavalta !louhos
 	</p>
 	
-	<h5 class="contrast">Lähdekoodi</h5>
+	<h4>Lähdekoodi</h4>
 	
 	<p>
 		Kehitysversion lähdekoodi löytyy
