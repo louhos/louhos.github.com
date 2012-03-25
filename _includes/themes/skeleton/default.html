@@ -58,22 +58,16 @@
 						{% case page.language %}
 					
 							{% when 'fi' %}
-								{% assign title_projects = 'Projektit' %}
 								{% assign title_blog = 'Blogi' %}
 								{% assign title_contact = 'Ota yhteyttä' %}
 								{% assign title_other_lang = 'In English' %}
 							{% when 'en' %}
-								{% assign title_projects = 'Projects' %}
 								{% assign title_blog = 'Blog' %}
 								{% assign title_contact = 'Contact' %}
 								{% assign title_other_lang = 'Suomeksi' %}
 						{% endcase %}
 						
-				    	{% if page.root == true %}
-				    		<a class="brand" href="">{{ title_projects }}</a>
-				    	{% else %}
-				    		<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-				    	{% endif %}
+				    	<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 									
 						<ul class="nav">
 							{% assign pages_list = site.pages %}
