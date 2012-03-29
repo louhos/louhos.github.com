@@ -53,41 +53,16 @@ translation: en/index.html
 		<cite style="text-align: right">Simon Rogers, <a href="http://www.guardian.co.uk/news/datablog/2012/mar/02/data-scientist">Guardian</a>.</cite>
 	</blockquote>
 </div>
-<hr class="invisible">
-<div class="two-thirds column">
-	<h3>Projektit</h3>
-	<p>
-		<i>Louhos</i> on kokoelma avointa lähdekoodia ja 
-		välineitä suomalaiselle avoimelle datalle. Louhosta ylläpidetään
-		<a href="https://github.com/louhos">GitHubissa</a> ja eri projektien 
-		etenemistä voi lisäksi seurata <a href="http://louhos.wordpress.com/">
-		Louhos-blogissa</a>.
-		Älä epäröi <a href="http://louhos.github.com/contact.html">ottaa
-		yhteyttä</a>, jos puuhaat avoimen datan parissa.  Kaikki kontribuutiot 
-		avoimen datan hakuun, esikäsittelyyn, analyysiin ja visualisointiin 
-		liittyen ovat tervetulleita.
-	</p>
-	<p>
-		Yksi Louhoksen projekteista on suomalainen avoimen datan R-kirjasto 
-		<a href="sorvi/index.html"><i>soRvi</i></a>, joka helpottaa pääsyä
-		satojen suomalaisten tietoaineistojen äärelle ja mahdollistaa niiden 
-		yhdistelyn uusin tavoin. <a href="http://www.r-project.org/">R-ympäristö</a>
-		edistää eri lähteistä saatavien aineistojen sujuvaa yhdistämistä 
-		ammattimaisiin analyysi- ja visualisointimenetelmiin. Projekti vei 
-		tuplavoiton vuoden 2011 <a href="http://apps4finland.fi/fi/kilpailutyot/datan-avaus-sorvi-avoimen-datan-tyokalupakki-r-kielelle">Apps4Finland</a>-kisan datan avaus-sarjassa
-		(<a href="http://apps4finland.fi/fi/ajankohtaista/kovatasoinen-apps4finland-finaali-merkittava-loikka-avoimelle-datalle-suomessa">lehdistötiedote</a>).
-	</p>
-</div>
-<div class="one-third column">
-	<h3>Yhteisö</h3>
-	<p>
-		Louhos on vahvasti yhteisövetoinen avoimen lähdekoodin projekti. Palaute 
-		ja materiaali uusilta tekijöiltä on tervetullutta. 
-		Osallistumismahdollisuuksia on listattu GitHubin <a href="https://github.com/louhos/soRvi-dev/wiki/Osallistu">
-		wikisivulla</a>.</p>
-	</p>
-	<p align="center">
-		<strong>Ollaan yhteydessä!</strong>
-	</p>
 
+<div class="one-third column">
+	
+	<a href="https://github.com/louhos/soRvi-dev/wiki/Osallistu" id="ghinvolve">
+		Osallistu!
+	</a>
+	
+</div>
+
+<div class="two-thirds column" style="margin-top: 100px;">
+		{% assign posts_collate = site.posts %}
+		{% include JB/news_collate %}
 </div>

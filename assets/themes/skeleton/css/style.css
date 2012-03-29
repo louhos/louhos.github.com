@@ -34,7 +34,8 @@
 /* #Reset & Basics (Inspired by E. Meyers)
  ================================================== */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -43,12 +44,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
 	display: block;
-}
-
-body {
-	line-height: 1;
 }
 
 ol, ul {
@@ -69,7 +66,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 body {
 	background: #fff;
-	font: 14px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 14px/21px "Droid sans", Helvetica, Arial, sans-serif;
 	color: #444;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -83,7 +80,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color: #181818;
-	font-family: "Droid Serif", "Times New Roman", Helvetica, Arial, sans-serif;
+	font-family: "Droid Serif", "Helvetive Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 }
 
@@ -218,6 +215,11 @@ p a, p a:visited {
 	line-height: inherit;
 }
 
+ul.news a {
+	text-decoration: none;
+}
+
+
 /* #Lists
  ================================================== */
 
@@ -271,6 +273,10 @@ li p {
 	line-height: 21px;
 }
 
+ul.news {
+	list-style: none;
+	text-align: right;
+}
 
 /* #Images
  ================================================== */
@@ -294,3 +300,16 @@ img.scale-with-grid {
 .add-bottom {
 	margin-bottom: 20px !important;
 }
+
+span.newsdate {
+	font-size: 16px;
+	color: #7f7f7f;
+}
+
+span.newstitle {
+	font-size: 18px;
+	color: #181818;
+	font-family: "Droid sans", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+

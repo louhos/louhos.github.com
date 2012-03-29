@@ -30,10 +30,20 @@
 /* #Site Styles
 ================================================== */
 
-#attribution {
-	color: #4d4d4d;
-	margin: 40px auto 20px auto;
+
+
+.footer {
+	background-color: #dadada;
+	color: #797979;
+	text-shadow: rgba(255, 254, 255, 0.73) 0 1px 1px;
 	text-align: center;
+	margin: 50px 0 0 0;
+	padding: 25px 0 0 0;
+}
+
+.footer a{
+	text-decoration: none;
+	font-weight: bold;
 }
 
 #project-nav {
@@ -182,6 +192,25 @@ div.demoimgs a img {
 	background-color: rgba(0, 0, 0, 0.5);
 }	
 
+/* Get involved image */
+
+a#ghinvolve {
+	background-image: url('http://octodex.github.com/images/repo.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: block;
+	margin: 50px auto 0 auto;
+	height: 250px;
+	width: 250px;
+	
+	font-size: 28px;
+	color: #181818;
+	font-family: "Droid sans", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+	
 /* #Page Styles
 ================================================== */
 
