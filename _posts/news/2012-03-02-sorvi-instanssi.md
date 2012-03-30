@@ -1,12 +1,10 @@
 ---
-title: soRvi mukana Instanssissa
-layout: post
+title: Instanssi Digitaalisen tekemisen festivaali
+layout: news
 category : news
 tags : [news]
+language: fi
+info:
+  when: 9. - 11.3.2012
+  where_title: Jyväskylä
 ---
-{% include JB/setup %}
-
-#  Instanssi Digitaalisen tekemisen festivaali
-## Milloin: 9. - 11.3.2012
-## Missä: Jyväskylä
-

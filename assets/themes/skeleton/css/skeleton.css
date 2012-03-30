@@ -16,12 +16,17 @@
     #Mobile (Landscape)
     #Clearing */
 
-
-
 /* #Base 960 Grid
 ================================================== */
-
-    .container  								{ position: relative; width: 960px; margin: 0 auto; padding: 0; }
+	
+    .container { 
+    	position: relative; 
+    	width: 960px; 
+    	margin: 0 auto; 
+    	overflow: auto; 
+    	padding-bottom: 80px; /* This needs to be the same as in #footer::height and #footer::margin */
+    }
+    
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }

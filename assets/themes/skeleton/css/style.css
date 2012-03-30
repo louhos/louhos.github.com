@@ -34,6 +34,9 @@
 /* #Reset & Basics (Inspired by E. Meyers)
  ================================================== */
 
+html, body {
+	height: 100%;
+}
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -122,6 +125,17 @@ h6 {
 	font-size: 14px;
 	line-height: 21px;
 }
+
+h4.tagline {
+	color: #999999;
+	font-family: "Droid sans", Helvetica, Arial, sans-serif;
+}
+
+h4.tagline > a {
+	color: #999999;
+	text-decoration: none;
+}
+
 
 .subheader {
 	color: #777;
@@ -278,6 +292,20 @@ ul.news {
 	text-align: right;
 }
 
+li.next, li.prev {
+	display: inline;
+	padding: 0 5px 0 5px;
+}
+
+li.next.disabled a, li.prev.disabled a {
+	color: #b9b9b9;
+	text-decoration: none;
+}
+
+li.tag {
+	display: inline;
+}
+
 /* #Images
  ================================================== */
 
@@ -311,5 +339,9 @@ span.newstitle {
 	color: #181818;
 	font-family: "Droid sans", Helvetica, Arial, sans-serif;
 	font-weight: bold;
+}
+
+div.newscontent {
+	margin: 50px 0 50px 0;
 }
 

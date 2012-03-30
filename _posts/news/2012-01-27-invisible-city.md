@@ -1,11 +1,11 @@
 ---
-title: Invisible City - Avoimen tiedon päivä Korjaamolla
-layout: post
+title: Invisible City - Avoimen tiedon päivä
+layout: news
 category : news
-tags : [news]
+tags : [news, sorvi]
+language: fi
+info:
+  when: 4.2.2012
+  where_title: Vanha Ylioppilastalo, Mannerheimintie 3, Helsinki
+  where_link: http://g.co/maps/ddkxm
 ---
-{% include JB/setup %}
-
-# Invisible City - Avoimen tiedon päivä Korjaamolla. World Design Capital Helsinki 2012 Designpääkaupunkiviikonloppu.
-## Milloin: 4.2.2012
-## Missä: [Kulttuuritehdas Korjaamo, Töölönkatu 51, Helsinki](http://g.co/maps/ddkxm)
