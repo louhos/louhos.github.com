@@ -215,6 +215,30 @@ a#ghinvolve {
 	text-align: center;
 	text-decoration: none;
 }
+
+/* Contributors */
+
+div.personinfo {
+	text-align: center;
+}
+	
+.personinfo-img {
+	position:relative;
+	margin: 0 auto 0 auto;
+	-webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+div.personinfo .links {
+	width: 144px;
+	margin: 10px auto 0 auto;
+}
+
+div.personinfo .links a {
+	text-decoration: none;
+}
+
 	
 /* #Page Styles
 ================================================== */

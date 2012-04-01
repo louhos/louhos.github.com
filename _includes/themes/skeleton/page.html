@@ -3,6 +3,10 @@
 	<h3 class="tagline">{{ page.tagline }}</h3>
 	{% if page.version %}
 		<h5>Versio {{ page.version }}</h5>
+	{% else %}
+		{% if page.root %}
+			<h5>Versio {{ site.version }}</h5>
+		{% endif %}
 	{% endif %}
 	<hr />
 </div>

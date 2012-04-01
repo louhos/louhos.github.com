@@ -17,8 +17,34 @@ author :
   email : joona.lehtomaki@gmail.com
   github : jlehtoma
   twitter : jlehtoma
-  feedburner : feedname
-version: 0.1
+users :
+  leo : 
+    role : admin
+    name : Leo Lahti
+    picture : LeoLahti.jpg
+    email : leo.lahti@iki.fi
+    homepage : http://antagomir.github.com/
+    github : antagomir
+    twitter : antagomir
+    googleplus : https://plus.google.com/101894517788603274082/
+  juuso : 
+    role : admin
+    name : Juuso Parkkinen
+    picture : JuusoParkkinen.jpg
+    email : juuso.parkkinen@gmail.com
+    github : ouzor
+    twitter : ouzor
+    googleplus : https://plus.google.com/110816312923792859782/
+  joona : 
+    role : admin
+    name : Joona Lehtomäki
+    picture : JoonaLehtomaki.jpg
+    email : joona.lehtomaki@gmail.com
+    homepage : https://tuhat.halvi.helsinki.fi/portal/en/persons/joona-lehtomaki%287f6888ed-acb0-4c6a-aab5-bc54f26d0e61%29.html
+    github : jlehtoma
+    twitter : jlehtoma
+    googleplus : https://plus.google.com/112885751907512172261/
+version: 0.2
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

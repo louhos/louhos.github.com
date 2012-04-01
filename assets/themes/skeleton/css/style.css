@@ -136,6 +136,9 @@ h4.tagline > a {
 	text-decoration: none;
 }
 
+h5.tagline-main {
+	font-family: "Droid sans", Helvetica, Arial, sans-serif;
+}
 
 .subheader {
 	color: #777;
@@ -306,6 +309,10 @@ li.tag {
 	display: inline;
 }
 
+h5.tagline-main > li{
+	margin: 25px 0 25px 0;
+}
+
 /* #Images
  ================================================== */
 
@@ -313,6 +320,7 @@ img.scale-with-grid {
 	max-width: 100%;
 	height: auto;
 }
+
 
 /* #Misc
  ================================================== */
@@ -343,5 +351,80 @@ span.newstitle {
 
 div.newscontent {
 	margin: 50px 0 50px 0;
+}
+
+div.info {
+	text-align: center;
+}
+
+div.info h4 {
+	color: #999999;
+	font-family: "Droid sans", Helvetica, Arial, sans-serif;
+}
+
+ /* Shared styles */
+        
+.drop-shadow {
+    position:relative;
+    float:left;
+    width:95%;
+    padding: 3em 0 3em 0;    
+    margin: 3em 0 3em 20px; 
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.drop-shadow:before,
+.drop-shadow:after {
+    content:"";
+    position:absolute; 
+    z-index:-2;
+}
+
+
+ /* Lifted corners */
+
+.lifted {
+    -moz-border-radius:4px; 
+         border-radius:4px;
+}
+
+.lifted:before,
+.lifted:after { 
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);   
+       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+            box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);    
+       -moz-transform:rotate(-3deg);   
+        -ms-transform:rotate(-3deg);   
+         -o-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+}
+
+.lifted:after {
+    right:10px; 
+    left:auto;
+    -webkit-transform:rotate(3deg);   
+       -moz-transform:rotate(3deg);  
+        -ms-transform:rotate(3deg);  
+         -o-transform:rotate(3deg);
+            transform:rotate(3deg);
+}
+
+ /* Raised shadow - no pseudo-elements needed */
+        
+.raised {
+    -moz-border-radius: 8px; 
+     border-radius: 8px;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
