@@ -354,13 +354,17 @@ div.newscontent {
 }
 
 div.info {
+	position:relative;
+    float:left;
 	text-align: center;
+	margin: 50px 0 50px 0;
 }
 
 div.info h4 {
 	color: #797979;
 	text-shadow: rgba(255, 254, 255, 0.73) 0 1px 1px;
 	font-family: "Droid sans", Helvetica, Arial, sans-serif;
+	margin-bottom: 30px;
 }
 
  /* Shared styles */
@@ -371,7 +375,7 @@ div.info h4 {
     width:95%;
     padding: 3em 0 3em 0;    
     margin: 3em 0 3em 20px; 
-    background: #e7e7e7;
+    background: #fff;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
