@@ -54,13 +54,13 @@
 #project-nav {
 	display: block;
 	float: left;
-	width: 60%;
+	width: 50%;
 }
 
 #site-nav {
 	display: block;
 	float: right;
-	width: 40%;
+	width: 50%;
 }
 
 /* Header */
