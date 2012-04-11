@@ -7,7 +7,18 @@ language: en
 translation: contact.html
 ---
 
-<div class="two-thirds column">
+{% include JB/setup %}
+
+<div class="sixteen column">
+	
+	<p>
+		Louhos is a community-driven collection of open source code and
+		tools for open data in Finland.  Contributions to
+		facilitate the downloading, preprocessing, analysis, and
+		visualization, written in any language, are welcome.
+	</p>
+	
+	
 	<ol>
 		<li>
 			<strong>Email: </strong> sorvi-admin - at - lists.r-forge.r-project.org
@@ -29,12 +40,55 @@ translation: contact.html
 		</li>
 	</ol>
 	
-	<p>
-		Louhos is a community-driven collection of open source code and
-		tools for open data in Finland. The Louhos repository is hosted
-		at <a href="https://github.com/louhos">github</a>.  Contributions to
-		facilitate the downloading, preprocessing, analysis, and
-		visualization, written in any language, are welcome.
-	</p>
 	
 </div>
+
+<div class="info">
+	<h4>Administrators</h4>
+	
+	<!-- NOTE! one-third column is hard coded!-->
+	{% for user_hash in site.users %}
+		{% for user in user_hash %}
+			{% if user.role == "admin" %}
+				<div class="one-third-less column">
+					<div class="personinfo">
+						<h5 class="tagline-main">{{ user.name }}</h5>
+						<img src="{{ ASSET_PATH }}/skeleton/images/{{ user.picture }}" alt="{{ user.name }}" class="personinfo-img"/>
+						<div class="links">
+							{% if user.homepage %}
+								<a href="{{ user.homepage }}" title="Web page" target="_blank">
+									<img src="{{ ASSET_PATH }}/skeleton/images/web24.png" />
+								</a>
+							{% endif %}
+							{% if user.twitter %}
+								<a href="https://www.twitter.com/{{ user.twitter }}" title="Twitter" target="_blank">
+									<img src="{{ ASSET_PATH }}/skeleton/images/twitter24.png" />
+								</a>
+							{% endif %}
+							{% if user.googleplus %}
+								<a href="{{ user.googleplus }}" title="Google+" target="_blank">
+									<img src="{{ ASSET_PATH }}/skeleton/images/googleplus24.png" />
+								</a>
+							{% endif %}
+							{% if user.github %}
+								<a href="https://www.github.com/{{ user.github }}" title="GitHub" target="_blank">
+									<img src="{{ ASSET_PATH }}/skeleton/images/github24.png" />
+								</a>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	<div class="clear"></div>
+	<br /><br />
+	<h4>Contributions</h4>
+	<div class="personinfo">
+		<h5 class="tagline-main">You?</h5>
+		<a href="https://github.com/louhos/soRvi-dev/wiki/Osallistu" title="GitHub" target="_blank">
+			<img src="{{ ASSET_PATH }}/skeleton/images/mystery.png" alt="Sinä" class="personinfo-img"/>
+		</a>
+	</div>
+
+</div>	

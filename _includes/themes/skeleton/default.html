@@ -63,10 +63,12 @@
 							{% when 'fi' %}
 								{% assign title_blog = 'Blogi' %}
 								{% assign title_contact = 'Ota yhteyttä' %}
+								{% assign link_contact = 'contact.html' %}
 								{% assign title_other_lang = 'In English' %}
 							{% when 'en' %}
 								{% assign title_blog = 'Blog' %}
 								{% assign title_contact = 'Contact' %}
+								{% assign link_contact = 'en/contact.html' %}
 								{% assign title_other_lang = 'Suomeksi' %}
 						{% endcase %}
 						
@@ -80,7 +82,7 @@
 					</div>
 					<div id="site-nav">
 						<a class="brand" href="https://louhos.wordpress.com/">{{ title_blog }}</a>
-						<a class="brand" href="{{ HOME_PATH }}contact.html">{{ title_contact }}</a>
+						<a class="brand" href="{{ HOME_PATH }}{{ link_contact }}">{{ title_contact }}</a>
 						<!--<a class="brand" href="{{ HOME_PATH }}faq.html">FAQ</a>-->
 						{% if page.translation %}
 							<a class="brand" href="{{ HOME_PATH }}{{ page.translation }}">{{ title_other_lang }}</a>
