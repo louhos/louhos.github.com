@@ -9,7 +9,7 @@ info:
   where_title: Jyväskylä
 ---
 Instanssin [kotisivut](http://instanssi.org/2012/) sekä Leon ja Juuson 
-[esitelmä]() soRvista:
+[esitelmä](http://www.youtube.com/embed/4re-3qtm1os) soRvista:
 
 {% assign link = "http://www.youtube.com/embed/4re-3qtm1os" %}
 {% include louhos/youtube %}

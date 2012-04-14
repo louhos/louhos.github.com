@@ -20,7 +20,7 @@
 <div class="one-third column">
   <ul>
 	  {% if page.previous %}
-	    <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Previous</a></li>
+	    <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Edellinen</a></li>
 	  {% else %}
 	    <li class="prev disabled"><a>Edellinen</a></li>
 	  {% endif %}
@@ -28,7 +28,7 @@
 	  {% if page.next %}
 	    <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Seuraava</a></li>
 	  {% else %}
-	    <li class="next disabled"><a>Next</a>
+	    <li class="next disabled"><a>Suraava</a>
 	  {% endif %}
   </ul>
 </div>
