@@ -7,7 +7,7 @@ language: fi
 <div class="sixteen columns">
 	<p>
 
-Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja kontribuuttoreille. Tämä sivu on vielä työn alla.
+Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja kontribuuttoreille. Tämä sivu on vielä työn alla ja ohjeita täydennetään pian.
 
 	</p>
 	
@@ -24,7 +24,7 @@ Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja 
 			<h5>soRvi-paketin kääntämisohjeet:</h5> 
 
 			<p>
-			Asenna <a href="https://github.com/hadley/devtools">devtools</a> R:ssä:  
+			Asenna <a href="https://github.com/hadley/devtools">devtools</a> R:ssä:
 {% highlight r %}  
 install.packages(devtools)  
 library(devtools)  
@@ -33,20 +33,26 @@ library(devtools)
 
 			<p>
 			Generoi R-paketin dokumentaatio R:ssä komentosarjalla
-{% highlight r %}  
+{% highlight r %}
 library(devtools)  
 document("soRvi-dev")  
 {% endhighlight %}
 			</p>
 
 			<p>
-			Aja komentorivillä:
-{% highlight r %}  
+			Käännä paketti komentosarjalla:
+{% highlight r %}
 /myRpath/R CMD check soRvi-dev  
 /myRpath/R CMD build soRvi-dev  
 /myRpath/R CMD INSTALL sorvi_x.y.z.tar.gz  
 {% endhighlight %}
 			</p>
+
+			<p>
+			  Korjaa omiin muutoksiisi liittyvät virheilmoitukset ja varoitukset
+			</p>
+
+			
 		</li>
 
 		<li>
