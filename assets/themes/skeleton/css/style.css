@@ -354,10 +354,19 @@ div.newscontent {
 }
 
 div.info {
-	position:relative;
-    float:left;
+	position: relative;
+    float: left;
 	text-align: center;
 	margin: 50px 0 50px 0;
+}
+
+div.info ul {
+	text-align: left;
+}
+
+div.info ul li {
+	font-size: 16px;
+	padding-left: 40px;
 }
 
 div.info h4 {
