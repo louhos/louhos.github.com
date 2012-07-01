@@ -43,15 +43,23 @@ language: fi
 			<p>
 {% highlight r %}
 install.packages("devtools")
-library(devtools)
 {% endhighlight %}
 			</p>
 
 			<p>
-			.. ja sitten soRvi komennolla
+			Nyt soRvin asentaminen onnistuu R:stä käsin Linux/Mac-ympäristössä komennolla:
+
 {% highlight r %}
+install_github(repo = "soRvi-dev", username = "louhos")
+{% endhighlight %}  
+			
+			.. ja Windowsissa komennolla:
+{% highlight r %}
+library(devtools)
 install_github(repo = "soRvi-dev", username = "louhos", type = "source")
 {% endhighlight %}
+
+
 			</p>
 
 
