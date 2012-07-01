@@ -7,10 +7,12 @@ language: fi
 <div class="sixteen columns">
 	<p>
 
-Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja kontribuuttoreille. Sivu on työn alla ja ohjeita täydennetään pian.
+Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja kontribuuttoreille. Sivu on työn alla ja ohjeita täydennetään pian. Sorvin kehitys tapahtuu GitHubissa. Kehityksen päävaiheet ovat (i) kehitysversion kloonaus; (ii) paketin kääntäminen; (iii) koodin kehittäminen; (iv) virheiden ja varoitusten korjaaminen; (v) uusien kontribuutioiden liittäminen päähaaraan. Tiivis ohjeistus alla:
 
 	</p>
 	
+	<h4>Kehitysversion kloonaus</h4>
+
 	<ol>
 		<li>
 		<a href="asennus.html">Asenna R ja soRvin vaatimat riippuvuudet</a>
@@ -26,6 +28,13 @@ Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja 
 install.packages(devtools)
 {% endhighlight %}
 		</li>
+
+	</ol>
+
+
+	<h4>Paketin kääntäminen ja asennus</h4>
+
+	<ol>
 
 		<li>			
 		Dokumentaatiosivujen (soRvi-dev/man/*.Rd) generointi R:ssä (olettaen, että soRvi-dev sijaitsee työhakemistossa):
@@ -57,12 +66,17 @@ install("soRvi-dev")
 {% endhighlight %}
 		</li>
 
+	</ol>
+
+	<h4>Kontribuointi päähaaraan</h4>
+
+	<ol>
 		<li>			
 		Korjaa muutoksiisi liittyvät virheilmoitukset ja varoitukset
 		</li>
 
 		<li>
-		Kontribuoi. Ylläpidon kannalta kätevin tapa kontribuutioiden vastaanottamiseen on <a href="https://help.github.com/articles/using-pull-requests">GitHubin pull-request-toiminto</a>, jossa teet kehitystyön omassa kehityshaarassasi, ja työn valmistuttua varmistat että se on yhteensopiva päähaaran (master branch) kanssa. Tämän jälkeen voit lähettää ylläpidolle pyynnön vetää muutokset päähaaraan. Tiiviit ohjeet:
+		Ylläpidon kannalta kätevin tapa kontribuutioiden vastaanottamiseen on <a href="https://help.github.com/articles/using-pull-requests">GitHubin pull-request-toiminto</a>, jossa teet kehitystyön omassa kehityshaarassasi, ja työn valmistuttua varmistat että se on yhteensopiva päähaaran (master branch) kanssa. Tämän jälkeen voit lähettää ylläpidolle pyynnön vetää muutokset päähaaraan. Tiiviit ohjeet:
 		  <ul>
 		  <li>Tee <a href="https://github.com/bricoleurs/bricolage/wiki/Merging-with-Git">git-merge</a> omaan kehityshaaraasi soRvin <a href="https://github.com/louhos/soRvi-dev">master branchista</a></li>
 		  <li>Lähetä ylläpidolle pull-request esim. <a href="https://github.com/louhos/soRvi-dev">sorvin GitHub-sivuston kautta</a></li>
