@@ -8,6 +8,8 @@ language: fi
 	<p>
 	<a href="index.html">soRvi</a> on yhteiskunnan avointen tietovarantojen keskitettyyn hakuun, putsaamiseen, analysointiin, yhdistelyyn ja visualisointiin suunnattu avoimen lähdekoodin hanke, joka keskittyy erityisesti suomalaiseen avoimeen dataan. Avoimen lähdekoodin R-kielelle toteutetun kirjaston välineet helpottavat tiedonlouhinta-algoritmien soveltamista julkisiin tietolähteisiin ammattimaisessa laskentaympäristössä. Valmiiden hakurutiinien ansiosta monipuoliset aineistot ja tehokkaat analyysimenetelmät ovat välittömästi yhdistettävissä ilman hankalia esikäsittelyvaiheita. soRvi-kirjasto toimii mm. Linux-, Mac- ja Windows-ympäristöissä. Alla tiiviit asennusohjeet. Pyydämme raportoimaan havaituista puutteista osoitteeseen sorvi-commits at lists.r-forge.r-project.org
 	</p>
+
+	<h4>Asennusohjeet</h4>
 	
 	<ol>
 		<li>
@@ -39,7 +41,7 @@ language: fi
 		<li>
 			<h5>Asenna soRvi</h5> 
 
-			Kun vaaditut riippuvuudet on asennettu (ks. yllä), soRvi-paketin voi asentaa suoraan R:stä käsin. Asenna ensin <a href="https://github.com/hadley/devtools">devtools</a>:
+			Kun vaaditut riippuvuudet on asennettu (ks. yllä), soRvi-paketin voi asentaa suoraan R:stä käsin. Käynnistä R ja asenna <a href="https://github.com/hadley/devtools">devtools</a>:
 			<p>
 {% highlight r %}
 install.packages("devtools")
@@ -50,10 +52,11 @@ install.packages("devtools")
 			Nyt soRvin asentaminen onnistuu R:stä käsin Linux/Mac-ympäristössä komennolla:
 
 {% highlight r %}
+library(devtools)
 install_github(repo = "soRvi-dev", username = "louhos")
 {% endhighlight %}  
 			
-			.. ja Windowsissa komennolla:
+			.. tai Windowsissa komennolla:
 {% highlight r %}
 library(devtools)
 install_github(repo = "soRvi-dev", username = "louhos", type = "source")
@@ -89,9 +92,7 @@ source("http://sorvi.r-forge.r-project.org/examples/helloworld.R")
 	<p>
 	Projektin pääkehittäjiä ovat <a href="http://www.iki.fi/Leo.Lahti">Leo 
 	Lahti</a>, Juuso Parkkinen ja Joona Lehtomäki. Uudet tekijät, 
-	kontribuutiot ja palaute ovat tervetulleita, ylläpitäjät tavoitat 
-	sähköpostilla sorvi-commits .. at .. lists.r-forge.r-project.org tai 
-	IRCnetin kanavalta !louhos
+	kontribuutiot ja palaute ovat tervetulleita - <a href="http://louhos.github.com/contact.html">ota yhteyttä</a>.
 	</p>
 	
 	<h4>Lähdekoodi</h4>
@@ -104,7 +105,7 @@ source("http://sorvi.r-forge.r-project.org/examples/helloworld.R")
 
         <h4>Paketin kehittäjille</h4>
 	<p>
-	Otamme vastaan kontribuutioita pakettiin ja uudet kehittäjät ovat tervetulleita. Ohjeita on koottu <a href="kehitys.html">tälle sivulle</a>
+	Otamme vastaan kontribuutioita pakettiin ja uudet kehittäjät ovat tervetulleita. Kehitysohjeita on koottu <a href="kehitys.html">tälle sivulle</a>.
 	</p>
 
 </div>
