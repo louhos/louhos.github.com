@@ -26,13 +26,12 @@ Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja 
 			<p>
 			Asenna <a href="https://github.com/hadley/devtools">devtools</a> R:ssä:
 {% highlight r %}  
-install.packages(devtools)  
-library(devtools)  
+install.packages(devtools)
 {% endhighlight %}
 			</p>
 
 			<p>
-			Generoi R-paketin dokumentaatio R:ssä komentosarjalla
+			Kun soRvi-dev-kansio sijaitsee työhakemistossa, voit generoida dokumentaatiosivut R:ssä komentosarjalla
 {% highlight r %}
 library(devtools)  
 document("soRvi-dev")  
@@ -40,7 +39,7 @@ document("soRvi-dev")
 			</p>
 
 			<p>
-			Käännä paketti komentosarjalla:
+			Käännä paketti komentosarjalla (korvaa myRpath R-asennushakemistolla):
 {% highlight r %}
 /myRpath/R CMD check soRvi-dev  
 /myRpath/R CMD build soRvi-dev  
@@ -49,19 +48,23 @@ document("soRvi-dev")
 			</p>
 
 			<p>
-			  Korjaa omiin muutoksiisi liittyvät virheilmoitukset ja varoitukset
+			  Korjaa muutoksiisi liittyvät virheilmoitukset ja varoitukset
 			</p>
-
 			
 		</li>
 
 		<li>
-		  <h5>Kontribuoi, mergetä masteriin, ja lähetä ylläpidolle pull-request</h5> 
+		  <h5>Kontribuoi</h5>
+		  Ylläpidon kannalta kätevin tapa kontribuutioiden vastaanottamiseen on GitHubin pull-request toiminto:
+		  <p>Tee git-merge soRvin <a href="https://github.com/louhos/soRvi-dev">master branchiin</a></p>
+		  <p>Lähetä ylläpidolle <a href="https://github.com/louhos/soRvi-dev">pull-request</a></p>
+		  
+		  Otamme vastaan kontribuutioita myös muilla tavoin. Jos sinulla on R-kielistä lähdekoodia, jonka olisit halukas kontribuoimaan soRvi-kirjastoon, <a href="http://louhos.github.com/contact.html">ota yhteyttä</a> ja katsotaan yhdessä miten voitaisiin edetä.
+		  
 		</li>  
 
 	</ol>
 	
-
 	
 	<h4>Yhteisö ja tuki</h4>
 	<p>
