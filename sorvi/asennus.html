@@ -6,19 +6,7 @@ language: fi
 --- 
 <div class="sixteen columns">
 	<p>
-		<a href="index.html">soRvi</a> on yhteiskunnan avointen
-		tietovarantojen keskitettyyn hakuun, putsaamiseen, analysointiin,
-		yhdistelyyn ja visualisointiin suunnattu avoimen lähdekoodin hanke,
-		joka keskittyy erityisesti suomalaiseen avoimeen dataan. Avoimen
-		lähdekoodin R-kielelle toteutetun kirjaston välineet helpottavat
-		tiedonlouhinta-algoritmien soveltamista julkisiin tietolähteisiin
-		ammattimaisessa laskentaympäristössä. Valmiiden hakurutiinien ansiosta
-		monipuoliset aineistot ja tehokkaat analyysimenetelmät ovat
-		välittömästi yhdistettävissä ilman hankalia esikäsittelyvaiheita.
-		soRvi-kirjasto toimii mm. Linux-, Mac- ja
-		Windows-ympäristöissä. Alla tiivis ohjeistus kehitysversion
-		käyttöönotosta. Pyydämme raportoimaan havaituista puutteista
-		osoitteeseen sorvi-commits at lists.r-forge.r-project.org
+	<a href="index.html">soRvi</a> on yhteiskunnan avointen tietovarantojen keskitettyyn hakuun, putsaamiseen, analysointiin, yhdistelyyn ja visualisointiin suunnattu avoimen lähdekoodin hanke, joka keskittyy erityisesti suomalaiseen avoimeen dataan. Avoimen lähdekoodin R-kielelle toteutetun kirjaston välineet helpottavat tiedonlouhinta-algoritmien soveltamista julkisiin tietolähteisiin ammattimaisessa laskentaympäristössä. Valmiiden hakurutiinien ansiosta monipuoliset aineistot ja tehokkaat analyysimenetelmät ovat välittömästi yhdistettävissä ilman hankalia esikäsittelyvaiheita. soRvi-kirjasto toimii mm. Linux-, Mac- ja Windows-ympäristöissä. Alla tiiviit asennusohjeet. Pyydämme raportoimaan havaituista puutteista osoitteeseen sorvi-commits at lists.r-forge.r-project.org
 	</p>
 	
 	<ol>
@@ -33,18 +21,18 @@ language: fi
 			<h5>Asenna riippuvuudet</h5>
 			<ul>
 				<li>
-					<b>Windows:</b> 
-					Asenna <a href="http://www.perl.org/get.html">PERL</a> ja <a href="http://cran.r-project.org/bin/windows/Rtools/">RTools</a>.
+				<b>Windows:</b> 
+				Asenna <a href="http://www.perl.org/get.html">PERL</a> ja <a href="http://cran.r-project.org/bin/windows/Rtools/">RTools</a>.
 				</li>
 
 				<li>
-					<b>Mac:</b>
-					Asenna <a href="http://developer.apple.com/xcode">XCode</a>. Lisäksi
-					voit asentaa joissakin esimerkeissä tarvittavan ohjelmiston rgdal (<a href="http://spatialanalysis.co.uk/2010/11/installing-rgdal-on-mac-os-x/">rgdal-asennusohjeet</a>; <a href="http://stackoverflow.com/questions/7168345/problems-installing-rgeos-and-rgdal-on-mac-os-x-lion">rgdal-asennusohjeet2</a>).
+				<b>Mac:</b>
+				Asenna <a href="http://developer.apple.com/xcode">XCode</a>. Lisäksi voit asentaa joissakin esimerkeissä tarvittavan ohjelmiston rgdal (<a href="http://spatialanalysis.co.uk/2010/11/installing-rgdal-on-mac-os-x/">rgdal-asennusohjeet</a>; <a href="http://stackoverflow.com/questions/7168345/problems-installing-rgeos-and-rgdal-on-mac-os-x-lion">rgdal-asennusohjeet2</a>).
 				</li>
 
 				<li>
-					<b>Linux:</b> Asenna <a href="http://xmlsoft.org/downloads.html">XML</a>, <a href="http://trac.osgeo.org/geos">GEOS</a>, <a href="http://trac.osgeo.org/proj">PROJ.4</a> ja <a href="http://curl.haxx.se/download.html">CURL</a>. Lisäksi voit asentaa joissakin esimerkeissä tarvittavat (<a href="http://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL</a> ja <a href="http://freeglut.sourceforge.net/">freeglut</a>). Asentamisen sujuvoittamiseksi voit ladata <a href="http://github.com/louhos/takomo/tree/master/installation/">valmiin asennusskriptin</a> (Debian / Ubuntu / Fedora / OpenSuse). 
+				<b>Linux:</b> 
+				Asenna <a href="http://xmlsoft.org/downloads.html">XML</a>, <a href="http://trac.osgeo.org/geos">GEOS</a>, <a href="http://trac.osgeo.org/proj">PROJ.4</a> ja <a href="http://curl.haxx.se/download.html">CURL</a>. Lisäksi voit asentaa joissakin esimerkeissä tarvittavat (<a href="http://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL</a> ja <a href="http://freeglut.sourceforge.net/">freeglut</a>). Asentamisen sujuvoittamiseksi voit käyttää <a href="http://github.com/louhos/takomo/tree/master/installation/">valmista asennusskriptiä</a> (Debian / Ubuntu / Fedora / OpenSuse). 
 				</li>
 
 			</ul>
@@ -67,45 +55,6 @@ install_github(repo = "soRvi-dev", username = "louhos", type = "source")
 {% endhighlight %}
 			</p>
 
-
-<!--			
-
-			<p>
-				soRvi:n voi asentaa joko julkaisu- tai kehitysversion. 
-				Julkaisuversio on vaakaampi ja yleensä saatavilla kaikille
-				alustoille (Win, Mac ja Linux). Kehitysversio sisältää uusimmat
-				työkalut ja ajantasaisimmat aineistot, mutta on epävakaampi ja
-				koodi saattaa muuttua paljonkin ennen julkaisua. soRvi:n 
-				kehitystyöstä kiinnostuneille kehitysversio on suositeltava
-				versio.
-			</p>
-
-                        <strong>Julkaisuversio</strong>
-			<p>
-				Käynnistä R ja
-				aja <a href="http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R">sorvin asennusskripti</a>
-				R:stä käsin komennolla
-{% highlight r %}
-source("http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R")
-{% endhighlight %}
-			</p>
-
-			<strong>Kehitysversio</strong>
-			<p>
-				Asenna ensin paketti <a href="https://github.com/hadley/devtools">devtools</a>:
-{% highlight r %}
-install.packages(devtools)
-library(devtools)
-{% endhighlight %}
-			</p>
-			<p>
-				Asenna soRvi:n kehitysversio suoraan GitHubista.
-{% highlight r %}
-install_github(repo = "soRvi-dev", username = "louhos", type = "source")
-{% endhighlight %}
-			</p>
-		</li>
--->
 
 		<li>
 			<h5>Kokeile asennuksen onnistumista</h5> 
