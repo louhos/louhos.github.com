@@ -6,145 +6,118 @@ language: fi
 --- 
 <div class="sixteen columns">
 	<p>
-		<a href="index.html">soRvi</a> on yhteiskunnan avointen
-		tietovarantojen keskitettyyn hakuun, putsaamiseen, analysointiin,
-		yhdistelyyn ja visualisointiin suunnattu avoimen lähdekoodin hanke,
-		joka keskittyy erityisesti suomalaiseen avoimeen dataan. Avoimen
-		lähdekoodin R-kielelle toteutetun kirjaston välineet helpottavat
-		tiedonlouhinta-algoritmien soveltamista julkisiin tietolähteisiin
-		ammattimaisessa laskentaympäristössä. Valmiiden hakurutiinien ansiosta
-		monipuoliset aineistot ja tehokkaat analyysimenetelmät ovat
-		välittömästi yhdistettävissä ilman hankalia esikäsittelyvaiheita.
-		soRvi-paketti toimii mm. Linux-, Mac- ja
-		Windows-ympäristöissä. Alla tiivis ohjeistus kehitysversion
-		käyttöönotosta. Pyydämme raportoimaan havaituista puutteista
-		osoitteeseen sorvi-commits at lists.r-forge.r-project.org
+	<a href="index.html">soRvi</a> on yhteiskunnan avointen tietovarantojen keskitettyyn hakuun, putsaamiseen, analysointiin, yhdistelyyn ja visualisointiin suunnattu avoimen lähdekoodin hanke, joka keskittyy erityisesti suomalaiseen avoimeen dataan. Avoimen lähdekoodin R-kielelle toteutetun kirjaston välineet helpottavat tiedonlouhinta-algoritmien soveltamista julkisiin tietolähteisiin ammattimaisessa laskentaympäristössä. Valmiiden hakurutiinien ansiosta monipuoliset aineistot ja tehokkaat analyysimenetelmät ovat välittömästi yhdistettävissä ilman hankalia esikäsittelyvaiheita. soRvi-kirjasto toimii mm. Linux-, Mac- ja Windows-ympäristöissä. Alla tiiviit asennusohjeet. Pyydämme raportoimaan havaituista puutteista (<a href="http://louhos.github.com/contact.html">yhteystiedot</a>).
 	</p>
+
+	<h4>Asennusohjeet</h4>
 	
 	<ol>
 		<li>
 			<h5>Asenna <a href =
 			"http://www.r-project.org">R-laskentaympäristö</a></h5> Tuemme uusinta
-			versiota (R-2.14.0), joskin saattaa toimia myös
-			aikaisemmilla. Graafisista R-käyttöliittymistä suosittelemme
+			R-versiota (R-2.15.0); saattaa toimia myös aikaisemmilla. 
+			Graafisista R-käyttöliittymistä suosittelemme
 			ohjelmistoa <a href="http://rstudio.org/">RStudio</a>.<br />
 		</li>
 		<li>
 			<h5>Asenna riippuvuudet</h5>
 			<ul>
 				<li>
-					<b>Windows:</b> Suurin osa riippuvuuksista asentuu tarvittaessa
-					automaattisesti. Asenna
-					lisäksi <a href="http://www.perl.org/get.html">PERL</a>.
-					Jos haluat asentaa soRvi:n kehitysversion, asenna myös
-					<a href="http://cran.r-project.org/bin/windows/Rtools/">RTools</a>.
+				<b>Windows:</b> 
+				Asenna <a href="http://www.perl.org/get.html">PERL</a> ja <a href="http://cran.r-project.org/bin/windows/Rtools/">RTools</a>.
 				</li>
+
 				<li>
-					<b>Mac:</b>
-					Asenna <a href="http://developer.apple.com/xcode">XCode</a>. Lisäksi
-					voit asentaa joissakin esimerkeissä tarvittavan ohjelmiston rgdal (<a href="http://spatialanalysis.co.uk/2010/11/installing-rgdal-on-mac-os-x/">rgdal-asennusohjeet</a>; <a href="http://stackoverflow.com/questions/7168345/problems-installing-rgeos-and-rgdal-on-mac-os-x-lion">rgdal-asennusohjeet2</a>).
+				<b>Mac:</b>
+				Asenna <a href="http://developer.apple.com/xcode">XCode</a>. Lisäksi voit asentaa joissakin esimerkeissä tarvittavan ohjelmiston rgdal (<a href="http://spatialanalysis.co.uk/2010/11/installing-rgdal-on-mac-os-x/">rgdal-asennusohjeet</a>; <a href="http://stackoverflow.com/questions/7168345/problems-installing-rgeos-and-rgdal-on-mac-os-x-lion">rgdal-asennusohjeet2</a>).
 				</li>
+
 				<li>
-					<b>Linux:</b> Aja
-					komentoriviltä <a href="http://github.com/louhos/takomo/tree/master/installation/">asennuskripti</a>. Tämä
-					asentaa
-					ohjelmistot <a href="http://xmlsoft.org/downloads.html">XML</a>, <a href="http://trac.osgeo.org/geos">GEOS</a>, <a href="http://trac.osgeo.org/proj">PROJ.4</a>
-					ja <a href="http://curl.haxx.se/download.html">CURL</a>, sekä
-					joissakin esimerkeissä tarvittavia paketteja
-					(<a href="http://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL</a>
-					ja <a href="http://freeglut.sourceforge.net/">freeglut</a>). Jos
-					asennusskriptin ajamisessa tulee ongelmia, voit kokeilla mainittujen
-					pakettien manuaalista asentamista.
+				<b>Linux:</b> 
+				Asenna <a href="http://xmlsoft.org/downloads.html">XML</a>, <a href="http://trac.osgeo.org/geos">GEOS</a>, <a href="http://trac.osgeo.org/proj">PROJ.4</a> ja <a href="http://curl.haxx.se/download.html">CURL</a>. Lisäksi voit asentaa joissakin esimerkeissä tarvittavat (<a href="http://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL</a> ja <a href="http://freeglut.sourceforge.net/">freeglut</a>). Asentamisen sujuvoittamiseksi voit käyttää <a href="http://github.com/louhos/takomo/tree/master/installation/">valmista asennusskriptiä</a> (Debian / Ubuntu / Fedora / OpenSuse). 
 				</li>
+
 			</ul>
 		<li>
 			<h5>Asenna soRvi</h5> 
+
+			Kun vaaditut riippuvuudet on asennettu (ks. yllä), soRvi-paketin voi asentaa suoraan R:stä käsin. Käynnistä R ja asenna <a href="https://github.com/hadley/devtools">devtools</a>:
 			<p>
-				soRvi:n voi asentaa joko julkaisu- tai kehitysversion. 
-				Julkaisuversio on vaakaampi ja yleensä saatavilla kaikille
-				alustoille (Win, Mac ja Linux). Kehitysversio sisältää uusimmat
-				työkalut ja ajantasaisimmat aineistot, mutta on epävakaampi ja
-				koodi saattaa muuttua paljonkin ennen julkaisua. soRvi:n 
-				kehitystyöstä kiinnostuneille kehitysversio on suositeltava
-				versio.
-			</p>
-			<strong>Julkaisuversio</strong>
-			<p>
-				Käynnistä R ja
-				aja <a href="http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R">sorvin asennusskripti</a>
-				R:stä käsin komennolla
 {% highlight r %}
-source("http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R")
+install.packages("devtools")
 {% endhighlight %}
 			</p>
-			<strong>Kehitysversio</strong>
+
 			<p>
-				Asenna ensin paketti <a href="https://github.com/hadley/devtools">devtools</a>:
+			Nyt soRvin asentaminen onnistuu R:stä käsin komennolla:
 {% highlight r %}
-install.packages(devtools)
 library(devtools)
-{% endhighlight %}
+install_github(repo = "soRvi", username = "louhos")
+{% endhighlight %}  
+			
 			</p>
-			<p>
-				Asenna soRvi:n kehitysversio suoraan GitHubista.
-{% highlight r %}
-install_github(repo = "soRvi-dev", username = "louhos", type = "source")
-{% endhighlight %}
-			</p>
-		</li>
+
+
 		<li>
-			<h5>Kokeile asennuksen onnistumista</h5> 
-			<p>
-				Lataa soRvi käyttöön R:ssä komennolla 
+		<h5>Kokeile asennuksen onnistumista</h5> 
+		<p>
+		Lataa soRvi käyttöön R:ssä komennolla 
 {% highlight r %}
 library("sorvi")
 {% endhighlight %}
-			</p>
-			<p>
-				Jos asennus onnistui, ruudulle tulostuu tietoa paketista. 
-				Seuraavaksi voitkokeilla vaikkapa seuraavaa esimerkkiä:
+		</p>
+		<p>
+		Jos asennus onnistui, ruudulle tulostuu tietoa paketista. Seuraavaksi voit kokeilla vaikkapa seuraavaa esimerkkiä:
 {% highlight r %}
 source("http://sorvi.r-forge.r-project.org/examples/helloworld.R")
 {% endhighlight %}
 		
-			</p>
+		</p>
 		</li>
 	</ol>
-	
-	
-	<p>
-		Lisää esimerkkejä paketin käytöstä Suomi-datan penkomiseen 
-		löydät <a href="vignette.pdf">manuaalista</a>, <a href="http://louhos.wordpress.com/">Louhos-blogista</a>
-		ja <a href="https://github.com/louhos/takomo/tree/master/examples">koodiarkistosta</a>. Palaute asennukseen ja
-		käyttöön liittyen on tervetullutta; tarjoamme tukea mahdollisuuksien
-		mukaan.
-	</p>
-	
+
+
+	<p></p>
+
+	<h4>Kirjaston tarjoamien välineiden dokumentaatio ja käyttöesimerkit</h4>
+
+	<ul>
+		<li>
+		  <a href="https://github.com/louhos/soRvi/wiki/Data">Avattujen tietolähteiden dokumentaatio ja hakuesimerkit</a>
+		</li>
+
+		<li>
+		  <a href="http://louhos.wordpress.com/">Louhos-blogin käyttöesimerkit</a>
+		</li>
+
+		<li>
+		  <a href="https://github.com/louhos/takomo/tree/master/examples">Koodiarkisto</a>
+		</li>
+
+		<li>
+		  <a href="vignette.pdf">Vignette</a>
+		</li>
+
+	</ul>
+
+	<p></p>
+
 	<h4>Yhteisö ja tuki</h4>
-	<p>
-		Projektin pääkehittäjiä ovat <a href="http://www.iki.fi/Leo.Lahti">Leo 
-		Lahti</a>, Juuso Parkkinen ja Joona Lehtomäki. Uudet tekijät, 
-		kontribuutiot ja palaute ovat tervetulleita, ylläpitäjät tavoitat 
-		sähköpostilla sorvi-commits .. at .. lists.r-forge.r-project.org tai 
-		IRCnetin kanavalta !louhos
-	</p>
-	
-	<h4>Lähdekoodi</h4>
-	
-	<p>
-		Kehitysversion lähdekoodi löytyy
-		Louhoksen <a href="https://github.com/louhos/soRvi-dev">github-sivulta</a>. <p></p>
-		Koodi on julkaistu
-		avoimella <a href="http://en.wikipedia.org/wiki/BSD_licenses">FreeBSD</a>-lisenssillä,
-		joka sallii lähdekoodin vapaan käytön, muokkaamisen ja levittämisen,
-		kunhan samat oikeudet jatkokäytölle taataan uusissakin tuotoksissa.
-	</p>
 
-        <h4>Paketin kehittäjille</h4>
-	<p>
-	Otamme vastaan kontribuutioita pakettiin ja uudet kehittäjät
-ovat tervetulleita. Ohjeita kehitysversion kehittämiseen on koottu
-<a href="kehitys.html">tälle sivulle</a>
-	</p>
+	Kaikki palaute asennukseen ja käyttöön liittyen on erittäin tervetullutta; kehittäjäyhteisöltä saaa tukea kirjaston asentamiseen, käyttöön ja kehittämiseen (<a href="http://louhos.github.com/contact.html">yhteystiedot</a>). Projektin pääkehittäjiä ovat <a href="http://www.iki.fi/Leo.Lahti">Leo Lahti</a>, Juuso Parkkinen ja Joona Lehtomäki. Uudet tekijät ja kontribuutiot ovat tervetulleita. Osallistumismahdollisuuksia on listattu <a href="https://github.com/louhos/soRvi/wiki/Osallistu">wiki-sivulle</a>. 
+	
+	<p></p>
 
+	<h4>Lähdekoodi ja kehitystyö</h4>
+
+	Otamme vastaan kontribuutioita pakettiin ja uudet kehittäjät ovat tervetulleita. 	
+	<p></p>
+	<ul>
+	  <li><a href="kehitys.html">Ohjelmakirjaston kehittämisohjeita</a>. 		
+	  <li><a href="https://github.com/louhos/soRvi">soRvi-paketin lähdekoodi</a>. 
+	</ul>
+
+	Koodi on julkaistu avoimella <a href="http://en.wikipedia.org/wiki/BSD_licenses">FreeBSD</a>-lisenssillä, joka sallii lähdekoodin vapaan käytön, muokkaamisen ja levittämisen, kunhan samat oikeudet jatkokäytölle taataan uusissakin tuotoksissa.
+
+	<p></p>
 </div>

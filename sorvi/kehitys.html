@@ -7,61 +7,102 @@ language: fi
 <div class="sixteen columns">
 	<p>
 
-Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja kontribuuttoreille. Tämä sivu on vielä työn alla ja ohjeita täydennetään pian.
+Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja kontribuuttoreille. Sivu on työn alla ja ohjeita täydennetään pian. Sorvin kehitys tapahtuu GitHubissa. Kehityksen päävaiheet ovat (i) kehitysversion kloonaus; (ii) paketin kääntäminen; (iii) koodin kehittäminen; (iv) virheiden ja varoitusten korjaaminen; (v) uusien kontribuutioiden liittäminen päähaaraan. Tiivis ohjeistus alla:
 
 	</p>
 	
+	<h4>Kehitysversion kloonaus</h4>
+
 	<ol>
 		<li>
-			<h5><a href="asennus.html">Asenna R ja soRvin vaatimat riippuvuudet</a>
-
-		</li>
-		<li>
-			<h5>Forkkaa klooni soRvin <a href="https://github.com/louhos/soRvi-dev">GitHub-kehitysversiosta</a></h5>
-		
-
-		<li>
-			<h5>soRvi-paketin kääntämisohjeet:</h5> 
-
-			<p>
-			Asenna <a href="https://github.com/hadley/devtools">devtools</a> R:ssä:
-{% highlight r %}  
-install.packages(devtools)  
-library(devtools)  
-{% endhighlight %}
-			</p>
-
-			<p>
-			Generoi R-paketin dokumentaatio R:ssä komentosarjalla
-{% highlight r %}
-library(devtools)  
-document("soRvi-dev")  
-{% endhighlight %}
-			</p>
-
-			<p>
-			Käännä paketti komentosarjalla:
-{% highlight r %}
-/myRpath/R CMD check soRvi-dev  
-/myRpath/R CMD build soRvi-dev  
-/myRpath/R CMD INSTALL sorvi_x.y.z.tar.gz  
-{% endhighlight %}
-			</p>
-
-			<p>
-			  Korjaa omiin muutoksiisi liittyvät virheilmoitukset ja varoitukset
-			</p>
-
-			
+		<a href="asennus.html">Asenna R ja soRvin vaatimat riippuvuudet</a>
 		</li>
 
 		<li>
-		  <h5>Kontribuoi, mergetä masteriin, ja lähetä ylläpidolle pull-request</h5> 
-		</li>  
+		<a href="https://help.github.com/articles/fork-a-repo">Forkkaa klooni</a> soRvin <a href="https://github.com/louhos/soRvi">GitHub-kehitysversiosta</a>
+		</li>
+
+		<li>
+		Asenna <a href="https://github.com/hadley/devtools">devtools</a> R:stä käsin:
+{% highlight r %}
+install.packages(devtools)
+{% endhighlight %}
+		</li>
 
 	</ol>
-	
 
+
+	<h4>Paketin kääntäminen ja asennus</h4>
+
+	<ol>
+
+		<li>			
+		Dokumentaatiosivujen (soRvi/man/*.Rd) generointi R:ssä (olettaen, että soRvi sijaitsee työhakemistossa):
+{% highlight r %}
+library(devtools)  
+document("soRvi")  
+{% endhighlight %}
+		</li>
+
+		<li>			
+		Paketin validointi:
+{% highlight r %}
+check("soRvi")
+{% endhighlight %}
+		</li>
+
+		
+		<li>					
+		Paketin kääntö:
+{% highlight r %}
+build("soRvi")
+{% endhighlight %}
+		</li>
+
+		<li>					
+		Paketin asennus:
+{% highlight r %}
+install("soRvi")
+{% endhighlight %}
+		</li>
+
+	</ol>
+
+	<h4>Kontribuointi päähaaraan</h4>
+
+	<ol>
+		<li>			
+		Korjaa muutoksiisi liittyvät virheilmoitukset ja varoitukset
+		</li>
+
+
+		<li>			
+		Varmista, että olet lisännyt uuden koodin (pkg/R/*.R) kehityshaarasi alle
+		</li>
+
+		<li>			
+		Varmista, että olet lisännyt uudet dokumentaatiosivut (pkg/man/*.Rd) kehityshaarasi alle
+		</li>
+
+		<li>			
+		  Päivitä pkg/DESCRIPTION (versionumero ja päivämäärä)
+		</li>
+
+		<li>
+		  Päivitä inst/NEWS (tiivistelmä muutoksista)
+		</li>
+
+		<li>
+		Ylläpidon kannalta kätevin tapa kontribuutioiden vastaanottamiseen on <a href="https://help.github.com/articles/using-pull-requests">GitHubin pull-request-toiminto</a>, jossa teet kehitystyön omassa kehityshaarassasi, ja työn valmistuttua varmistat että se on yhteensopiva päähaaran (master branch) kanssa. Tämän jälkeen voit lähettää ylläpidolle pyynnön vetää muutokset päähaaraan. Tiiviit ohjeet:
+		  <ul>
+		  <li>Tee <a href="https://github.com/bricoleurs/bricolage/wiki/Merging-with-Git">git-merge</a> omaan kehityshaaraasi soRvin <a href="https://github.com/louhos/soRvi">master branchista</a></li>
+		  <li>Lähetä ylläpidolle pull-request esim. <a href="https://github.com/louhos/soRvi">sorvin GitHub-sivuston kautta</a></li>
+		  <li>Lisää ohjeita Gitin käyttöön soRvin <a href="https://github.com/louhos/soRvi/wiki/Devel">kehityswikissä</a>
+		  </ul>
+		  Otamme vastaan kontribuutioita myös muilla tavoin. Jos sinulla on R-kielistä lähdekoodia, jonka olisit halukas kontribuoimaan soRvi-kirjastoon, <a href="http://louhos.github.com/contact.html">ota yhteyttä</a> ja katsotaan yhdessä miten voitaisiin edetä.				  
+		</li>  
+
+	</ol>	
 	
 	<h4>Yhteisö ja tuki</h4>
 	<p>
@@ -76,9 +117,8 @@ document("soRvi-dev")
 	
 	<p>
 		Kehitysversion lähdekoodi löytyy
-		Louhoksen <a href="https://github.com/louhos/soRvi-dev">github-sivulta</a>. <p></p>
-		Koodi on julkaistu
-		avoimella <a href="http://en.wikipedia.org/wiki/BSD_licenses">FreeBSD</a>-lisenssillä,
+		Louhoksen <a href="https://github.com/louhos/soRvi">github-sivulta</a>.
+		Koodi on julkaistu avoimella <a href="http://en.wikipedia.org/wiki/BSD_licenses">FreeBSD</a>-lisenssillä,
 		joka sallii lähdekoodin vapaan käytön, muokkaamisen ja levittämisen,
 		kunhan samat oikeudet jatkokäytölle taataan uusissakin tuotoksissa.
 	</p>
