@@ -1,6 +1,8 @@
-# Louhos web pages
+# Louhos home 
 
-Based on [Jekyll-Bootstrap](http://jekyllbootstrap.com/) and 
+Louhos is a community-driven collection of open source code and algorithmic tools for Open Data in Finland. For details, see the project home page at [louhos.github.com](louhos.github.com).  
+
+The site is based on [Jekyll-Bootstrap](http://jekyllbootstrap.com/) and 
 [Skeleton](http://www.getskeleton.com/)
 
 ## Version
@@ -9,6 +11,9 @@ Based on [Jekyll-Bootstrap](http://jekyllbootstrap.com/) and
 
 ## Contributing 
 
+Leo Lahti  
+Juuso Parkkinen  
+Joona Lehtomäki  
 
 ## License
 
