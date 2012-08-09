@@ -1,10 +1,10 @@
 ---
 layout: page
-title: soRvi - asennus
+title: sorvi - asennus
 ---
 {% include JB/setup %}
 
-[soRvi](/sorvi/index.html) on yhteiskunnan avointen
+[sorvi](/sorvi/index.html) on yhteiskunnan avointen
 tietovarantojen keskitettyyn hakuun, putsaamiseen, analysointiin,
 yhdistelyyn ja visualisointiin suunnattu avoimen lähdekoodin hanke,
 joka keskittyy erityisesti suomalaiseen avoimeen dataan. Avoimen
@@ -14,7 +14,7 @@ ammattimaisessa laskentaympäristössä. Valmiiden hakurutiinien ansiosta
 monipuoliset aineistot ja tehokkaat analyysimenetelmät ovat
 välittömästi yhdistettävissä ilman hankalia esikäsittelyvaiheita.
 
-soRvi-paketti toimii mm. Linux-, Mac- ja
+sorvi-paketti toimii mm. Linux-, Mac- ja
 Windows-ympäristöissä. Alla tiivis ohjeistus kehitysversion
 käyttöönotosta. Pyydämme raportoimaan havaituista puutteista
 osoitteeseen sorvi-commits at lists.r-forge.r-project.org
@@ -43,7 +43,7 @@ ja [freeglut](http://freeglut.sourceforge.net/)). Jos
 asennusskriptin ajamisessa tulee ongelmia, voit kokeilla mainittujen
 pakettien manuaalista asentamista.  
 
-##### 3. Asenna soRvi: 
+##### 3. Asenna sorvi: 
 Käynnistä R ja aja 
 [sorvin asennusskripti](http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R) R:stä käsin komennolla
 
@@ -53,7 +53,7 @@ source("http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R")
   
 ##### 4. Kokeile asennuksen onnistumista: 
 
-Lataa soRvi käyttöön R:ssä komennolla   
+Lataa sorvi käyttöön R:ssä komennolla   
 
 {% highlight r %}
 library("sorvi") 

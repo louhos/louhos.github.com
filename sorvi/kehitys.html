@@ -1,13 +1,13 @@
 ---
 layout: page
 root: false
-title: soRvi - kehitys
+title: sorvi - kehitys
 language: fi
 --- 
 <div class="sixteen columns">
 	<p>
 
-Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja kontribuuttoreille. Sivu on työn alla ja ohjeita täydennetään pian. Sorvin kehitys tapahtuu GitHubissa. Kehityksen päävaiheet ovat (i) kehitysversion kloonaus; (ii) paketin kääntäminen; (iii) koodin kehittäminen; (iv) virheiden ja varoitusten korjaaminen; (v) uusien kontribuutioiden liittäminen päähaaraan. Tiivis ohjeistus alla:
+Tällä sivulla ohjeita <a href="index.html">sorvi</a>-paketin kehittäjille ja kontribuuttoreille. Sivu on työn alla ja ohjeita täydennetään pian. Sorvin kehitys tapahtuu GitHubissa. Kehityksen päävaiheet ovat (i) kehitysversion kloonaus; (ii) paketin kääntäminen; (iii) koodin kehittäminen; (iv) virheiden ja varoitusten korjaaminen; (v) uusien kontribuutioiden liittäminen päähaaraan. Tiivis ohjeistus alla:
 
 	</p>
 	
@@ -15,11 +15,11 @@ Tällä sivulla ohjeita <a href="index.html">soRvi</a>-paketin kehittäjille ja 
 
 	<ol>
 		<li>
-		<a href="asennus.html">Asenna R ja soRvin vaatimat riippuvuudet</a>
+		<a href="asennus.html">Asenna R ja sorvin vaatimat riippuvuudet</a>
 		</li>
 
 		<li>
-		<a href="https://help.github.com/articles/fork-a-repo">Forkkaa klooni</a> soRvin <a href="https://github.com/louhos/soRvi">GitHub-kehitysversiosta</a>
+		<a href="https://help.github.com/articles/fork-a-repo">Forkkaa klooni</a> sorvin <a href="https://github.com/louhos/sorvi">GitHub-kehitysversiosta</a>
 		</li>
 
 		<li>
@@ -37,17 +37,17 @@ install.packages(devtools)
 	<ol>
 
 		<li>			
-		Dokumentaatiosivujen (soRvi/man/*.Rd) generointi R:ssä (olettaen, että soRvi sijaitsee työhakemistossa):
+		Dokumentaatiosivujen (sorvi/man/*.Rd) generointi R:ssä (olettaen, että sorvi sijaitsee työhakemistossa):
 {% highlight r %}
 library(devtools)  
-document("soRvi")  
+document("sorvi")  
 {% endhighlight %}
 		</li>
 
 		<li>			
 		Paketin validointi:
 {% highlight r %}
-check("soRvi")
+check("sorvi")
 {% endhighlight %}
 		</li>
 
@@ -55,14 +55,14 @@ check("soRvi")
 		<li>					
 		Paketin kääntö:
 {% highlight r %}
-build("soRvi")
+build("sorvi")
 {% endhighlight %}
 		</li>
 
 		<li>					
 		Paketin asennus:
 {% highlight r %}
-install("soRvi")
+install("sorvi")
 {% endhighlight %}
 		</li>
 
@@ -95,11 +95,11 @@ install("soRvi")
 		<li>
 		Ylläpidon kannalta kätevin tapa kontribuutioiden vastaanottamiseen on <a href="https://help.github.com/articles/using-pull-requests">GitHubin pull-request-toiminto</a>, jossa teet kehitystyön omassa kehityshaarassasi, ja työn valmistuttua varmistat että se on yhteensopiva päähaaran (master branch) kanssa. Tämän jälkeen voit lähettää ylläpidolle pyynnön vetää muutokset päähaaraan. Tiiviit ohjeet:
 		  <ul>
-		  <li>Tee <a href="https://github.com/bricoleurs/bricolage/wiki/Merging-with-Git">git-merge</a> omaan kehityshaaraasi soRvin <a href="https://github.com/louhos/soRvi">master branchista</a></li>
-		  <li>Lähetä ylläpidolle pull-request esim. <a href="https://github.com/louhos/soRvi">sorvin GitHub-sivuston kautta</a></li>
-		  <li>Lisää ohjeita Gitin käyttöön soRvin <a href="https://github.com/louhos/soRvi/wiki/Devel">kehityswikissä</a>
+		  <li>Tee <a href="https://github.com/bricoleurs/bricolage/wiki/Merging-with-Git">git-merge</a> omaan kehityshaaraasi sorvin <a href="https://github.com/louhos/sorvi">master branchista</a></li>
+		  <li>Lähetä ylläpidolle pull-request esim. <a href="https://github.com/louhos/sorvi">sorvin GitHub-sivuston kautta</a></li>
+		  <li>Lisää ohjeita Gitin käyttöön sorvin <a href="https://github.com/louhos/sorvi/wiki/Devel">kehityswikissä</a>
 		  </ul>
-		  Otamme vastaan kontribuutioita myös muilla tavoin. Jos sinulla on R-kielistä lähdekoodia, jonka olisit halukas kontribuoimaan soRvi-kirjastoon, <a href="http://louhos.github.com/contact.html">ota yhteyttä</a> ja katsotaan yhdessä miten voitaisiin edetä.				  
+		  Otamme vastaan kontribuutioita myös muilla tavoin. Jos sinulla on R-kielistä lähdekoodia, jonka olisit halukas kontribuoimaan sorvi-kirjastoon, <a href="http://louhos.github.com/contact.html">ota yhteyttä</a> ja katsotaan yhdessä miten voitaisiin edetä.				  
 		</li>  
 
 	</ol>	
@@ -117,7 +117,7 @@ install("soRvi")
 	
 	<p>
 		Kehitysversion lähdekoodi löytyy
-		Louhoksen <a href="https://github.com/louhos/soRvi">github-sivulta</a>.
+		Louhoksen <a href="https://github.com/louhos/sorvi">github-sivulta</a>.
 		Koodi on julkaistu avoimella <a href="http://en.wikipedia.org/wiki/BSD_licenses">FreeBSD</a>-lisenssillä,
 		joka sallii lähdekoodin vapaan käytön, muokkaamisen ja levittämisen,
 		kunhan samat oikeudet jatkokäytölle taataan uusissakin tuotoksissa.
