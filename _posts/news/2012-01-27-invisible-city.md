@@ -8,8 +8,8 @@ info:
   when: 4.2.2012
   where_title: Vanha Ylioppilastalo, Mannerheimintie 3, Helsinki
   where_link: http://g.co/maps/ddkxm
-
 ---
 
-[http://www.forumvirium.fi/node/1058](Invisible City - Avoimen tiedon päivä) Korjaamolla. World Design Capital Helsinki 2012
+[Invisible City - Avoimen tiedon päivä](http://www.forumvirium.fi/node/1058) 
+Korjaamolla. World Design Capital Helsinki 2012
 Designpääkaupunkiviikonloppu.
