@@ -11,6 +11,5 @@ info:
 
 ---
 
-[http://www.forumvirium.fi/node/1058](Invisible City - Avoimen tiedon
-päivä) Korjaamolla. World Design Capital Helsinki 2012
+[http://www.forumvirium.fi/node/1058](Invisible City - Avoimen tiedon päivä) Korjaamolla. World Design Capital Helsinki 2012
 Designpääkaupunkiviikonloppu.
