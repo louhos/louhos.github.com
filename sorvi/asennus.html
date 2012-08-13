@@ -20,7 +20,16 @@ language: fi
 		(<a href="http://louhos.github.com/contact.html">yhteystiedot</a>).
 	</p>
 
-	<h4>Asennusohjeet</h4>
+	<p>
+		Sorvin <a href="https://github.com/louhos/sorvi">lähdekoodi</a> löytyy
+		GitHubista, josta paketin voi myös suoraan asentaa omalle koneelleen.
+		Paketin asentaminen edellyttää tiettyjen kehitystyökalujen asentamista,
+		mikä vaatii käyttäjältä järjestelmävalvojan oikeudet. Sorvi on 
+		mahdollista asentaa Windows-alustalla myös ilman järjestelmävalvojan 
+		oikeuksia, ohjeet tähän löydät <a href="#win-ohjeet">täältä</a>.
+	</p>
+
+	<h4>Asennusohjeet (suositeltu tapa)</h4>
 	
 	<ol>
 		<li>
@@ -39,13 +48,27 @@ language: fi
 				</li>
 
 				<li>
-				<b>Mac:</b>
-				Asenna <a href="http://developer.apple.com/xcode">XCode</a>. Lisäksi voit asentaa joissakin esimerkeissä tarvittavan ohjelmiston rgdal (<a href="http://spatialanalysis.co.uk/2010/11/installing-rgdal-on-mac-os-x/">rgdal-asennusohjeet</a>; <a href="http://stackoverflow.com/questions/7168345/problems-installing-rgeos-and-rgdal-on-mac-os-x-lion">rgdal-asennusohjeet2</a>).
+					<b>Mac:</b>
+					Asenna <a href="http://developer.apple.com/xcode">XCode</a>. 
+					Lisäksi voit asentaa joissakin esimerkeissä tarvittavan 
+					ohjelmiston rgdal (<a href="http://spatialanalysis.co.uk/2010/11/installing-rgdal-on-mac-os-x/">
+						rgdal-asennusohjeet</a>; <a href="http://stackoverflow.com/questions/7168345/problems-installing-rgeos-and-rgdal-on-mac-os-x-lion">
+							rgdal-asennusohjeet2</a>).
 				</li>
 
 				<li>
 				<b>Linux:</b> 
-				Asenna <a href="http://xmlsoft.org/downloads.html">XML</a>, <a href="http://trac.osgeo.org/geos">GEOS</a>, <a href="http://trac.osgeo.org/proj">PROJ.4</a> ja <a href="http://curl.haxx.se/download.html">CURL</a>. Lisäksi voit asentaa joissakin esimerkeissä tarvittavat (<a href="http://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL</a> ja <a href="http://freeglut.sourceforge.net/">freeglut</a>). Asentamisen sujuvoittamiseksi voit käyttää <a href="http://github.com/louhos/takomo/tree/master/installation/">valmista asennusskriptiä</a> (Debian / Ubuntu / Fedora / OpenSuse). 
+				Asenna <a href="http://curl.haxx.se/download.html">CURL</a>. 
+				Lisäksi voit asentaa joissakin esimerkeissä tarvittavat 
+				riippuvuudet 
+				<a href="http://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL</a>, 
+				<a href="http://freeglut.sourceforge.net/">freeglut</a>, 
+				<a href="http://xmlsoft.org/downloads.html">XML</a>, 
+				<a href="http://trac.osgeo.org/geos">GEOS</a> ja 
+				<a href="http://trac.osgeo.org/proj">PROJ.4</a>. 
+				Asentamisen sujuvoittamiseksi voit käyttää 
+				<a href="http://github.com/louhos/takomo/tree/master/installation/">
+					valmista asennusskriptiä</a> (Debian / Ubuntu / Fedora / OpenSuse). 
 				</li>
 
 			</ul>
@@ -70,7 +93,7 @@ install_github(repo = "sorvi", username = "louhos")
 
 
 		<li>
-		<h5>Kokeile asennuksen onnistumista</h5> 
+		<h5 id="asennus-onnnistui">Kokeile asennuksen onnistumista</h5> 
 		<p>
 		Lataa sorvi käyttöön R:ssä komennolla 
 {% highlight r %}
@@ -85,10 +108,59 @@ source("http://sorvi.r-forge.r-project.org/examples/helloworld.R")
 		
 		</p>
 		</li>
+		
 	</ol>
 
+	<hr />
 
-	<p></p>
+	<h4 id="win-ohjeet">Asennusohjeet Windows-alustalla ilman järjestelmävalvojan 
+		oikeuksia</h4>
+	
+		<p>
+			Jos käyttäjällä ei ole tarvittavia oikeuksia, ei yllä olevien ohjeiden 
+			kohdan 2 riippuvuuksien asentaminen onnistu. Sorvista on olemassa
+			etukäteen käännetty binääriversio, jonka käyttäminen ei vaadi
+			RToolsin asentamista. Huomaa, että yllä olevat asennusohjeet 
+			asentavat aina viimeisimmän sorvi-version kun taas binääriversio ei
+			päivity aivan yhtä nopeasti. 
+		</p>
+		
+		<p>
+			Nämä ohjeet myös olettavat, että <a href =
+			"http://www.r-project.org">R-laskentaympäristö</a> on asennettuna ja 
+			että käyttäjällä on kirjoitusoikeudet omaan kotikansioonsa.
+		</p>
+
+		<ol>
+		<li>
+			<h5>Asenna sorvin binääripaketti</h5> 
+			<p>
+				Käynnistä R ja suorita sorvin <a href="https://github.com/louhos/sorvi/blob/master/inst/win-install.R">
+				asennusskripti</a> komennolla:
+			</p>
+{% highlight r %}
+source("http://louhos.github.com/sorvi/win-install.R")
+{% endhighlight %}
+			
+			<p>
+				Skripti asentaa kaikki sorvin tarvitsemat paketit sekä itse
+				sorvin binääriversion. 
+			</p>
+			
+		</li>
+		<li>
+			<h5>Kokeile asennuksen onnistumista</h5> 
+			
+			<p>
+				Kuten yllä olevien ohjeiden <a href="#asennus-onnnistui">
+					kohdassa 4</a>.
+			</p>
+			
+		</li>
+		
+	</ol>
+
+	<hr />
 
 	<h4>Kirjaston tarjoamien välineiden dokumentaatio ja käyttöesimerkit</h4>
 
