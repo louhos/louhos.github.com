@@ -8,56 +8,59 @@ language: fi
 translation: en/index.html
 ---
 
-<div class="two-thirds column">
-	<p>
-	  	Julkisesti saatavien tietoaineistojen määrä
-	  	kasvaa kiihtyvää tahtia. Hallintoon,
-	  	talouteen, liikenteeseen, paikkatietoon ja
-	  	muihin alueisiin liittyvien datavirtojen
-	  	pöyhintä avaa uusia näkökulmia
-	  	yhteiskuntaan. Laaja saatavuus ja käyttö on
-	  	omiaan nostamaan yhteisten tietovarantojemme
-	 	arvoa. Louhoksessa tavoitteenamme on:
-	</p>
-	<ol>
-		<h5 class="tagline-main">
-		<li>
-			Kehittää ja käyttää uusia välineitä yhteiskunnan tietovirtojen analysointiin
-		</li>
-		<li>
-			Tarjota koodivarasto voimavarojen keskittämiseen ja 
-			koordinointiin
-
-		</li>
-		<li>
-			Edistää julkisten tietovirtojen tehokasta saatavuutta ja 
-			käyttöä
-		</li>
-		</h5>
-	</ol>
-</div>
-<div class="one-third column">
-	<blockquote>
+<div class="row">
+	<div class="span8">
 		<p>
-			If you asked me what a data scientist was, I would say someone who 
-			can bridge the raw data and the analysis - and make it accessible. 
-			It's a democratising role; by bringing the data to the people, you 
-			make the world just a little bit better
+		  	Julkisesti saatavien tietoaineistojen määrä
+		  	kasvaa kiihtyvää tahtia. Hallintoon,
+		  	talouteen, liikenteeseen, paikkatietoon ja
+		  	muihin alueisiin liittyvien datavirtojen
+		  	pöyhintä avaa uusia näkökulmia
+		  	yhteiskuntaan. Laaja saatavuus ja käyttö on
+		  	omiaan nostamaan yhteisten tietovarantojemme
+		 	arvoa. Louhoksessa tavoitteenamme on:
 		</p>
-		<cite style="text-align: right">Simon Rogers, <a href="http://www.guardian.co.uk/news/datablog/2012/mar/02/data-scientist">Guardian</a>.</cite>
-	</blockquote>
-</div>
-
-<div class="one-third column">
+		<ol>
+			<h5 class="tagline-main">
+			<li>
+				Kehittää ja käyttää uusia välineitä yhteiskunnan tietovirtojen analysointiin
+			</li>
+			<li>
+				Tarjota koodivarasto voimavarojen keskittämiseen ja 
+				koordinointiin
 	
-	<a href="https://github.com/louhos/sorvi/wiki/Osallistu" id="ghinvolve">
-		Osallistu!
-	</a>
+			</li>
+			<li>
+				Edistää julkisten tietovirtojen tehokasta saatavuutta ja 
+				käyttöä
+			</li>
+			</h5>
+		</ol>
+	</div>
+	<div class="span4">
+		<blockquote>
+			<p>
+				If you asked me what a data scientist was, I would say someone who 
+				can bridge the raw data and the analysis - and make it accessible. 
+				It's a democratising role; by bringing the data to the people, you 
+				make the world just a little bit better
+			</p>
+			<cite style="text-align: right">Simon Rogers, <a href="http://www.guardian.co.uk/news/datablog/2012/mar/02/data-scientist">Guardian</a>.</cite>
+		</blockquote>
+	</div>
+</div>
+
+<div class="row">
+	<div class="span4">
+		
+		<a href="https://github.com/louhos/sorvi/wiki/Osallistu" id="ghinvolve">
+			Osallistu!
+		</a>
+		
+	</div>
 	
+	<div class="span8" style="margin-top: 100px;">
+			{% assign posts_collate = site.posts %}
+			{% include JB/news_collate %}
+	</div>
 </div>
-
-<div class="two-thirds column" style="margin-top: 100px;">
-		{% assign posts_collate = site.posts %}
-		{% include JB/news_collate %}
-</div>
-
