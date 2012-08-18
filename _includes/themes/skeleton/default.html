@@ -82,11 +82,12 @@
 						
 				    	<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 									
-						<ul class="nav">
-							{% assign pages_list = site.pages %}
-							{% assign group = 'project' %}
-							{% include JB/pages_list %}
-						</ul>
+					  <ul class="nav">
+					    {% assign pages_list = site.pages %}
+					    {% assign group = 'project' %}
+					    {% include JB/pages_list %}
+					  </ul>
+
 					</div>
 					<div id="site-nav">
 						<a class="brand" href="{{ HOME_PATH }}{{ link_events }}">{{ title_events }}</a>
