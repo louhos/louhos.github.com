@@ -26,6 +26,7 @@ Tällä sivulla ohjeita <a href="index.html">sorvi</a>-paketin kehittäjille ja 
 		Asenna <a href="https://github.com/hadley/devtools">devtools</a> R:stä käsin:
 {% highlight r %}
 install.packages(devtools)
+install.packages(roxygen2)
 {% endhighlight %}
 		</li>
 
@@ -45,7 +46,7 @@ document("sorvi")
 		</li>
 
 		<li>			
-		Paketin validointi:
+		Paketin validointi (Windows-systeemeissä saatetaan tarvita LaTex-pakettien erillistä asentamista ennen checkiä):
 {% highlight r %}
 check("sorvi")
 {% endhighlight %}
