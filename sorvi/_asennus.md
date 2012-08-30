@@ -45,10 +45,10 @@ pakettien manuaalista asentamista.
 
 ##### 3. Asenna sorvi: 
 Käynnistä R ja aja 
-[sorvin asennusskripti](http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R) R:stä käsin komennolla
+[sorvin asennusskripti](http://louhos.github.com/sorvi/installation.scripts/sorvi.installation.R) R:stä käsin komennolla
 
 {% highlight r %}  
-source("http://sorvi.r-forge.r-project.org/examples/sorvi.installation.R")  
+source("http://louhos.github.com/sorvi/installation.scripts/sorvi.installation.R")  
 {% endhighlight %}  
   
 ##### 4. Kokeile asennuksen onnistumista: 
@@ -63,5 +63,5 @@ Jos asennus onnistui, ruudulle tulostuu tietoa paketista. Seuraavaksi voit
 kokeilla vaikkapa seuraavaa esimerkkiä:
 
 {% highlight r %}
-source("http://sorvi.r-forge.r-project.org/examples/helloworld.R")
+source("http://louhos.github.com/sorvi/installation.scripts/helloworld.R")
 {% endhighlight %}
