@@ -7,7 +7,7 @@ language: fi
 info:
   when: Tuesday 18.9.2012
   where_title: MAKE Space, Aalto University
-
+  where_link: http://goo.gl/maps/yMtY
 ---
 
 [Louhos](http://louhos.github.com) järjestää tiedehackathonin [Open
