@@ -217,5 +217,5 @@ for (pkg in prequisities) {
   install.prequisites(pkg)
 }
 
-install_url("https://github.com/downloads/louhos/sorvi/sorvi_0.1.78.zip", 
+install_url("https://github.com/downloads/louhos/sorvi/sorvi_0.1.85.zip", 
             binary=T)
