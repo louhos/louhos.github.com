@@ -46,7 +46,15 @@ users :
     twitter : jlehtoma
     googleplus : https://plus.google.com/112885751907512172261/
 
-version: 0.2
+projects:
+  sorvi : 
+    title : sorvi
+    url : sorvi/index.html
+  datavaalit :
+    title : Datavaalit
+    url: http://beta.datavaalit.fi
+
+version: 0.3
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

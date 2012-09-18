@@ -313,6 +313,10 @@ h5.tagline-main > li{
 	margin: 25px 0 25px 0;
 }
 
+.dropdown-item > a {
+	padding: 0 0 0 0;
+}
+
 /* #Images
  ================================================== */
 
