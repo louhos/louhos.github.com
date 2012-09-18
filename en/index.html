@@ -26,6 +26,7 @@ translation: index.html
 		Here at Louhos we aim at:
 	</p>
 	<ol>
+    <h5 class="tagline-main">
 		<li>
 			Providing a central hub that facilitates efficient
 			access and utilization of public data resources
@@ -38,6 +39,7 @@ translation: index.html
 			Actually, we think Simon Rogers said it better we ever
 			could, so read the quote on the right
 		</li>
+    </h5>
 	</ol>
 </div>
 <div class="one-third column">
@@ -52,3 +54,15 @@ translation: index.html
 	</blockquote>
 </div>
 
+<div class="one-third column">
+  
+	<a href="https://github.com/louhos/sorvi/wiki/Osallistu" id="ghinvolve">
+		Join us!
+	</a>
+	
+</div>
+
+<div class="two-thirds column" style="margin-top: 100px;">
+		{% assign posts_collate = site.posts %}
+		{% include JB/news_collate %}
+</div>
