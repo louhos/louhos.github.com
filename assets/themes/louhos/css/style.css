@@ -451,11 +451,16 @@ div.info h4 {
 	padding: 10px 0 10px 0;
 }
 
+
 .section-text {
 	padding: 8px 0 10px 0;
 }
 
 a.em-link {
 	font-size: 16px;
+	text-decoration: none;
+}
+
+a.em-link:hover {
 	color: #E9322D;
 }
