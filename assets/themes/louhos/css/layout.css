@@ -183,6 +183,15 @@ div.demoimgs a img {
 	text-decoration: none;
 }
 
+.dropdown-item li div > ul a{
+	color: #000000;
+}
+
+.dropdown-item > a {
+	color: #000000;
+	padding: 0 0 0 0;
+}
+
 .topbar div > ul a:hover, .nav a:hover {
 	background-color: #333;
 	background-color: rgba(255, 255, 255, 0.05);
