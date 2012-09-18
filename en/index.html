@@ -3,7 +3,7 @@ layout: page
 root: true
 title: Louhos
 tagline: Open Source Code Repository for Open Data in Finland
-version: 0.1
+version: 0.2
 ghurl: https://github.com/louhos/louhos.github.com
 language: en
 translation: index.html
@@ -11,56 +11,60 @@ translation: index.html
 
 {% include JB/setup %}
 
+<div class="row">
+	<div class="span8">
 
-<div class="two-thirds column">
-	<p>
-		With open data on governance, economics,
-		traffic, geographic information rapidly
-		increasing, there is a clear need for free
-		and open tools for analyzing it. Making the analytical tools widely
-		available and facilitating their use will
-		increase the value of the public data
-		resources.
-	</p>
-	<p>
-		Here at Louhos we aim at:
-	</p>
-	<ol>
-		<li>
-			Providing a central hub that facilitates efficient
-			access and utilization of public data resources
-		</li>
-		<li>
-			Developing analytical tools and using them for new insights
-			into how the society works
-		</li>
-		<li>
-			Actually, we think Simon Rogers said it better we ever
-			could, so read the quote on the right
-		</li>
-	</ol>
-</div>
-<div class="one-third column">
-	<blockquote>
 		<p>
-			If you asked me what a data scientist was, I would say someone who can
-			bridge the raw data and the analysis - and make it accessible. It's a
-			democratising role; by bringing the data to the people, you make the
-			world just a little bit better
+			With open data on governance, economics,
+			traffic, geographic information rapidly
+			increasing, there is a clear need for free
+			and open tools for analyzing it. Making the analytical tools widely
+			available and facilitating their use will
+			increase the value of the public data
+			resources.
 		</p>
-		<cite style="text-align: right">Simon Rogers, <a href="http://www.guardian.co.uk/news/datablog/2012/mar/02/data-scientist">Guardian</a>.</cite>
-	</blockquote>
+		<h5 class="tagline-main">
+			Here at Louhos we aim at:
+		</h5>
+		<ol>
+			<h5 class="tagline-main">
+				<li>
+					Providing a central hub that facilitates efficient
+					access and utilization of public data resources
+				</li>
+				<li>
+					Developing analytical tools and using them for new insights
+					into how the society works
+				</li>
+				<li>
+					Actually, we think Simon Rogers said it better we ever
+					could, so read the quote on the right
+				</li>
+			</h5>
+		</ol>
+	</div>
+	<div class="span4">
+		<blockquote>
+			<p>
+				If you asked me what a data scientist was, I would say someone who can
+				bridge the raw data and the analysis - and make it accessible. It's a
+				democratising role; by bringing the data to the people, you make the
+				world just a little bit better
+			</p>
+			<cite style="text-align: right">Simon Rogers, <a href="http://www.guardian.co.uk/news/datablog/2012/mar/02/data-scientist">Guardian</a>.</cite>
+		</blockquote>
+	</div>
 </div>
-
-<div class="one-third column">
+<div class="row">
+	<div class="span4">
   
-	<a href="https://github.com/louhos/sorvi/wiki/Osallistu" id="ghinvolve">
-		Join us!
-	</a>
-	
-</div>
+		<a href="https://github.com/louhos/sorvi/wiki/Osallistu" id="ghinvolve">
+			Join us!
+		</a>
+	</div>
 
-<div class="two-thirds column" style="margin-top: 100px;">
+	<div class="span8" style="margin-top: 100px;">
 		{% assign posts_collate = site.posts %}
 		{% include JB/news_collate %}
+	</div>	
 </div>
