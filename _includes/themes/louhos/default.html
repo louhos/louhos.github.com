@@ -26,7 +26,14 @@
 		<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 		<link href="{{ ASSET_PATH }}/css/code.css?body=1" rel="stylesheet" type="text/css" media="all">
 		
-		<link href="{{ ASSET_PATH }}/fonts/webfonts/ss-standard.css" rel="stylesheet" />
+		{% if page.ss-standard %}
+			<link href="{{ ASSET_PATH }}/fonts/ss-standard/ss-standard.css" rel="stylesheet" />
+		{% endif %}
+		
+		{% if page.ss-social %}
+			<link href="{{ ASSET_PATH }}/fonts/ss-social/ss-social.css" rel="stylesheet" />
+		{% endif %}
+	
 
 		<link href="{{ ASSET_PATH }}/js/fancybox-2.0.5/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
 		<link href="{{ ASSET_PATH }}/js/fancybox-2.0.5/helpers/jquery.fancybox-thumbs.css?v=2.0.4" rel="stylesheet" type="text/css"  />
