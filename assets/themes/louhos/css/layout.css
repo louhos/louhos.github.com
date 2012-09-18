@@ -183,13 +183,18 @@ div.demoimgs a img {
 	text-decoration: none;
 }
 
-.dropdown-item li div > ul a{
-	color: #000000;
+a.dropdown-items {
+	color: #000;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	display: block;
+	float: none;
+	padding: 10px 10px 11px;
+	line-height: 19px;
+	text-decoration: none;
 }
 
-.dropdown-item > a {
+li.dropdown-item {
 	color: #000000;
-	padding: 0 0 0 0;
 }
 
 .topbar div > ul a:hover, .nav a:hover {
