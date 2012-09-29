@@ -49,7 +49,7 @@ users :
 projects:
   sorvi : 
     title : sorvi
-    url : sorvi/index.html
+    url : http://louhos.github.com/sorvi/index.html
   datavaalit :
     title : Datavaalit
     url: http://www.datavaalit.fi
