@@ -224,6 +224,14 @@ a#ghinvolve {
 	text-decoration: none;
 }
 
+.contact-link {
+	margin-top: 5px;
+}
+
+.contact-links {
+	margin-bottom: 25px;
+}
+
 /* Contributors */
 
 div.personinfo {
