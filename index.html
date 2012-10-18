@@ -11,15 +11,6 @@ translation: en/index.html
 
 {% include JB/setup %}
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <div class="row">
 	<div class="span8">
 
@@ -84,10 +75,6 @@ translation: en/index.html
 	<div class="span8">
 			{% assign posts_collate = site.posts %}
 			{% include JB/news_collate %}
-
-<p></p>
-<div class="fb-like" data-href="http://louhos.github.com" data-send="true" data-layout="button_count" data-width="400" data-show-faces="false" data-font="arial"></div>		
-
 	</div>
 
 </div>
