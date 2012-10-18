@@ -53,6 +53,9 @@ projects:
   datavaalit :
     title : Datavaalit
     url: http://www.datavaalit.fi
+  datawiki :
+    title : Datawiki
+    url: http://louhos.github.com/datawiki/index.html
 
 version: 0.3
 
