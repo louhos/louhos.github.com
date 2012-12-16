@@ -1,29 +1,39 @@
-# Copyright (C) 2011-2012 Louhos (louhos.github.com)
-# Contact: louhos.github.com/contact.html
-# All rights reserved.
+# (C) 2011-2012 Louhos <louhos@googlegroups.com> All rights reserved.
+# License: FreeBSD, http://en.wikipedia.org/wiki/BSD_licenses
 
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the FreeBSD License:
-# http://en.wikipedia.org/wiki/BSD_licenses
+# Esimerkki Suomen kuntatason vaestonkasvutilastojen (Tilastokeskus)
+# visualisoinnista Maanmittauslaitoksen karttadatalla (2010)
 
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-# This script was implemented with soRvi version 0.1.72
-
-# Load soRvi R library
+# Lataa soRvi
+# http://louhos.github.com/sorvi
 library(sorvi)
 
-# Load Maanmittauslaitos (MML) data 
-LoadData("MML")
+# Lue Suomen kuntarajat SpatialPolygon-muodossa
+# (C) Maanmittauslaitos 2011
+# http://www.maanmittauslaitos.fi/aineistot-palvelut/digitaaliset-tuotteet/ilmaiset-aineistot/hankinta
+sp <- LoadMML(data.id = "kunta1_p", resolution = "1_milj_Shape_etrs_shape") 
 
-# Pick municipal borders shape file
-kunnat <- MML[["1_milj_Shape_etrs_shape"]][["kunta1_p"]]
+# Lue kuntatason vaestonkasvutiedot tilastokeskuksen StatFin-tietokannasta
+# http://www.stat.fi/tup/statfin/index.html
+# PC Axis-muodossa ja muunna data.frameksi
+px <- GetPXTilastokeskus("http://pxweb2.stat.fi/database/StatFin/vrm/muutl/080_muutl_tau_203.px")
 
-# Plot municipal borders with lines (kunta) and provinces with colors (maakunta)
-p <- PlotShape(kunnat, varname = "Maakunta", type = "qualitative")
+# Poimi taulukosta halutut tiedot
+vaestonkasvu <- subset(px, Väestönmuutos.ja.väkiluku == "Luonnollinen väestönlisäys" & Vuosi == 2010)
 
-# Investigate other data contents in the shape file
-print("Data fields in the shapefile object:")
-print(names(kunnat))
+# Lisaa tiedot karttaobjektiin
+sp@data$vaestonkasvu <- vaestonkasvu$dat[match(sp$Kunta.FI, vaestonkasvu$Alue)]
+# Korvaa puuttuvat arvot nollalla
+sp[["vaestonkasvu"]][is.na(sp[["vaestonkasvu"]])] <- 0
+
+# Piirra kuva
+varname <- "vaestonkasvu"
+int <- max(abs(sp[[varname]]))
+q <- PlotShape(sp, varname, type = "twoway",
+main = "Väestönkasvu 2010",
+at = seq(0 - int, 0 + int, length = 11))
+
+#jpeg("vaestonkasvu.jpg")
+print(q)
+#dev.off()
+
