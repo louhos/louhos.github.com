@@ -6,7 +6,7 @@ tags : [news]
 language: fi
 info:
   when: 23.5.2013
-  where_title: Finland
+  where_title: Helsingin yliopisto, Helsinki
   where_link: http://www.paikkatietoikkuna.fi/web/fi/geoinformatiikan-tutkimuspaivat-22.-23.5.2013
 ---
 
