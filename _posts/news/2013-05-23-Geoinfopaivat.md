@@ -12,7 +12,7 @@ info:
 
 [Geoinformatiikan
 tutkimuspäivät](http://www.paikkatietoikkuna.fi/web/fi/geoinformatiikan-tutkimuspaivat-22.-23.5.2013)
-käsittelee mm. avoimen datan hyödyntämistä paikkatietoalalla.
+käsittelee mm. avoimen datan hyödyntämistä paikkatietoalalla. Pekka Sarkola ([@posiki](https://twitter.com/posiki)) referoi päivien kulkua [blogissaan](http://paikkatieto.com/2013/05/23/geoinformatiikan-tutkimuspaivat-osa-iii/).
 
 
 
