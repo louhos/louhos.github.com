@@ -6,29 +6,18 @@ language: fi
 --- 
 <div class="span12">
 	<p>
-		<a href="index.html">Sorvi</a>-paketti
-    <!-- on yhteiskunnan avointen tietovarantojen
-		keskitettyyn hakuun, putsaamiseen, analysointiin, yhdistelyyn ja 
-		visualisointiin suunnattu avoimen lähdekoodin hanke, joka keskittyy 
-		erityisesti suomalaiseen avoimeen dataan. Avoimen lähdekoodin R-kielelle 
-		toteutetun kirjaston välineet helpottavat tiedonlouhinta-algoritmien 
-		soveltamista julkisiin tietolähteisiin ammattimaisessa 
-		laskentaympäristössä. Valmiiden hakurutiinien ansiosta monipuoliset 
-		aineistot ja tehokkaat analyysimenetelmät ovat välittömästi 
-		yhdistettävissä ilman hankalia esikäsittelyvaiheita. soRvi-kirjasto
-    -->
-		toimii Linux-, Mac- ja Windows-ympäristöissä. Alla tiiviit 
-		asennusohjeet. Pyydämme raportoimaan havaituista puutteista 
-		(<a href="http://louhos.github.com/contact.html">yhteystiedot</a>).
-	</p>
+		<a href="index.html">Sorvi</a>-paketti toimii Linux-,
+		Mac- ja Windows-ympäristöissä. Alla tiiviit
+		ohjeet stabiilin release-version asentamiseen. Pyydämme
+		raportoimaan havaituista puutteista
+		(<a href="http://louhos.github.com/contact.html">yhteystiedot</a>). 
 
-	<p>
-		Sorvin <a href="https://github.com/louhos/sorvi">lähdekoodi</a> löytyy
-		GitHubista, josta paketin voi myös suoraan asentaa omalle koneelleen.
-		Paketin asentaminen edellyttää tiettyjen kehitystyökalujen asentamista,
-		mikä vaatii käyttäjältä järjestelmävalvojan oikeudet. Sorvi on 
-		mahdollista asentaa Windows-alustalla myös ilman järjestelmävalvojan 
-		oikeuksia, ohjeet tähän löydät <a href="#win-ohjeet">täältä</a>.
+		Kehitysvaiheessa olevat uusimmat kokeelliset työkalut
+		saa käyttöön asentamalla sorvin
+		kehitysversion: <a href="devinstall.html">asennusohjeet</a>. Tätä
+		suosittelemme lähinnä paketin kehittäjille ja
+		kokeneemmille R-käyttäjille
+
 	</p>
 
 	<h4>Asennusohjeet (suositeltu tapa)</h4>
@@ -38,10 +27,10 @@ language: fi
 			<h5>Asenna R-laskentaympäristö</h5>
             <ul>
                 <li>
-                    Lataa ja asenna <a href = "http://www.r-project.org">R-laskentaympäristö</a>. Tuemme uusinta R-versiota (R-2.15.2); saattaa toimia myös aikaisemmilla.
+                    Lataa ja asenna <a href = "http://www.r-project.org">R-laskentaympäristö</a>. Tuemme uusinta R-versiota (R-3.0.1); saattaa toimia myös aikaisemmilla.
                 </li>
                 <li>
-                    Graafisista R-käyttöliittymistä suosittelemme ohjelmistoa <a href="http://www.rstudio.com/ide/download/desktop">RStudio (desktop-versio)</a>. Vaihda RStudion asetuksista 'Default text encoding' -kohtaan 'UTF-8'.
+                    Graafisista R-käyttöliittymistä suosittelemme ohjelmistoa <a href="http://www.rstudio.com/ide/download/desktop">RStudio (desktop-versio)</a>. Vaihda RStudion asetuksista 'Default text encoding' kohtaan 'UTF-8'.
                 </li>
             </ul>
 		</li>
@@ -49,17 +38,12 @@ language: fi
 			<h5>Asenna riippuvuudet</h5>
 			<ul>
 				<li>
-				<b>Windows:</b> 
-				Asenna <a href="http://cran.r-project.org/bin/windows/Rtools/">RTools</a>. Asenna RToolsin versio, joka vastaa käyttämääsi R-versiota (tarkista versionumero esim. R:ssä komennolla 'R.Version()'). Huomaa lisäksi että RTools:n asennuksessa kohdassa 'Select Components' pitää olla valittuna checkboxit 'R toolset' ja 'Cygwin DLLs', sekä kohdassa 'Select Additional Tasks' checkbox 'Edit the system PATH'.
+				<b>Windows:</b> Ei riippuvuuksia.
 				</li>
 
 				<li>
 				<b>Mac:</b>
 				Asenna <a href="http://developer.apple.com/xcode">XCode</a>. 
-<!--
- rgdal asentuu nykyään myös macille suoraan CRANista -Juuso 1.11.2012
- Lisäksi voit asentaa joissakin esimerkeissä tarvittavan ohjelmiston rgdal (<a href="http://spatialanalysis.co.uk/2010/11/installing-rgdal-on-mac-os-x/">rgdal-asennusohjeet</a>; <a href="http://stackoverflow.com/questions/7168345/problems-installing-rgeos-and-rgdal-on-mac-os-x-lion">rgdal-asennusohjeet2</a>).
- -->
 				</li>
 
 				<li>
@@ -82,20 +66,11 @@ language: fi
 		<li>
 			<h5>Asenna sorvi</h5> 
 
-			Kun vaaditut riippuvuudet on asennettu (ks. yllä), sorvi-paketin voi asentaa suoraan R:stä käsin. Käynnistä R ja asenna <a href="https://github.com/hadley/devtools">devtools</a>:
+			Kun vaaditut riippuvuudet on asennettu (ks. yllä), sorvi-paketin voi asentaa suoraan R:stä käsin. Käynnistä R ja anna asennuskomento:  
 			<p>
-{% highlight r %}
-install.packages("devtools")
-{% endhighlight %}
-			</p>
-
-			<p>
-			Nyt sorvin asentaminen onnistuu R:stä käsin komennolla:
-{% highlight r %}
-library(devtools)
-install_github(repo = "sorvi", username = "louhos")
-{% endhighlight %}  
-			
+			  {% highlight r %}
+			  install.packages("sorvi")
+			  {% endhighlight %}
 			</p>
 
 
@@ -103,67 +78,17 @@ install_github(repo = "sorvi", username = "louhos")
 		<h5 id="asennus-onnnistui">Kokeile asennuksen onnistumista</h5> 
 		<p>
 		Lataa sorvi käyttöön R:ssä komennolla 
-{% highlight r %}
-library("sorvi")
-{% endhighlight %}
+		{% highlight r %}
+		library("sorvi")
+		{% endhighlight %}
 		</p>
 		<p>
 		Jos asennus onnistui, ruudulle tulostuu tietoa paketista. Seuraavaksi voit kokeilla vaikkapa seuraavaa esimerkkiä:
-{% highlight r %}
-source("http://louhos.github.com/sorvi/installation.scripts/helloworld.R")
-{% endhighlight %}
+		{% highlight r %}
+		source("http://louhos.github.com/sorvi/installation.scripts/helloworld.R")
+		{% endhighlight %}
 		
 		</p>
-		</li>
-		
-	</ol>
-
-	<hr />
-
-	<h4 id="win-ohjeet">Asennusohjeet Windows-alustalla ilman järjestelmävalvojan 
-		oikeuksia</h4>
-	
-		<p>
-			Jos käyttäjällä ei ole tarvittavia oikeuksia, ei yllä olevien ohjeiden 
-			kohdan 2 riippuvuuksien asentaminen onnistu. Sorvista on olemassa
-			etukäteen käännetty binääriversio, jonka käyttäminen ei vaadi
-			RToolsin asentamista. Huomaa, että yllä olevat asennusohjeet 
-			asentavat aina viimeisimmän sorvi-version kun taas binääriversio ei
-			päivity aivan yhtä nopeasti. 
-		</p>
-		
-		<p>
-			Nämä ohjeet myös olettavat, että <a href =
-			"http://www.r-project.org">R-laskentaympäristö</a> on asennettuna ja 
-			että käyttäjällä on kirjoitusoikeudet omaan kotikansioonsa.
-		</p>
-
-		<ol>
-		<li>
-			<h5>Asenna sorvin binääripaketti</h5> 
-			<p>
-				Käynnistä R ja suorita sorvin <a href="https://github.com/louhos/sorvi/blob/master/inst/win-install.R">
-				asennusskripti</a> komennolla:
-			</p>
-{% highlight r %}
-source("http://louhos.github.com/sorvi/win-install.R")
-{% endhighlight %}
-			
-			<p>
-				Skripti asentaa kaikki sorvin tarvitsemat paketit sekä itse
-				<a href="https://github.com/louhos/sorvi/downloads">
-					sorvin binääriversion</a>. 
-			</p>
-			
-		</li>
-		<li>
-			<h5>Kokeile asennuksen onnistumista</h5> 
-			
-			<p>
-				Kuten yllä olevien ohjeiden <a href="#asennus-onnnistui">
-					kohdassa 4</a>.
-			</p>
-			
 		</li>
 		
 	</ol>
