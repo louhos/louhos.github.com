@@ -6,17 +6,15 @@ language: fi
 --- 
 <div class="span12">
 	<p>
-		<a href="index.html">Sorvi</a>-paketti toimii Linux-,
-		Mac- ja Windows-ympäristöissä. Alla tiiviit
-		ohjeet stabiilin release-version asentamiseen. Pyydämme
-		raportoimaan havaituista puutteista
-		(<a href="http://louhos.github.com/contact.html">yhteystiedot</a>). 
+		<a href="index.html">Sorvi</a> toimii Linux-, Mac- ja
+		Windows-ympäristöissä. Alla tiiviit ohjeet stabiilin
+		release-version asentamiseen. Pyydämme
+		<a href="http://louhos.github.com/contact.html">raportoimaan havaituista puutteista</a>. 
 
-		Kehitysvaiheessa olevat uusimmat kokeelliset työkalut
-		saa käyttöön asentamalla sorvin
-		kehitysversion: <a href="devinstall.html">asennusohjeet</a>. Tätä
-		suosittelemme lähinnä paketin kehittäjille ja
-		kokeneemmille R-käyttäjille
+		Uusimmat kokeelliset työkalut saa
+		käyttöön <a href="devinstall.html">asentamalla
+		kehitysversion</a>. Tätä suosittelemme lähinnä paketin
+		kehittäjille ja kokeneemmille R-käyttäjille
 
 	</p>
 
@@ -68,9 +66,9 @@ language: fi
 
 			Kun vaaditut riippuvuudet on asennettu (ks. yllä), sorvi-paketin voi asentaa suoraan R:stä käsin. Käynnistä R ja anna asennuskomento:  
 			<p>
-			  {% highlight r %}
-			  install.packages("sorvi")
-			  {% endhighlight %}
+{% highlight r %}
+install.packages("sorvi")
+{% endhighlight %}
 			</p>
 
 
@@ -78,17 +76,20 @@ language: fi
 		<h5 id="asennus-onnnistui">Kokeile asennuksen onnistumista</h5> 
 		<p>
 		Lataa sorvi käyttöön R:ssä komennolla 
-		{% highlight r %}
-		library("sorvi")
-		{% endhighlight %}
+{% highlight r %}
+library("sorvi")
+{% endhighlight %}
 		</p>
 		<p>
 		Jos asennus onnistui, ruudulle tulostuu tietoa paketista. Seuraavaksi voit kokeilla vaikkapa seuraavaa esimerkkiä:
-		{% highlight r %}
-		source("http://louhos.github.com/sorvi/installation.scripts/helloworld.R")
-		{% endhighlight %}
-		
+{% highlight r %}
+source("http://louhos.github.com/sorvi/installation.scripts/helloworld.R")
+{% endhighlight %}		
 		</p>
+		</li>
+
+		<li>
+		  Dokumentaation ja lisää käyttöesimerkkejä löydät <a href="https://github.com/louhos/sorvi/wiki/Data">Datawikistä</a>
 		</li>
 		
 	</ol>
