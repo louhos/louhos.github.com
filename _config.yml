@@ -56,6 +56,10 @@ projects:
   datawiki :
     title : Datawiki
     url: http://louhos.github.com/datawiki/index.html
+  rOpenGov :
+    title : rOpenGov
+    url: http://ropengov.github.io
+
 
 version: 0.3
 
