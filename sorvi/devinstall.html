@@ -9,15 +9,29 @@ language: fi
 
     <h4>Kehittäjille: sorvin kehitysversion asennus</h4>
 
-	<p>
-		Sorvin kehitysversion <a href="https://github.com/louhos/sorvi">lähdekoodi</a> löytyy
-		GitHubista, josta paketin voi myös suoraan asentaa omalle koneelleen.
-		Paketin asentaminen edellyttää tiettyjen kehitystyökalujen asentamista,
-		mikä vaatii käyttäjältä järjestelmävalvojan oikeudet. 
-	</p>
+
+    sorvin kehitysversion voi asentaa suoraan R:stä (olettaen että
+    vaaditut riippuvuudet on asennettu; ks. alla)
+
+    <p>
+      {% highlight r %}
+      library(devtools) # If needed, install this with: install.packages("devtools")
+      install_github(repo = "sorvi", username = "louhos")
+      {% endhighlight %}
+    </p>
+
+    <p>
+
+      Sorvin
+      kehitysversion <a href="https://github.com/louhos/sorvi">lähdekoodi</a>
+      löytyy GitHubista. Kehitysversion asentaminen edellyttää
+      tiettyjä kehitystyökaluja ja vaatii käyttäjältä
+      järjestelmävalvojan oikeudet.
+
+    </p>
 
 
-	<h5>Asenna riippuvuudet</h5>
+	<h5>Riippuvuuksien asentaminen</h5>
 		<ul>
 
 		<li>
@@ -48,17 +62,6 @@ language: fi
 
 
 		</ul>
-
-		<h5>Asenna sorvin kehitysversio</h5> 
-
-			Kun vaaditut riippuvuudet on asennettu (ks. yllä), sorvi-paketin voi asentaa suoraan R:stä käsin. Käynnistä R ja anna asennuskomennot:
-			<p>
-			  {% highlight r %}
-			  install.packages("devtools")
-			  library(devtools)
-			  install_github(repo = "sorvi", username = "louhos")
-			  {% endhighlight %}
-			</p>
 
 
 	<hr />
