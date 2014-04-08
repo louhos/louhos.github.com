@@ -167,3 +167,6 @@ JB :
   
   # How many items are shown in the news_collate array
   max_news_items : 5
+
+# Maruku fix / LL 7.4.2014
+markdown: kramdown
