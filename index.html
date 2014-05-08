@@ -72,9 +72,30 @@ translation: en/index.html
 
 	</div>
 
+	<p>Blog RSS here: <a title="blog RSS" href="http://louhos.github.io/atom.xml">
+                    <i class="icon-rss"></i></a>
+                    </p>
+
 	<div class="span8">
 			{% assign posts_collate = site.posts %}
 			{% include JB/news_collate %}
+			{{ post.excerpt }}
 	</div>
 
+<!-- näyttää excerptinä postin ekan kappaleen.
+
+<div class="span8">
+    {% for post in site.posts offset: 0 limit: 3 %}
+    {% assign author = site.authors[post.author] %}
+    <div class="meta">
+            <small style="color: #999;">{{ post.date | date: "%b %d, %Y" }}</small> 
+            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+            by <strong>{{ author.display_name }}</strong>
+        </div>
+        {{ post.excerpt }}
+    {% endfor %}
 </div>
+
+-->
+</div>
+

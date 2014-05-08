@@ -1,0 +1,31 @@
+---
+layout: page
+root: true
+title: Louhos-blogi
+tagline: Lähdekoodia avointen suomalaisten datavirtojen seulontaan
+version: 0.2
+ghurl: https://github.com/louhos/
+language: fi
+translation: en/index.html
+---
+
+{% include JB/setup %}
+
+<div class="row">
+
+
+<ul class="posts">
+	{% for post in site.posts %}
+	{% assign author = site.authors[post.author] %}
+	<li>
+		<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+		<div class="meta">
+			{{ post.date | date_to_string }}
+			by <strong>{{ author.display_name }}</strong>
+		</div>
+	</li>
+	{{ post.excerpt }}
+	{% endfor %}
+</ul>
+
+</div>
