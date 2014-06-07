@@ -21,36 +21,18 @@ väistyvä [Wordpress-blogimme](https://louhos.wordpress.com) ei
 tue. Tästä [uudesta blogistamme](http://louhos.github.io/), jota nyt
 luet, postausten lähdekoodit on mahdollista ladata omalle koneelle,
 ajaa sellaisenaan tai muokata edelleen. Esimerkiksi koko tämän
-blogipostauksen, R-koodit mukaan lukien, voit ladata ja ajaa
-seuraavalla komentosarjalla R:ssä:
+blogipostauksen, R-koodit mukaan lukien, voit tuottaa seuraavalla
+komentosarjalla R:ssä.
 
 
 {% highlight r %}
-url <- "https://raw.githubusercontent.com/louhos/louhos.github.com/master/_R/2014-06-07-uusiblogi.Rmd"
 library(RCurl)
-download.file(url, destfile = "2014-06-07-uusiblogi.Rmd", method = "curl")
+download.file("https://raw.githubusercontent.com/louhos/louhos.github.com/master/_R/2014-06-07-uusiblogi.Rmd", 
+    destfile = "2014-06-07-uusiblogi.Rmd", method = "curl")
 library(knitr)
 knit("2014-06-07-uusiblogi.Rmd")
 {% endhighlight %}
 
-
-
-
-### Siirtymävaihe
-
-Samalla on tullut ajankohtaiseksi pilkkoa suomalaisen avoimen datan <a
-href="http://louhos.github.io/sorvi/">sorvi-kirjasto</a> pienempiin
-palasiin. Tämä auttaa riippuvuusviidakon setvimisessä helpottaen sekä
-ylläpitoa että käyttöä. Olemme nyt siirtämässä entisen sorvi-kirjaston
-ja Louhos-blogin toiminnallisuudet uudelle toimintaa entistä paremmin
-tukevalle alustalle. Odotellessa voit vilkaista rOpenGov-hankkeen <a
-href="https://github.com/ropengov">Github-sivulta</a>
-viimeistelyvaiheessa olevia kirjastoja Suomesta ja muualta. Paljon on
-jo valmiina, ja tulemme kohtapuoliin kirjoittelemaan tähän blogiin
-tarkempia esittelyjä valmiista kirjastoista, joita ovat esimerkiksi
-äskettäin <a href="http://datademo.fi/">Datademo</a>-rahoitusta
-saaneet <a href="https://github.com/rOpenGov/helsinki">helsinki</a> ja
-<a href="https://github.com/rOpenGov/gisfin">gisfin</a> -kirjastot.
 
 
 ### R-ekosysteemi laajenee
@@ -66,7 +48,22 @@ href="http://louhos.github.io/contact.html">Louhoksen</a> (Suomi) ja
 <a href="http://ropengov.github.io/contribute/">rOpenGov-hankkeen</a>
 (kansainvälinen toiminta) sivujen kautta.
 
-### Suomi-R-kirjastojen lataushistoria
+Samalla on tullut ajankohtaiseksi pilkkoa suomalaisen avoimen datan <a
+href="http://louhos.github.io/sorvi/">sorvi-kirjasto</a> pienempiin
+palasiin. Tämä auttaa riippuvuusviidakon setvimisessä helpottaen sekä
+ylläpitoa että käyttöä. Olemme nyt siirtämässä entisen sorvi-kirjaston
+ja Louhos-blogin toiminnallisuudet uudelle toimintaa entistä paremmin
+tukevalle alustalle. Odotellessa voit vilkaista rOpenGov-hankkeen <a
+href="https://github.com/ropengov">Github-sivulta</a>
+viimeistelyvaiheessa olevia kirjastoja Suomesta ja muualta. Paljon on
+jo valmiina, ja tulemme kohtapuoliin kirjoittelemaan tähän blogiin
+tarkempia esittelyjä valmiista kirjastoista, joita ovat esimerkiksi
+äskettäin <a href="http://datademo.fi/">Datademo</a>-rahoitusta
+saaneet <a href="https://github.com/rOpenGov/helsinki">helsinki</a> ja
+<a href="https://github.com/rOpenGov/gisfin">gisfin</a> -kirjastot.  
+
+
+### Suomalaisen avoimen datan R-kirjastojen lataushistoria
 
 Alla lämmittelyksi toistettava R-esimerkki, joka hakee
 CRAN-repositorystä pakettiemme lataushistorian ja piirtää niistä
@@ -93,7 +90,7 @@ RStudio_CRAN_data_folder <- download_RStudio_CRAN_data(START = "2014-06-05",
 
 
 {% highlight text %}
-## Files where downloaded to:  /tmp/RtmpgMfPu7
+## Files where downloaded to:  /tmp/RtmpbL8unD
 {% endhighlight %}
 
 
@@ -105,8 +102,8 @@ my_RStudio_CRAN_data <- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
 
 
 {% highlight text %}
-## Reading /tmp/RtmpgMfPu7/2014-06-05.csv.gz ...
-## Reading /tmp/RtmpgMfPu7/2014-06-06.csv.gz ...
+## Reading /tmp/RtmpbL8unD/2014-06-05.csv.gz ...
+## Reading /tmp/RtmpbL8unD/2014-06-06.csv.gz ...
 {% endhighlight %}
 
 
