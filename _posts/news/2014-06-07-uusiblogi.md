@@ -5,6 +5,8 @@ layout: news
 category : news
 tags : [news]
 language: fi
+author:
+  name: Leo Lahti
 ---
 
 Olemme rakentaneet yhteiskunnallisen avoimen datan algoritmikirjastoja
