@@ -65,7 +65,7 @@ Alla lämmittelyksi toistettava R-esimerkki, joka hakee
 CRAN-repositorystä pakettiemme lataushistorian ja piirtää niistä
 kuvaajat:
 
-```{r cran, warning=FALSE, message=FALSE, echo=FALSE}
+```{r cran, warning=FALSE, message=FALSE, echo=FALSE, results='hide'}
 
 # if (!require('devtools')) install.packages('devtools'); require('devtools')
 # make sure you have Rtools installed first! if not, then run:
@@ -79,7 +79,7 @@ require(installr)
 # The first two functions might take a good deal of time to run
 # (depending on the date range)
 RStudio_CRAN_data_folder <- download_RStudio_CRAN_data(
-			       START = '2014-04-01', 
+			       START = '2014-06-05', 
 			       END = '2014-06-06')
 my_RStudio_CRAN_data <- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
 
@@ -125,6 +125,7 @@ for (pkg in c("sorvi", "helsinki", "sotkanet")) {
 # Convert package info to factor
 dfs$pkg <- factor(dfs$pkg)
 ```
+
 
 ```{r cran2, warning=FALSE, message=FALSE, fig.width=13, fig.height=7}
 library(ggplot2)
