@@ -69,7 +69,7 @@ Alla lämmittelyksi toistettava R-esimerkki, joka hakee
 CRAN-repositorystä pakettiemme lataushistorian ja piirtää niistä
 kuvaajat:
 
-```{r cran, warning=FALSE, message=FALSE}
+```{r cran, warning=FALSE, message=FALSE, fig.width=10, fig.height=7}
 
 # if (!require('devtools')) install.packages('devtools'); require('devtools')
 # make sure you have Rtools installed first! if not, then run:

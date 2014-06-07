@@ -90,7 +90,7 @@ RStudio_CRAN_data_folder <- download_RStudio_CRAN_data(START = "2014-06-05",
 
 
 {% highlight text %}
-## Files where downloaded to:  /tmp/RtmpaZkLfS
+## Files where downloaded to:  /tmp/Rtmp42LSVX
 {% endhighlight %}
 
 
@@ -102,8 +102,8 @@ my_RStudio_CRAN_data <- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
 
 
 {% highlight text %}
-## Reading /tmp/RtmpaZkLfS/2014-06-05.csv.gz ...
-## Reading /tmp/RtmpaZkLfS/2014-06-06.csv.gz ...
+## Reading /tmp/Rtmp42LSVX/2014-06-05.csv.gz ...
+## Reading /tmp/Rtmp42LSVX/2014-06-06.csv.gz ...
 {% endhighlight %}
 
 
