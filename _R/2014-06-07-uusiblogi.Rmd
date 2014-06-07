@@ -21,9 +21,9 @@ toistettavalla lähdekoodilla
 (mm. [Rmarkdown](http://rmarkdown.rstudio.com/) ja [iPython
 notebook](http://ipython.org/notebook.html)), joita käytöstä nyt
 väistyvä [Wordpress-blogimme](https://louhos.wordpress.com) ei
-tue. Tästä [uudesta blogistamme](http://louhos.github.io/), jota nyt
-luet, postausten lähdekoodit on mahdollista ladata omalle koneelle,
-ajaa sellaisenaan tai muokata edelleen. 
+tue. Tästä [uudesta blogistamme](http://louhos.github.io/blog.html),
+jota nyt luet, postausten lähdekoodit on mahdollista ladata omalle
+koneelle, ajaa sellaisenaan tai muokata edelleen (ks. alla).
 
 
 ### Avoimen datan R-ekosysteemi laajenee
@@ -81,7 +81,7 @@ require(installr)
 # The first two functions might take a good deal of time to run
 # (depending on the date range)
 RStudio_CRAN_data_folder <- download_RStudio_CRAN_data(
-			       START = '2014-06-05', 
+			       START = '2014-04-01', 
 			       END = '2014-06-06')
 my_RStudio_CRAN_data <- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
 
