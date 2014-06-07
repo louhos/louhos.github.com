@@ -61,9 +61,11 @@ href="http://louhos.github.io/contact.html">Louhoksen</a> (Suomi) ja
 
 ### Suomalaisen avoimen datan R-kirjastojen lataushistoria
 
-Alla lämmittelyksi toistettava R-esimerkki, joka hakee
-CRAN-repositorystä pakettiemme lataushistorian ja piirtää niistä
-kuvaajat:
+Alla lämmittelyksi toistettava R-esimerkki, joka piirtää pakettiemme
+lataushistoriast kuvaajat. Lataushistorian hakeva osa
+[taustakoodista](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd)
+on piilotettu tekstin pitämiseksi selkeänä:
+
 
 ```{r cran, warning=FALSE, message=FALSE, echo=FALSE, results='hide'}
 
@@ -140,10 +142,8 @@ print(p)
 
 ### Blogipostauksen tuottaminen R-kielellä
 
-Osa tämän blogipostauksen [taustakoodista](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd) on piilotettu tekstin
-pitämiseksi selkeänä. Koko postauksen, R-koodit ja kuvat mukaan
-lukien, voit ladata omalle koneellesi ja kääntää seuraavalla
-komentosarjalla R:ssä.
+Koko tämän postauksen, R-koodit ja kuvat mukaan lukien, voit ladata
+omalle koneellesi ja kääntää seuraavalla komentosarjalla R:ssä.
 
 ```{r repro, warning=FALSE, message=FALSE, eval = FALSE}
 library(RCurl)
