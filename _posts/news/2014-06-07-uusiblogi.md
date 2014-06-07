@@ -20,19 +20,7 @@ notebook](http://ipython.org/notebook.html)), joita käytöstä nyt
 väistyvä [Wordpress-blogimme](https://louhos.wordpress.com) ei
 tue. Tästä [uudesta blogistamme](http://louhos.github.io/), jota nyt
 luet, postausten lähdekoodit on mahdollista ladata omalle koneelle,
-ajaa sellaisenaan tai muokata edelleen. Esimerkiksi koko tämän
-blogipostauksen, R-koodit mukaan lukien, voit tuottaa seuraavalla
-komentosarjalla R:ssä.
-
-
-{% highlight r %}
-library(RCurl)
-download.file("https://raw.githubusercontent.com/louhos/louhos.github.com/master/_R/2014-06-07-uusiblogi.Rmd", 
-    destfile = "2014-06-07-uusiblogi.Rmd", method = "curl")
-library(knitr)
-knit("2014-06-07-uusiblogi.Rmd")
-{% endhighlight %}
-
+ajaa sellaisenaan tai muokata edelleen. 
 
 
 ### R-ekosysteemi laajenee
@@ -90,7 +78,7 @@ RStudio_CRAN_data_folder <- download_RStudio_CRAN_data(START = "2014-06-05",
 
 
 {% highlight text %}
-## Files where downloaded to:  /tmp/Rtmp42LSVX
+## Files where downloaded to:  /tmp/RtmpaD2F5E
 {% endhighlight %}
 
 
@@ -102,8 +90,8 @@ my_RStudio_CRAN_data <- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
 
 
 {% highlight text %}
-## Reading /tmp/Rtmp42LSVX/2014-06-05.csv.gz ...
-## Reading /tmp/Rtmp42LSVX/2014-06-06.csv.gz ...
+## Reading /tmp/RtmpaD2F5E/2014-06-05.csv.gz ...
+## Reading /tmp/RtmpaD2F5E/2014-06-06.csv.gz ...
 {% endhighlight %}
 
 
@@ -159,5 +147,21 @@ print(p)
 {% endhighlight %}
 
 ![center](/figs/2014-06-07-uusiblogi/cran.png) 
+
+
+
+### Blogipostauksen tuottaminen R-kielellä
+
+Koko tämän blogipostauksen, R-koodit ja kuvat mukaan lukien, voit
+tuottaa seuraavalla komentosarjalla R:ssä.
+
+
+{% highlight r %}
+library(RCurl)
+download.file("https://raw.githubusercontent.com/louhos/louhos.github.com/master/_R/2014-06-07-uusiblogi.Rmd", 
+    destfile = "2014-06-07-uusiblogi.Rmd", method = "curl")
+library(knitr)
+knit("2014-06-07-uusiblogi.Rmd")
+{% endhighlight %}
 
 
