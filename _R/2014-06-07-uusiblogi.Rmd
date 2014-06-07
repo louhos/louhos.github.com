@@ -20,19 +20,7 @@ notebook](http://ipython.org/notebook.html)), joita käytöstä nyt
 väistyvä [Wordpress-blogimme](https://louhos.wordpress.com) ei
 tue. Tästä [uudesta blogistamme](http://louhos.github.io/), jota nyt
 luet, postausten lähdekoodit on mahdollista ladata omalle koneelle,
-ajaa sellaisenaan tai muokata edelleen. Esimerkiksi koko tämän
-blogipostauksen, R-koodit mukaan lukien, voit tuottaa seuraavalla
-komentosarjalla R:ssä.
-
-```{r repro, warning=FALSE, message=FALSE, eval = FALSE}
-library(RCurl)
-download.file(  
- "https://raw.githubusercontent.com/louhos/louhos.github.com/master/_R/2014-06-07-uusiblogi.Rmd", 
- destfile = "2014-06-07-uusiblogi.Rmd", 
- method = "curl")
-library(knitr)
-knit("2014-06-07-uusiblogi.Rmd")
-```
+ajaa sellaisenaan tai muokata edelleen. 
 
 
 ### R-ekosysteemi laajenee
@@ -69,7 +57,7 @@ Alla lämmittelyksi toistettava R-esimerkki, joka hakee
 CRAN-repositorystä pakettiemme lataushistorian ja piirtää niistä
 kuvaajat:
 
-```{r cran, warning=FALSE, message=FALSE, fig.width=10, fig.height=7}
+```{r cran, warning=FALSE, message=FALSE, fig.width=13, fig.height=7}
 
 # if (!require('devtools')) install.packages('devtools'); require('devtools')
 # make sure you have Rtools installed first! if not, then run:
@@ -135,5 +123,21 @@ p <- p + ggtitle("Latauksia huhtikuun alusta")
 p <- p + xlab("Päivä") + ylab("Lataukset yhteensä")
 print(p)
 
+```
+
+
+### Blogipostauksen tuottaminen R-kielellä
+
+Koko tämän blogipostauksen, R-koodit ja kuvat mukaan lukien, voit
+tuottaa seuraavalla komentosarjalla R:ssä.
+
+```{r repro, warning=FALSE, message=FALSE, eval = FALSE}
+library(RCurl)
+download.file(  
+ "https://raw.githubusercontent.com/louhos/louhos.github.com/master/_R/2014-06-07-uusiblogi.Rmd", 
+ destfile = "2014-06-07-uusiblogi.Rmd", 
+ method = "curl")
+library(knitr)
+knit("2014-06-07-uusiblogi.Rmd")
 ```
 
