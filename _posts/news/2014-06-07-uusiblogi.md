@@ -26,7 +26,7 @@ luet, postausten lähdekoodit on mahdollista ladata omalle koneelle,
 ajaa sellaisenaan tai muokata edelleen. 
 
 
-### R-ekosysteemi laajenee
+### Avoimen datan R-ekosysteemi laajenee
 
 Matkan varrella vahvistuneiden kansainvälisten verkostojen tiimoilta
 on syntynyt <a
@@ -62,7 +62,7 @@ href="http://louhos.github.io/contact.html">Louhoksen</a> (Suomi) ja
 ### Suomalaisen avoimen datan R-kirjastojen lataushistoria
 
 Alla lämmittelyksi toistettava R-esimerkki, joka piirtää pakettiemme
-lataushistoriast kuvaajat. Lataushistorian hakeva osa
+lataushistoriasta kuvaajat. Lataushistorian hakeva osa blogipostauksen
 [taustakoodista](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd)
 on piilotettu tekstin pitämiseksi selkeänä:
 

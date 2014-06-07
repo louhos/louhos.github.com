@@ -26,7 +26,7 @@ luet, postausten lähdekoodit on mahdollista ladata omalle koneelle,
 ajaa sellaisenaan tai muokata edelleen. 
 
 
-### R-ekosysteemi laajenee
+### Avoimen datan R-ekosysteemi laajenee
 
 Matkan varrella vahvistuneiden kansainvälisten verkostojen tiimoilta
 on syntynyt <a
@@ -62,7 +62,7 @@ href="http://louhos.github.io/contact.html">Louhoksen</a> (Suomi) ja
 ### Suomalaisen avoimen datan R-kirjastojen lataushistoria
 
 Alla lämmittelyksi toistettava R-esimerkki, joka piirtää pakettiemme
-lataushistoriast kuvaajat. Lataushistorian hakeva osa
+lataushistoriasta kuvaajat. Lataushistorian hakeva osa blogipostauksen
 [taustakoodista](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd)
 on piilotettu tekstin pitämiseksi selkeänä:
 
@@ -81,7 +81,7 @@ require(installr)
 # The first two functions might take a good deal of time to run
 # (depending on the date range)
 RStudio_CRAN_data_folder <- download_RStudio_CRAN_data(
-			       START = '2014-06-05', 
+			       START = '2014-04-01', 
 			       END = '2014-06-06')
 my_RStudio_CRAN_data <- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
 
@@ -129,7 +129,7 @@ dfs$pkg <- factor(dfs$pkg)
 ```
 
 
-```{r cran2, warning=FALSE, message=FALSE, fig.width=13, fig.height=7}
+```{r cran2, warning=FALSE, message=FALSE, echo=FALSE, fig.width=13, fig.height=7}
 library(ggplot2)
 theme_set(theme_classic(15))
 p <- ggplot(dfs, aes(x = date, y = downloads.cumulative, col = pkg)) 
@@ -142,8 +142,9 @@ print(p)
 
 ### Blogipostauksen tuottaminen R-kielellä
 
-Koko tämän postauksen, R-koodit ja kuvat mukaan lukien, voit ladata
-omalle koneellesi ja kääntää seuraavalla komentosarjalla R:ssä.
+Koko tämän postauksen, taustalla pyörivät R-koodit ja kuvat mukaan
+lukien, voit ladata omalle koneellesi ja kääntää seuraavalla
+komentosarjalla R:ssä.
 
 ```{r repro, warning=FALSE, message=FALSE, eval = FALSE}
 library(RCurl)
