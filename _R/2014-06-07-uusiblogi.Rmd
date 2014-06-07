@@ -61,9 +61,9 @@ href="http://louhos.github.io/contact.html">Louhoksen</a> (Suomi) ja
 
 ### Suomalaisen avoimen datan R-kirjastojen lataushistoria
 
-Alla lämmittelyksi toistettava R-esimerkki, joka piirtää pakettiemme
-lataushistoriasta kuvaajat. Lataushistorian hakeva osa blogipostauksen
-[taustakoodista](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd)
+Alla lämmittelyksi toistettavalla R-esimerkillä piirretyt kuvaajat
+pakettiemme CRAN-lataushistoriasta keväällä 2014.  [Esimerkin
+taustakoodi](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd)
 on piilotettu tekstin pitämiseksi selkeänä:
 
 
@@ -81,7 +81,7 @@ require(installr)
 # The first two functions might take a good deal of time to run
 # (depending on the date range)
 RStudio_CRAN_data_folder <- download_RStudio_CRAN_data(
-			       START = '2014-04-01', 
+			       START = '2014-06-05', 
 			       END = '2014-06-06')
 my_RStudio_CRAN_data <- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
 

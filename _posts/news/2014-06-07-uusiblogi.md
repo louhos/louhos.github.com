@@ -71,25 +71,15 @@ on piilotettu tekstin pitämiseksi selkeänä:
 
 
 
-
-{% highlight r %}
-library(ggplot2)
-theme_set(theme_classic(15))
-p <- ggplot(dfs, aes(x = date, y = downloads.cumulative, col = pkg))
-p <- p + geom_line()
-p <- p + ggtitle("Latauksia huhtikuun 2014 alusta")
-p <- p + xlab("Päivä") + ylab("Lataukset yhteensä")
-print(p)
-{% endhighlight %}
-
 ![center](/figs/2014-06-07-uusiblogi/cran2.png) 
 
 
 
 ### Blogipostauksen tuottaminen R-kielellä
 
-Koko tämän postauksen, R-koodit ja kuvat mukaan lukien, voit ladata
-omalle koneellesi ja kääntää seuraavalla komentosarjalla R:ssä.
+Koko tämän postauksen, taustalla pyörivät R-koodit ja kuvat mukaan
+lukien, voit ladata omalle koneellesi ja kääntää seuraavalla
+komentosarjalla R:ssä.
 
 
 {% highlight r %}
