@@ -21,9 +21,9 @@ toistettavalla lähdekoodilla
 (mm. [Rmarkdown](http://rmarkdown.rstudio.com/) ja [iPython
 notebook](http://ipython.org/notebook.html)), joita käytöstä nyt
 väistyvä [Wordpress-blogimme](https://louhos.wordpress.com) ei
-tue. Tästä [uudesta blogistamme](http://louhos.github.io/), jota nyt
-luet, postausten lähdekoodit on mahdollista ladata omalle koneelle,
-ajaa sellaisenaan tai muokata edelleen. 
+tue. Tästä [uudesta blogistamme](http://louhos.github.io/blog.html),
+jota nyt luet, postausten lähdekoodit on mahdollista ladata omalle
+koneelle, ajaa sellaisenaan tai muokata edelleen (ks. alla).
 
 
 ### Avoimen datan R-ekosysteemi laajenee
