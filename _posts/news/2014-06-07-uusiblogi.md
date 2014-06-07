@@ -61,9 +61,9 @@ href="http://louhos.github.io/contact.html">Louhoksen</a> (Suomi) ja
 
 ### Suomalaisen avoimen datan R-kirjastojen lataushistoria
 
-Alla lämmittelyksi toistettava R-esimerkki, joka piirtää pakettiemme
-lataushistoriasta kuvaajat. Lataushistorian hakeva osa blogipostauksen
-[taustakoodista](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd)
+Alla lämmittelyksi toistettavalla R-esimerkillä piirretyt kuvaajat
+pakettiemme CRAN-lataushistoriasta keväällä 2014.  [Esimerkin
+taustakoodi](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd)
 on piilotettu tekstin pitämiseksi selkeänä:
 
 
