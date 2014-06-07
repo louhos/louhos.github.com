@@ -26,7 +26,7 @@ komentosarjalla R:ssä.
 
 ```{r repro, warning=FALSE, message=FALSE, eval = FALSE}
 library(RCurl)
-download.file(
+download.file(  
  "https://raw.githubusercontent.com/louhos/louhos.github.com/master/_R/2014-06-07-uusiblogi.Rmd", 
  destfile = "2014-06-07-uusiblogi.Rmd", 
  method = "curl")
@@ -69,7 +69,7 @@ Alla lämmittelyksi toistettava R-esimerkki, joka hakee
 CRAN-repositorystä pakettiemme lataushistorian ja piirtää niistä
 kuvaajat:
 
-```{r cran, warning=FALSE, message=FALSE, out.width='1\\linewidth'}
+```{r cran, warning=FALSE, message=FALSE}
 
 # if (!require('devtools')) install.packages('devtools'); require('devtools')
 # make sure you have Rtools installed first! if not, then run:

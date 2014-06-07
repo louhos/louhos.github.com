@@ -90,7 +90,7 @@ RStudio_CRAN_data_folder <- download_RStudio_CRAN_data(START = "2014-06-05",
 
 
 {% highlight text %}
-## Files where downloaded to:  /tmp/RtmpbL8unD
+## Files where downloaded to:  /tmp/RtmpaZkLfS
 {% endhighlight %}
 
 
@@ -102,8 +102,8 @@ my_RStudio_CRAN_data <- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
 
 
 {% highlight text %}
-## Reading /tmp/RtmpbL8unD/2014-06-05.csv.gz ...
-## Reading /tmp/RtmpbL8unD/2014-06-06.csv.gz ...
+## Reading /tmp/RtmpaZkLfS/2014-06-05.csv.gz ...
+## Reading /tmp/RtmpaZkLfS/2014-06-06.csv.gz ...
 {% endhighlight %}
 
 
@@ -158,6 +158,6 @@ p <- p + xlab("Päivä") + ylab("Lataukset yhteensä")
 print(p)
 {% endhighlight %}
 
-<img src="/figs/2014-06-07-uusiblogi/cran.png" title="center" alt="center" width="1\linewidth" />
+![center](/figs/2014-06-07-uusiblogi/cran.png) 
 
 
