@@ -65,7 +65,7 @@ Alla lämmittelyksi toistettava R-esimerkki, joka hakee
 CRAN-repositorystä pakettiemme lataushistorian ja piirtää niistä
 kuvaajat:
 
-```{r cran, warning=FALSE, message=FALSE, fig.width=13, fig.height=7}
+```{r cran, warning=FALSE, message=FALSE, echo=FALSE}
 
 # if (!require('devtools')) install.packages('devtools'); require('devtools')
 # make sure you have Rtools installed first! if not, then run:
@@ -124,7 +124,9 @@ for (pkg in c("sorvi", "helsinki", "sotkanet")) {
 
 # Convert package info to factor
 dfs$pkg <- factor(dfs$pkg)
+```
 
+```{r cran2, warning=FALSE, message=FALSE, fig.width=13, fig.height=7}
 library(ggplot2)
 theme_set(theme_classic(15))
 p <- ggplot(dfs, aes(x = date, y = downloads.cumulative, col = pkg)) 
@@ -132,14 +134,15 @@ p <- p + geom_line()
 p <- p + ggtitle("Latauksia huhtikuun 2014 alusta")
 p <- p + xlab("Päivä") + ylab("Lataukset yhteensä")
 print(p)
-
 ```
 
 
 ### Blogipostauksen tuottaminen R-kielellä
 
-Koko tämän blogipostauksen, R-koodit ja kuvat mukaan lukien, voit
-tuottaa seuraavalla komentosarjalla R:ssä.
+Osa tämän blogipostauksen [taustakoodista](https://github.com/louhos/louhos.github.com/blob/master/_R/2014-06-07-uusiblogi.Rmd) on piilotettu tekstin
+pitämiseksi selkeänä. Koko postauksen, R-koodit ja kuvat mukaan
+lukien, voit ladata omalle koneellesi ja kääntää seuraavalla
+komentosarjalla R:ssä.
 
 ```{r repro, warning=FALSE, message=FALSE, eval = FALSE}
 library(RCurl)
