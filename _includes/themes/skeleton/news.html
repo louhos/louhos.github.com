@@ -14,7 +14,9 @@
 </div>
 <hr>
 <div class="one-third column">
+    {% assign author = site.users[page.author] %}
 	Julkaistu: {{ page.date | date_to_long_string }}
+    - Kirjoittaja: {{ author.name }}
 </div>
 
 <div class="one-third column">
