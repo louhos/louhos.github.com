@@ -1,29 +1,29 @@
 ```{r knit, eval=FALSE, echo=FALSE}
 # Hot to knit this document into .md and .html
 library(knitr)
-knit(input="2014-06-10_helsinki-kirjasto.Rmd")
-knit2html(input="2014-06-10_helsinki-kirjasto.md")
+knit(input="2014-06-11_helsinki-kirjasto.Rmd")
+knit2html(input="2014-06-11_helsinki-kirjasto.md")
 ```
 
 # helsinki - Pääkaupunkiseudun avoimen datan työkalupakki R-kielelle
 
-Avoin data tarjoaa mahdollisuuden tutkia monia mielenkiintoisia kysymyksiä. Pääkaupunkiseudun kohdalla tämä onnistuu nyt [Datademo-rahoituksella](http://datademo.fi/) toteutetun [helsinki-kirjaston](https://github.com/rOpenGov/helsinki) avulla. Kirjasto tuo tärkeimmät pääkaupunkiseudun avoimet tietoaineistot R-laskentaympäristöön ja mahdollistaa niiden analyysin, yhdistämisen ja visualisoinnin.
+Avoin data tarjoaa mahdollisuuden tutkia monia mielenkiintoisia yhteiskunnallisia kysymyksiä. Pääkaupunkiseudun kohdalla tämä onnistuu nyt [Datademo-rahoituksella](http://datademo.fi/) toteutetun [helsinki-kirjaston](https://github.com/rOpenGov/helsinki) avulla. Kirjasto tuo tärkeimmät pääkaupunkiseudun avoimet tietoaineistot R-laskentaympäristöön ja mahdollistaa niiden analyysin, yhdistämisen ja visualisoinnin.
 
-Kirjaston kehitysversio löytyy [githubista](https://github.com/rOpenGov/helsinki) ja julkaisuversio [CRANista](http://cran.r-project.org/web/packages/helsinki/index.html). Kirjastossa mukana olevat datalähteet lyhyine esimerkkeineen löytyvät [tutoriaalista](https://github.com/rOpenGov/helsinki/blob/master/vignettes/helsinki_tutorial.md). Tärkeimmät mukana olevat datalähteet ovat tällä hetkellä
+Kirjaston kehitysversio löytyy [githubista](https://github.com/rOpenGov/helsinki) ja julkaisuversio [CRANista](http://cran.r-project.org/web/packages/helsinki/index.html). Kirjastossa mukana olevat datalähteet lyhyine esimerkkeineen löytyvät [tutoriaalista](https://github.com/rOpenGov/helsinki/blob/master/vignettes/helsinki_tutorial.md). [Ota yhteyttä](http://louhos.github.io/contact.html) jos haluat ehdottaa uusia datalähteitä! Tärkeimmät tällä hetkellä mukanava olevat lähteet ovat
 * [Helsingin kaupungin Kiinteistövirasto (HKK)](http://ptp.hel.fi/avoindata/)
 * [Helsingin seudun ympäristöpalvelu (HSY)](http://www.hsy.fi/seututieto/kaupunki/paikkatiedot/Sivut/Avoindata.aspx)
 * [Pääkaupunkiseudun Palvelukartan API](http://api.hel.fi/servicemap/v1/)
 * [HRI:n tilasto-API](http://dev.hel.fi/stats/)
 
-helsinki-kirjasto on osa suomalaisen avoimen datan R-ekosysteemin [laajenemista](http://louhos.github.io/news/2014/06/07/uusiblogi/), jossa alkuperäinen [sorvi-kirjasto](http://louhos.github.io/sorvi/) pilkotaan useampaan helpommin hallittavaan ja käytettävään kirjastoon. Datademo-rahoituksen turvin pystyimme toteuttamaan helsinki-kirjastosta nopealla aikataululla tärkeimmät datalähteet kattavan työkalun käyttöesimerkkeineen. Ilman datademo-rahoitusta tässä olisi kestänyt huomattavasti pidempään. Kirjaston kehitys jatkuu tulevaisuudessa [uusien datalähteiden](https://github.com/rOpenGov/helsinki/blob/master/vignettes/todo-datasets.md) lisäämisellä ja käyttöesimerkkien julkaisulla.
+helsinki-kirjasto on osa suomalaisen avoimen datan R-ekosysteemin [laajenemista](http://louhos.github.io/news/2014/06/07/uusiblogi/), jossa alkuperäinen [sorvi-kirjasto](http://louhos.github.io/sorvi/) pilkotaan useampaan helpommin hallittavaan ja käytettävään kirjastoon. Datademo-rahoituksen turvin pystyimme toteuttamaan helsinki-kirjastosta tärkeimmät datalähteet kattavan työkalun käyttöesimerkkeineen nopealla aikataululla. Ilman datademo-rahoitusta tässä olisi kestänyt huomattavasti pidempään. Kirjaston kehitys jatkuu tulevaisuudessa [uusien datalähteiden](https://github.com/rOpenGov/helsinki/blob/master/vignettes/todo-datasets.md) lisäämisellä ja käyttöesimerkkien julkaisulla.
 
-Datademo-rahoituksesta jäi erittäin positiivinen kuva, erityisenä plussana aktiivinen keskustelu ja kommentointi, joka parantaa kaikkien ehdotusten laatua ja antaa myös uusia ideoita. Osallistuimme myös Datademon toiseen kierrokseen paikkatietoon keskittyvällä [gisfin-kirjastolla](https://github.com/ropengov/gisfin) ja saimme rahoitusta myös sille, mikä on hienoa!
+Datademo-rahoituksesta jäi erittäin positiivinen kuva. Aktiivinen keskustelu ja kommentointi oli erittäin hyödyllistä, parantaen kaikkien ehdotusten laatua ja synnyttäen myös uusia ideoita. Osallistuimme Datademon toisellekin kierrokselle paikkatietoon keskittyvällä [gisfin-kirjastolla](https://github.com/ropengov/gisfin) ja saimme rahoitusta myös sille, mikä on hienoa!
 
 Esimerkkinä helsinki-kirjaston käytöstä tutkimme miten ala-asteen koulujen sijainti pääkaupunkiseudulla suhtautuu asukastiheyteen. Aloitetaan asentamalla helsinki-kirjasto:
 
 ```{r install, message=FALSE, warning=FALSE, results='hide'}
 # Install package helsinki from CRAN
-# install.packages("helsinki")
+install.packages("helsinki")
 # Load package
 library(helsinki)
 ```
