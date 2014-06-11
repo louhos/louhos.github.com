@@ -26,7 +26,8 @@ Lataa <a href="http://louhos.github.io/atom.xml">tämän blogin RSS-syöte</a> o
 		<a class="title" href="{{ post.url }}">{{ post.title }}</a>
 		<div class="meta">
 			{{ post.date | date_to_string }}
-			by <strong>{{ author.display_name }}</strong>
+<!--			by <strong>{{ author.display_name }}</strong>  -->
+			by <strong>{{ post.author.display_name }}</strong>
 		</div>
 	</li>
 	{{ post.excerpt }}
