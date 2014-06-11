@@ -6,15 +6,13 @@ title:  "helsinki - Pääkaupunkiseudun avoimen datan työkalupakki R-kielelle"
 date:   2014-06-11 13:36:00
 layout: news
 category : news
-tags : [news,R,ropengov,helsnki]
+tags : [news]
 language: fi
 author:
   name: Juuso Parkkinen
 ---
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-<img alt="Creative Commons -käyttölupa" style="border-width:0"
-src="http://i.creativecommons.org/l/by/4.0/88x31.png" /> </a>
+
 
 Avoin data tarjoaa mahdollisuuden tutkia monia mielenkiintoisia yhteiskunnallisia kysymyksiä. Pääkaupunkiseudun kohdalla tämä onnistuu nyt [Datademo-rahoituksella](http://datademo.fi/) toteutetun [helsinki-kirjaston](https://github.com/rOpenGov/helsinki) avulla. Kirjasto tuo tärkeimmät pääkaupunkiseudun avoimet tietoaineistot R-laskentaympäristöön ja mahdollistaa niiden analyysin, yhdistämisen ja visualisoinnin.
 
