@@ -3,7 +3,7 @@ title:  "helsinki - Pääkaupunkiseudun avoimen datan työkalupakki R-kielelle"
 date:   2014-06-11 13:36:00
 layout: news
 category : news
-tags : [news]
+tags : [news,R,ropengov,helsinki]
 language: fi
 author:
   name: Juuso Parkkinen

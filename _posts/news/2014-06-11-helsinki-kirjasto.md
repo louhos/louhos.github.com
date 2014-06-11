@@ -3,7 +3,7 @@ title:  "helsinki - Pääkaupunkiseudun avoimen datan työkalupakki R-kielelle"
 date:   2014-06-11 13:36:00
 layout: news
 category : news
-tags : [news,R]
+tags : [news,R,ropengov,helsinki]
 language: fi
 author:
   name: Juuso Parkkinen
@@ -136,3 +136,6 @@ print(p)
 
 Kartalla näkyvät tiheästi asutut alueet sinisellä ja koulut punaisina pisteinä. Koulujen sijainti näyttää vastaavan hyvin väestökeskittymiä, mutta erityisesti Espoon haja-asutusalueilla kouluja on harvassa ja koulumatkat voivat olla pitkiäkin. Samaan tapaan voisi tutkia muidenkin palvelujen sijaintia suhteessa asukastiheyteen.
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons -käyttölupa" style="border-width:0"
+src="http://i.creativecommons.org/l/by/4.0/88x31.png" /> </a>
