@@ -1,5 +1,17 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/louhos/post.html %}
+
+
+<h2>{{ page.title }}</h2>
+
+{% assign author = site.authors[page.author] %}
+<div class="post">
+	<div class="meta">
+		{{ page.date | date_to_string }} by 
+		<span class="author"><strong>{{ author.display_name }}</strong></span>
+	</div>
+	<hr>
+
+	{{ content }}
+</div>

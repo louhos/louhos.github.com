@@ -6,6 +6,7 @@ category : news
 tags : [news,R,ropengov,helsinki]
 language: fi
 author: juuso
+comments: true
 ---
 
 Avoin data tarjoaa mahdollisuuden tutkia monia mielenkiintoisia yhteiskunnallisia kysymyksiä. Pääkaupunkiseudun kohdalla tämä onnistuu nyt [Datademo-rahoituksella](http://datademo.fi/) toteutetun [helsinki-kirjaston](https://github.com/rOpenGov/helsinki) avulla. Kirjasto tuo tärkeimmät pääkaupunkiseudun avoimet tietoaineistot R-laskentaympäristöön ja mahdollistaa niiden analyysin, yhdistämisen ja visualisoinnin.
