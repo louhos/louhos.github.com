@@ -12,10 +12,11 @@ author:
 Keskeinen osa avoimen datan analysointia ja visualisointia on paikkatiedon käsittely. Kokemuksemme suomalaisen avoimen datan R-työkalujen kehittämisestä on osoittanut että suomalaisen paikkatiedon käsittelyyn tarvitaan oma R-kirjastonsa. Nykyisellään paikkatietoaineistot ovat hajallaan eri lähteissä, tiedostomuodoissa ja koordinaatistojärjestelmissä, ja niiden hyödyntäminen vaatii huomattavaa erityisosaamista. Tähän tarpeeseen olemme nyt toteuttaneet [Datademo-rahoituksella](http://datademo.fi/) toteutetun [gisfin-kirjaston](https://github.com/rOpenGov/gisfin).
 
 Kirjaston kehitysversio löytyy [githubista](https://github.com/rOpenGov/gisfin). Kirjastossa mukana olevat datalähteet lyhyine esimerkkeineen löytyvät [tutoriaalista](https://github.com/rOpenGov/helsinki/blob/master/vignettes/gisfin_tutorial.md). [Ota yhteyttä](http://louhos.github.io/contact.html) jos haluat ehdottaa uusia datalähteitä! Tärkeimmät tällä hetkellä mukanava olevat lähteet ovat
-* [Helsingin kaupungin Kiinteistöviraston aluejakokartat (HKK)](http://ptp.hel.fi/avoindata/)
-* [Helsingin seudun ympäristöpalvelun paikkatietoaineistot (HSY)](http://www.hsy.fi/seututieto/kaupunki/paikkatiedot/Sivut/Avoindata.aspx)
-* [Maanmittauslaitoksen avointa dataa](http://www.maanmittauslaitos.fi/avoindata)
-* [Tilastokeskuksen paikkatietoaineistoja](http://www.stat.fi/tup/rajapintapalvelut/index_en.html)
+
++ [Helsingin kaupungin Kiinteistöviraston aluejakokartat (HKK)](http://ptp.hel.fi/avoindata/)
++ [Helsingin seudun ympäristöpalvelun paikkatietoaineistot (HSY)](http://www.hsy.fi/seututieto/kaupunki/paikkatiedot/Sivut/Avoindata.aspx)
++ [Maanmittauslaitoksen avointa dataa](http://www.maanmittauslaitos.fi/avoindata)
++ [Tilastokeskuksen paikkatietoaineistoja](http://www.stat.fi/tup/rajapintapalvelut/index_en.html)
 
 gisfin-kirjasto jatkaa suomalaisen avoimen datan R-ekosysteemin laajenemista. Keväällä [toteutimme](http://louhos.github.io/news/2014/06/11/helsinki-kirjasto/) Datademon edellisen kierroksen rahoituksen turvin pääkaupunkiseudun avoimeen dataan keskittyneen [helsinki-kirjaston](https://github.com/rOpenGov/helsinki). helsinki-kirjaston myötä saamamme myönteiset kokemukset Datademosta vain vahvistuivat gisfin-kirjaston kehitystyön myötä. 
 
