@@ -9,20 +9,51 @@ author:
   name: Juuso Parkkinen & Joona Lehtomäki
 ---
 
-Keskeinen osa avoimen datan analysointia ja visualisointia on paikkatiedon käsittely. Kokemuksemme suomalaisen avoimen datan R-työkalujen kehittämisestä on osoittanut että suomalaisen paikkatiedon käsittelyyn tarvitaan oma R-kirjastonsa. Nykyisellään paikkatietoaineistot ovat hajallaan eri lähteissä, tiedostomuodoissa ja koordinaatistojärjestelmissä, ja niiden hyödyntäminen vaatii huomattavaa erityisosaamista. Tähän tarpeeseen olemme nyt toteuttaneet [Datademo-rahoituksella](http://datademo.fi/) toteutetun [gisfin-kirjaston](https://github.com/rOpenGov/gisfin).
+[Paikkatiedon](https://fi.wikipedia.org/wiki/Paikkatieto) käsittely on keskeinen osa avoimen datan analysointia ja visualisointia. Nykyisellään paikkatietoaineistot ovat hajallaan eri lähteissä, tiedostomuodoissa ja koordinaattijärjestelmissä, joten niiden hyödyntäminen vaatii huomattavaa erityisosaamista. Iso osa paikkatietoaineistojen käsittelyyn liittyvistä toimenpiteistä on kuitenkin automatisoitavissa. Tästä syystä olemme kehittäneet Suomalaisen paikkatiedon käsittelyyn tarkoitetun R-paketin: [`gisfin`](https://github.com/rOpenGov/gisfin). [Datademo-rahoituksen](http://datademo.fi/) turvin olemme saaneet `gisfin`-paketin kehityksen vauhdikkaaseen alkuun.
 
-Kirjaston kehitysversio löytyy [githubista](https://github.com/rOpenGov/gisfin). Kirjastossa mukana olevat datalähteet lyhyine esimerkkeineen löytyvät [tutoriaalista](https://github.com/rOpenGov/helsinki/blob/master/vignettes/gisfin_tutorial.md). [Ota yhteyttä](http://louhos.github.io/contact.html) jos haluat ehdottaa uusia datalähteitä! Tärkeimmät tällä hetkellä mukanava olevat lähteet ovat
+Paketin kehitysversio löytyy [githubista](https://github.com/rOpenGov/gisfin) ja vaikka kehitettävää on vielä paljon, voi pakettia jo hyödyntää monenlaisiin tehtäviin. Datalähteet, joita paketti hyödyntä sekä lyhyet käyttöä kuvaavat esimerkit löytyvät paketin [tutoriaalista](https://github.com/rOpenGov/helsinki/blob/master/vignettes/gisfin_tutorial.md). 
+
+Tärkeimmät tällä hetkellä mukanava olevat lähteet ovat
 
 + [Helsingin kaupungin Kiinteistöviraston aluejakokartat (HKK)](http://ptp.hel.fi/avoindata/)
 + [Helsingin seudun ympäristöpalvelun paikkatietoaineistot (HSY)](http://www.hsy.fi/seututieto/kaupunki/paikkatiedot/Sivut/Avoindata.aspx)
 + [Maanmittauslaitoksen avointa dataa](http://www.maanmittauslaitos.fi/avoindata)
 + [Tilastokeskuksen paikkatietoaineistoja](http://www.stat.fi/tup/rajapintapalvelut/index_en.html)
 
-gisfin-kirjasto jatkaa suomalaisen avoimen datan R-ekosysteemin laajenemista. Keväällä [toteutimme](http://louhos.github.io/news/2014/06/11/helsinki-kirjasto/) Datademon edellisen kierroksen rahoituksen turvin pääkaupunkiseudun avoimeen dataan keskittyneen [helsinki-kirjaston](https://github.com/rOpenGov/helsinki). helsinki-kirjaston myötä saamamme myönteiset kokemukset Datademosta vain vahvistuivat gisfin-kirjaston kehitystyön myötä. 
+Seuraavaksi aiomme laajentaa yksittäisistä kaupungeista saatavilla olevan datan määrä sisällyttämällä pakettiin [Lounaispaikan](http://paikkatietokeskus.lounaispaikka.fi/fi/aineistot/) Turku-aineistoja. [Ota yhteyttä](http://louhos.github.io/contact.html) jos haluat ehdottaa uusia datalähteitä!
 
-Kirjasto edelleen aktiivisen kehityksen alla, tarkoitus on lisätä [uusia datalähteitä](https://github.com/rOpenGov/gisfin/blob/master/vignettes/todo-datasets.md) ja kehittää käyttöesimerkkejä. Paketin kehitykseen liittyi loppumetreillä mukaan Jussi Jousimo Helsingin yliopistolta (tarkemmin, linkki!), joka toi mukaan Tilastokeskuksen paikkatietoaineistoja. Lisäksi meillä on Jussin johdolla työn alla [fmi-kirjasto](https://github.com/rOpenGov/fmi) Ilmatieteen laitoksen [avointen datojen](https://ilmatieteenlaitos.fi/avoin-data) käsittelyyn sekä sitä tukeva [rwfs-kirjasto](https://github.com/rOpenGov/rwfs), joten suomalainen avoimen datan R-ekosysteemi jatkaa laajenemistaan myös tulevaisuudessa!
+`gisfin`-paketti jatkaa suomalaisen avoimen datan R-ekosysteemin laajenemista. Keväällä [toteutimme](http://louhos.github.io/news/2014/06/11/helsinki-kirjasto/) Datademon edellisen kierroksen rahoituksen turvin pääkaupunkiseudun avoimeen dataan keskittyneen [`helsinki`-paketin](https://github.com/rOpenGov/helsinki). Omalta osaltamme Datademo on tarjonnyt sopivia resursseja kehitystyön ylläpitämiseen ja kokemuksemme molemmista kierroksista ovat olleet erittäin positiivisia.
 
-## ESIMERKKI?
+`gisfin` on edelleen aktiivisen kehityksen alla ja tulevaisuudessa lisäämme [uusia datalähteitä](https://github.com/rOpenGov/gisfin/blob/master/vignettes/todo-datasets.md) ja kehitämme käyttöesimerkkejä. Paketin kehitykseen liittyi loppumetreillä mukaan myös Jussi Jousimo Helsingin yliopistolta (tarkemmin, linkki!), joka toi mukaan Tilastokeskuksen paikkatietoaineistoja. Lisäksi meillä on Jussin johdolla työn alla [`fmi`-paketti](https://github.com/rOpenGov/fmi) Ilmatieteen laitoksen [avointen datojen](https://ilmatieteenlaitos.fi/avoin-data) käsittelyyn sekä yleisesti paikkatiedon verkkojakeluun tarkoitettua [WFS](https://en.wikipedia.org/wiki/Web_Feature_Service)-rajapintamäärittelyä ymmärtävä [`rwfs`-paketti](https://github.com/rOpenGov/rwfs). Suomalainen avoimen datan R-ekosysteemi jatkaa siis laajenemistaan myös tulevaisuudessa!
+
+## Esimerkkejä
+
+### Suomen kunnat kartalle
+
+Retrieve regional borders for Finland with `get_mml()`.
+
+```{r MML_regions, message=FALSE, warning=FALSE} 
+library(gisfin)
+
+list_mml_datasets()
+
+# Haetaan hallinto-alue aineisto
+sp.mml <- get_mml(map.id="Yleiskartta-4500", data.id="HallintoAlue")
+
+# Luodaan sopiva temaattinen karttaväritys aineistolle
+sp.mml@data$COL <- factor(generate_map_colours(sp.mml))
+# Piirretään kartta-aineisto käyttäen kuntia
+spplot(sp.mml, zcol="COL", col.regions=rainbow(length(levels(sp.mml@data$COL))), 
+       colorkey=FALSE)
+
+```
+
+
+### Helsingin äänestysalueet
+
+### Geokoodaminen
+
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 <img alt="Creative Commons -käyttölupa" style="border-width:0"
