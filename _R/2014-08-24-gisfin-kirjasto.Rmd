@@ -30,9 +30,9 @@ Seuraavaksi aiomme laajentaa yksittäisistä kaupungeista saatavilla olevan data
 
 ### Suomen kunnat kartalle
 
-Retrieve regional borders for Finland with `get_mml()`.
+Kuntarajat ovat tarpeellisia erilaisissa vaikkappa vaaleihin tai tilastotietoihin liittyvissä visualisoinneissa. Toisaalta kuntarajat muuttuvat lähes vuosittain. Ajantasainen kuntaraja-aineisto on saatavissa Maanmittauslaitokslta, mutta verrattain hankalassa GML-formaatissa. Alla oleva esimerkki näyttää, kuinka `list_mml_datasets`-funktiota voidaan käyttää listaamaan saatavilla olevat MML:n avoimet aineistot. Tämä jälkeen kuntaraja-aineisto (hallintoalueet) haetaan `get_mml`  -funktiolla.
 
-```{r MML_regions, message=FALSE, warning=FALSE} 
+```{r MML_kunnat, message=FALSE, warning=FALSE} 
 library(gisfin)
 
 list_mml_datasets()
@@ -43,17 +43,64 @@ sp.mml <- get_mml(map.id="Yleiskartta-4500", data.id="HallintoAlue")
 # Luodaan sopiva temaattinen karttaväritys aineistolle
 sp.mml@data$COL <- factor(generate_map_colours(sp.mml))
 # Piirretään kartta-aineisto käyttäen kuntia
-spplot(sp.mml, zcol="COL", col.regions=rainbow(length(levels(sp.mml@data$COL))), 
-       colorkey=FALSE)
+spplot(sp.mml, zcol="COL", col.regions=rainbow(length(levels(sp.mml@data$COL))), colorkey=FALSE)
 
 ```
 
-
 ### Helsingin äänestysalueet
 
-### Geokoodaminen
+Maamme suuremmat kaupungit kuten Helsinki, Turku ja Tampere tarjoavat monenlaisia avoimia aineistoja, joista osa on myös paikkaan sidottuja. Helsingissä paikkatietoaineistoja on saatavilla esimerkiksi [Helsingin kaupungin paikkatietopalveluiden](http://ptp.hel.fi/) kautta. Seuraava esimerkki noutaa kaupungin sivuilta pääkaupunkiseudun äänestysalueet ja visualisoi kartan kunnittain.
 
+```{r hkk-aanestysalue, message=FALSE, warning=FALSE, results='hide'}
+sp.aanestys <- get_helsinki_aluejakokartat(map.specifier="aanestysalue")
+spplot(sp.aanestys, zcol="KUNTA", col.regions=rainbow(length(levels(sp.aanestys@data$KUNTA))), colorkey=FALSE)
+```
 
+Seuraava esimerkki puolestaan näyttää, kuinka Helsingin peruspiirijako voidaan piirtää Googlen karttapalvelusta saadun taustakartan päälle. Haetaan ensin aineisto:
+
+```{r peruspiiri-1, message=FALSE, warning=FALSE, results='hide'}
+
+library(ggmap)
+library(ggplot2)
+
+sp.piiri <- get_helsinki_spatial(map.type="piirijako", map.specifier="ALUEJAKO_PERUSPIIRI")
+```
+
+Googlen kartta-aineistot ovat maantieteellisessä, 
+[WGS84](https://fi.wikipedia.org/wiki/WGS84)-pohjaisessa 
+koordinaattijärjestelmässä. Peruspiirien piirtämistä varten selvitetään ensin
+missä koordinaattijärjestelmässä peruspiiriaineisto on:
+
+```{r proj4string, message=FALSE, warning=FALSE}
+sp.piiri@proj4string
+```
+
+[EPSG](http://www.epsg-registry.org/)-koodi 3879 paljastaa, että aineisto on 
+Helsingissä käytössä olevassa ETRS89/GK25FIN tasokoordinaattijärjestelmässä. 
+Aineiston saamiseksi yhteismitalliseksi Googlen taustakartan kanssa, on se ensin
+projisoitava maantieteelliseen koordinaattijärjestelmään:
+
+```{r peruspiiri-2, message=FALSE, warning=FALSE, results='hide'}
+
+sp.piiri <- sp::spTransform(sp.piiri, CRS("+proj=longlat +datum=WGS84"))
+```
+
+Lopuksi piirretään peruspiirit ja taustakartta käyttäen suosittua 
+`ggplot2`-pakettia ja sen karttalaajennosta, `ggmap`-pakettia:
+
+```{r peruspiiri-3, message=FALSE, warning=FALSE, results='hide'}
+
+# Syötetään keskikoordinaatit peruspiirien maaantieteelliselle ulottuvuudelle
+hel.center <- apply(bbox(sp.piiri), 1, mean)
+
+# Haetaan kartta Googlen karttapalvelusta
+hel.map <- ggmap::get_map(location=hel.center, source="google", zoom=10, scale=2)
+
+# Muokataan paikkatietoaineisto ggplot2:lle sopivaan muotoon ja piirretään
+# aineistot
+df.piiri <- sp2df(sp.piiri, region="NIMI")
+ggmap(hel.map) + geom_polygon(data=df.piiri, aes(x=long, y=lat, fill=NIMI), alpha=0.5) + theme(legend.position="none")
+```
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 <img alt="Creative Commons -käyttölupa" style="border-width:0"
