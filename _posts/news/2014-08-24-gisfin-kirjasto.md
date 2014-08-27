@@ -1,12 +1,12 @@
 ---
 title:  "gisfin - Avoimen suomalaisen paikkatiedon työkalupakki R-kielelle"
-date:   2014-08-24 20:00:00
+date:   2014-08-26 20:00:00
 layout: news
 category : news
 tags : [news,R,ropengov,gisfin]
 language: fi
-author:
-  name: Juuso Parkkinen & Joona Lehtomäki
+author: joona
+comments: true
 ---
 
 [Paikkatiedon](https://fi.wikipedia.org/wiki/Paikkatieto) käsittely on keskeinen osa avoimen datan analysointia ja visualisointia. Nykyisellään paikkatietoaineistot ovat hajallaan eri lähteissä, tiedostomuodoissa ja koordinaattijärjestelmissä, joten niiden hyödyntäminen vaatii huomattavaa erityisosaamista. Iso osa paikkatietoaineistojen käsittelyyn liittyvistä toimenpiteistä on kuitenkin automatisoitavissa. Tästä syystä olemme kehittäneet suomalaisen paikkatiedon käsittelyyn tarkoitetun R-paketin: [`gisfin`](https://github.com/rOpenGov/gisfin). [Datademo-rahoituksen](http://datademo.fi/) turvin olemme saaneet `gisfin`-paketin kehityksen vauhdikkaaseen alkuun.
