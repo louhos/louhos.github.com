@@ -19,6 +19,7 @@ knit2html(input="2014-06-11_helsinki-kirjasto.md")
 Avoin data tarjoaa mahdollisuuden tutkia monia mielenkiintoisia yhteiskunnallisia kysymyksiä. Pääkaupunkiseudun kohdalla tämä onnistuu nyt [Datademo-rahoituksella](http://datademo.fi/) toteutetun [helsinki-kirjaston](https://github.com/rOpenGov/helsinki) avulla. Kirjasto tuo tärkeimmät pääkaupunkiseudun avoimet tietoaineistot R-laskentaympäristöön ja mahdollistaa niiden analyysin, yhdistämisen ja visualisoinnin.
 
 Kirjaston kehitysversio löytyy [githubista](https://github.com/rOpenGov/helsinki) ja julkaisuversio [CRANista](http://cran.r-project.org/web/packages/helsinki/index.html). Kirjastossa mukana olevat datalähteet lyhyine esimerkkeineen löytyvät [tutoriaalista](https://github.com/rOpenGov/helsinki/blob/master/vignettes/helsinki_tutorial.md). [Ota yhteyttä](http://louhos.github.io/contact.html) jos haluat ehdottaa uusia datalähteitä! Tärkeimmät tällä hetkellä mukanava olevat lähteet ovat
+
 * [Helsingin kaupungin Kiinteistövirasto (HKK)](http://ptp.hel.fi/avoindata/)
 * [Helsingin seudun ympäristöpalvelu (HSY)](http://www.hsy.fi/seututieto/kaupunki/paikkatiedot/Sivut/Avoindata.aspx)
 * [Pääkaupunkiseudun Palvelukartan API](http://api.hel.fi/servicemap/v1/)
