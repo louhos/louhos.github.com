@@ -9,11 +9,14 @@ author: jaakko
 comments: true
 ---
 
-Tasa-arvoinen avioliittolaki käsitellään eduskunnassa 28.11.2014. Sivistysvaliokunta asettui niukasti vastustamaan uudistusta. Mielenkiintoiseksi asian tekee sen, että vastustajien ja kannattajien välillä menee selkeä ikäraja, kuten ao. HS:n uutisgrafiikasta nähdään.
+Tasa-arvoinen avioliittolaki käsitellään eduskunnassa 28.11.2014. Sivistysvaliokunta asettui niukasti vastustamaan uudistusta. Mielenkiintoiseksi asian tekee sen, että vastustajien ja kannattajien välillä menee selkeä ikäraja, kuten ao. HS:n uutisgrafiikasta nähdään ([HS 21.11.2014][HS]).
+
+[HS]: http://www.hs.fi/politiikka/a1305900001070
+
 
 <img src="/figs/2014-11-22-kansanedustajat-tahdon-ika/HS.png" alt="Drawing" style="width: 300px;"/>
 
-[Helsingin sanomat tutki myös kansanedustajien kantoja](http://www.hs.fi/politiikka/a1305900001070) perustuen “useista eri lähteistä ja haastatteluista saatuihin tietoihin kansanedustajien kannoista, ja muutamassa tapauksessa kansanedustajien omiin ilmoituksiin.”
+Helsingin sanomat tutki myös kansanedustajien kantoja perustuen “useista eri lähteistä ja haastatteluista saatuihin tietoihin kansanedustajien kannoista, ja muutamassa tapauksessa kansanedustajien omiin ilmoituksiin” ([HS 21.11.2014][HS]).
 
 Onko näiden kansanedustajien kantojen ja heidän ikänsä välillä yhtä vahva korrelaatio kuin sivistysvaliokunnassa?
 
