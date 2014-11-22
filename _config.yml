@@ -45,6 +45,9 @@ users :
     github : jlehtoma
     twitter : jlehtoma
     googleplus : https://plus.google.com/112885751907512172261/
+  jaakko : 
+    role : editor
+    name : Jaakko Särelä
 
 projects:
   sorvi : 

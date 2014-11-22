@@ -1,10 +1,8 @@
 *~
-
 .directory
 .project
 _site/
-
 .Rhistory
-
 .DS_Store
 .Rproj.user
+louhos.github.com.Rproj
