@@ -24,7 +24,7 @@ Tarvittavat tiedot saa HS:n artikkelista ja eduskunnan sivuilta ja niistä saa k
 
 <img src="/figs/2014-11-22-kansanedustajat-tahdon-ika/tahdon_ika_hist.png" alt="Drawing" style="width: 600px;"/>
 
-Alla vielä toinen kuva jossa on estimoitu kunkin mielipiteen osuus kaikista iän mukaan. FIXME
+Alla vielä toinen kuva jossa on estimoitu kunkin mielipiteen osuus kaikista iän mukaan.
 
 <img src="/figs/2014-11-22-kansanedustajat-tahdon-ika/tahdon_ika_density.png" alt="Drawing" style="width: 600px;"/>
 
