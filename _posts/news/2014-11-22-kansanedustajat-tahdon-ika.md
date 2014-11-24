@@ -32,6 +32,10 @@ Vaikka ero kannassa iän mukaan ei olekaan enää yhtä selvä kuin sivistysvali
 
 [Lataa data csv:nä](http://louhos.github.io/static/data/Tahdonmod.csv).
 
+Iltasanomat teetti aiheesta kyselyn kansanedustajille, tätä olisi mielenkiintoista verrata HS:n arvioon ([IS 24.11.2014][IS]).
+
+[IS]: http://www.iltasanomat.fi/kotimaa/art-1288780101649.html
+
 ### Tarkempi kuvaus työprosessista
 
 Kansanedustajien kannat sai suoraan copy-pasteamalla HS:n artikkelista. Sen sijaan heidän syntymävuotensa vaati enemmän työtä, koska mihinkään ei ole koottu kaikkien tämänhetkisten kansanedustajien tarkkoja syntymävuosia. Helposti on saatavissa [syntymäaika vuosikymmenittäin], joka saattaisi riittää, mutta päätin kuitenkin hakea jokaisen kansanedustajan syntymävuoden erikseen eduskunnan [kansanedustajalistauksesta], jossa on linkki kunkin kansanedustajan tietosivulle, josta saa kansanedustajan syntymäajan.
@@ -46,7 +50,7 @@ Kirjoittaja Jaakko Särelä on Reaktor Innovations Oy:n Senior Data Scientist ja
 [kansanedustajalistauksesta]: http://www.eduskunta.fi/triphome/bin/hex3000.sh?haku=suppea&kanta=hetekau&kieli=su&paluuhaku=%2Fthwfakta%2Fhetekau%2Fhex%2Fhex3000.shtml&LYH=LYHEDU&ASC=&SUKUNIMI=&ETUNIMI=&KOTIKUNTA=&VAALIPIIRI=&EKRJ_KOODI=&SUKUPUOLI=&EDUSKUNTAKIELI=
 [Making histograms and density plots with ggplot2]: http://blog.lib.umn.edu/jeli0026/soils/2014/01/making-kick-ass-histograms-and-density-plots-with-ggplot2.html
 
-Päivitys 24.11.2014: Vaihdettu paremmat kuvat ja data csv:nä.
+Päivitys 24.11.2014: Vaihdettu paremmat kuvat ja data csv:nä. Lisätty linkki Iltasanomien uutiseen aiheesta.
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 <img alt="Creative Commons -käyttölupa" style="border-width:0"
