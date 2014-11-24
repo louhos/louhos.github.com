@@ -20,11 +20,17 @@ Helsingin sanomat tutki myös kansanedustajien kantoja perustuen “useista eri 
 
 Onko näiden kansanedustajien kantojen ja heidän ikänsä välillä yhtä vahva korrelaatio kuin sivistysvaliokunnassa?
 
-Tarvittavat tiedot saa HS:n artikkelista ja eduskunnan sivuilta ja niistä saa kätevästi plotattua jakaumia ja histogrammeja R:n ggplot2-kirjastolla.  Alla on kuva viiden vuoden bineihin jaetuista histogrammeista sekä aineistosta estimoidut kantajakaumat iän mukaan.
+Tarvittavat tiedot saa HS:n artikkelista ja eduskunnan sivuilta ja niistä saa kätevästi plotattua jakaumia ja histogrammeja R:n ggplot2-kirjastolla.  Alla on kuva viiden vuoden bineihin jaetuista histogrammeista.
 
-<img src="/figs/2014-11-22-kansanedustajat-tahdon-ika/tahdon_ika_dodge.png" alt="Drawing" style="width: 600px;"/>
+<img src="/figs/2014-11-22-kansanedustajat-tahdon-ika/tahdon_ika_hist.png" alt="Drawing" style="width: 600px;"/>
 
-Vaikka ero kannassa iän mukaan ei olekaan enää yhtä selvä kuin sivistysvaliokunnassa, näyttää siltä, että vanhemmat todennäköisemmin äänestävät ei, nuoremmat jaa ja epävarmat ovat iältään siltä väliltä.
+Alla vielä toinen kuva jossa on estimoitu kunkin mielipiteen osuus kaikista iän mukaan. FIXME
+
+<img src="/figs/2014-11-22-kansanedustajat-tahdon-ika/tahdon_ika_density.png" alt="Drawing" style="width: 600px;"/>
+
+Vaikka ero kannassa iän mukaan ei olekaan enää yhtä selvä kuin sivistysvaliokunnassa, näyttää siltä, että vanhemmat todennäköisemmin äänestävät ei, nuoremmat jaa ja epävarmat ovat iältään siltä väliltä. Huomattavaa on, että vanhin kansanedustaja Jörn Donner puoltaa ehdotusta, kun taas nuorin edustaja Miko Niikko vastustaa sitä, mikä näkyy myös kuvaajissa selvästi.
+
+[Lataa data csv:nä](http://louhos.github.io/static/data/Tahdonmod.csv).
 
 ### Tarkempi kuvaus työprosessista
 
@@ -40,6 +46,7 @@ Kirjoittaja Jaakko Särelä on Reaktor Innovations Oy:n Senior Data Scientist ja
 [kansanedustajalistauksesta]: http://www.eduskunta.fi/triphome/bin/hex3000.sh?haku=suppea&kanta=hetekau&kieli=su&paluuhaku=%2Fthwfakta%2Fhetekau%2Fhex%2Fhex3000.shtml&LYH=LYHEDU&ASC=&SUKUNIMI=&ETUNIMI=&KOTIKUNTA=&VAALIPIIRI=&EKRJ_KOODI=&SUKUPUOLI=&EDUSKUNTAKIELI=
 [Making histograms and density plots with ggplot2]: http://blog.lib.umn.edu/jeli0026/soils/2014/01/making-kick-ass-histograms-and-density-plots-with-ggplot2.html
 
+Päivitys 24.11.2014: Vaihdettu paremmat kuvat ja data csv:nä.
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 <img alt="Creative Commons -käyttölupa" style="border-width:0"
