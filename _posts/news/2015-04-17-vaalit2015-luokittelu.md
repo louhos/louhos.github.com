@@ -79,7 +79,8 @@ Entä tuo `euc`? Lisäsin yhden johdetun muuttujan, joka kertoo kuinka kauas nol
 
 Esimerkiksi Vasemmistoliiton kerroin on nolla, vaikka ehdokkaissa on monia muita puolueita enemmän "jyrkkiä" vastaajia.
 
-### Istuvat vs. uudet ehdokakat
+### Istuvat vs. uudet ehdokkaat
+
 Verrataan istuvien ja uusien ehdokkaiden luokittelun onnistumisprosentteja
 
 ![center](/figs/2015-04-17-vaalit2015-luokittelu/unnamed-chunk-6-1.png) 

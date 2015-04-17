@@ -149,7 +149,8 @@ ggplot(data=yle,aes(y=rad.euc,x=puolue.lyh))+geom_boxplot(outlier.size=0)+ylab("
 
 Esimerkiksi Vasemmistoliiton kerroin on nolla, vaikka ehdokkaissa on monia muita puolueita enemmän "jyrkkiä" vastaajia.
 
-### Istuvat vs. uudet ehdokakat
+### Istuvat vs. uudet ehdokkaat
+
 Verrataan istuvien ja uusien ehdokkaiden luokittelun onnistumisprosentteja
 
 ```{r,echo=FALSE,warning=FALSE,message=FALSE,fig.width=2,fig.height=3}
