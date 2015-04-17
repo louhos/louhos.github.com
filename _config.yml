@@ -48,6 +48,9 @@ users :
   jaakko : 
     role : editor
     name : Jaakko Särelä
+  johan : 
+    role : editor
+    name : Johan Himberg
 
 projects:
   sorvi : 
