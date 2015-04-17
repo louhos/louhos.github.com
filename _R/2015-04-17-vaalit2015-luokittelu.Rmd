@@ -222,6 +222,8 @@ Koska muuttujia on suhteellisen vähän suhteessa dataan ja malli on lineaarinen
 
 Datan esikäsittelyyn ja luokitteluun käytetty skripti sekä esikäsitellyt datat löytyvät [GitHubista](https://github.com/louhos/takomo/tree/master/vaalit2015/luokittelu).
 
+Kaikkien ehdokkaiden lasketut todennäköisyydet kuulua kuhunkin puolueeseen löytyvät [täältä](https://github.com/louhos/takomo/blob/master/vaalit2015/luokittelu/ehdokkaat.yle.csv).
+
 Kirjoittaja Johan Himberg on data scientist Reaktorilla ja kävi jo äänestämässä eduskuntavaaleissa.
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
