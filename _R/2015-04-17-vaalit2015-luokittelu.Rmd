@@ -5,7 +5,7 @@ layout: news
 category : news
 tags : [news,R,datavaalit]
 language: fi
-author: johan
+author: johanhimberg
 comments: true
 ---
 

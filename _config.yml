@@ -45,12 +45,18 @@ users :
     github : jlehtoma
     twitter : jlehtoma
     googleplus : https://plus.google.com/112885751907512172261/
-  jaakko : 
+  jaakkosarela : 
     role : editor
     name : Jaakko Särelä
-  johan : 
+    homepage : https://twitter.com/jaakkosarela
+  johanhimberg : 
     role : editor
     name : Johan Himberg
+    homepage : https://twitter.com/ingaskrap
+  jannesinkkonen :
+    role : editor
+    name : Janne Sinkkonen
+    homepage : https://twitter.com/euxoa
 
 projects:
   sorvi : 

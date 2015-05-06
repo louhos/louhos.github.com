@@ -5,7 +5,7 @@ layout: news
 category : news
 tags : [news,R]
 language: fi
-author: jaakko
+author: jaakkosarela
 comments: true
 ---
 
