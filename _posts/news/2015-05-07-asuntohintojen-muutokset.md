@@ -9,6 +9,16 @@ author: jannesinkkonen
 comments: true
 ---
 
+<!-- for latex/mathjax equations -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
 ## Mitä teimme?
 
 Mallinsimme osakeasuntojen hintoja ja niiden muutoksia, postinumerotasolla, koko Suomessa, vuosina 2005–2014, perustuen Tilastokeskuksen jakamiin kauppa- ja asukasmäärätietoihin. Mallin arvioita hinnoista voi tarkastella [vuorovaikutteisesta karttavisualisoinnista](http://kannattaakokauppa.fi/). Tuloksista voi lukea lisää [Reaktorin blogista](http://reaktor.com/blog/asuntojen-trendit-ja-miten-niista-tehdaan-luotettavia-ennusteita). Työn takana on Reaktorin [Data Science -tiimi](http://reaktor.com/datascience).
@@ -78,19 +88,21 @@ Vuoden vaikutus mallissa on siis kvadraattinen, ts. joka postinumerolla on malli
 
 Postinumerokohtaisia hintaparametreja kertyy yhteensä kuusi: hintataso, trendi, trendin muutos, ja väestötiheyden vaikutus näihin kaikkiin. Parametreilla on arvot ja varianssit myös postinumeroa isommille hierarkian alueille (Uusimaa, Espoo, jne.), josta ne pääsevät vaikuttamaan postinumerokohtaisiin arvioihin etenkin kun kauppoja on vähän. Parametreilla on myös eri hierarkiatasoilla kovarianssit, jolloin ne voivat auttaa toistensa estimointia tapauksissa joissa hintadata ei suoraan riitä. 
 
-Yhteenvetona kaavaksi, mallin alataso havaitulle keskihinnalle $y$ on 
+Yhteenvetona kaavaksi, mallin alataso havaitulle keskihinnalle $$y$$ on 
 
 $$
 \log h_{it} = 
        \beta_{i1} + \beta_{i2} t + \beta_{i3} t^2 + \beta_{i’4}d_i + \beta_{i’5}d_i\,t + \beta_{i’6}d_i\,t^2, 
 $$
+
 $$
 \log y_{it} \sim 
 \textrm{t}\,\left(\log h_{it}, \, \sqrt{\sigma^2_y + \frac{\sigma^2_w}{n_{it}}}, \, \nu\right)\,,
 $$
-jossa $i$ on postinumeroalue, $t$ vuosi, $\beta$ ovat postinumerokohtaisia hintakertoimia, $i’$ on postinumeron alin hierarkiataso (väestötiheysparametrit ovat yhteisiä kullekin $i’$-alueelle), $t()$ on t-jakauma, $\sigma_y$ vuosikohtainen hajonta, $\sigma_w$ kauppahintojen hajonta mittausyksikön (vuosi$\times$postinumero) sisällä, ja $\nu$ t-jakautuneen residuaalin vapausaste. Hinnat käsitellään mallissa logaritmisena, jolloin absoluuttisella hintaskaalalla malli on multiplikatiivinen. Hajonnat ja $\nu$ estimoidaan kaiken muun ohella. Kertoimille $\beta$ on multinormaali priori kovarianssimatriiseineen, ja lisäksi ylemmille hierarkiatasoille eli postinumeroa suuremmille alueille omat vastaavat rakenteensa ($\beta$ ja sen priorit). Yksityiskohdat tätä tarkemmin selviävät parhaiten [mallikoodista](https://github.com/reaktor/Neliohinnat/blob/master/source/m4.stan). 
 
-Vapausasteen $\nu$ estimaatti on luokkaa 6,5, eli hintojen residuaali on normaalijakaumaa selvästi pitkähäntäisempi. Suoraan mallin parametreista (koodissa matriisi "Omega") nähdään, että hintataso ja trendi korreloivat yli postinumeroalueiden ($r$=0,28), samoin trendin muutos ja hintataso ($r$=0,43). Halvat alueet ovat siis viimeisen n. kymmenen vuoden aikana halventuneet edelleen, ja kalliit kallistuneet. Tämä liittynee asutuksen keskittymiseen. 
+jossa $$i$$ on postinumeroalue, $$t$$ vuosi, $$\beta$$ ovat postinumerokohtaisia hintakertoimia, $$i’$$ on postinumeron alin hierarkiataso (väestötiheysparametrit ovat yhteisiä kullekin $$i’$$-alueelle), $$t()$$ on t-jakauma, $$\sigma_y$$ vuosikohtainen hajonta, $$\sigma_w$$ kauppahintojen hajonta mittausyksikön (vuosi$$\times$$postinumero) sisällä, ja $$\nu$$ t-jakautuneen residuaalin vapausaste. Hinnat käsitellään mallissa logaritmisena, jolloin absoluuttisella hintaskaalalla malli on multiplikatiivinen. Hajonnat ja $$\nu$$ estimoidaan kaiken muun ohella. Kertoimille $$\beta$$ on multinormaali priori kovarianssimatriiseineen, ja lisäksi ylemmille hierarkiatasoille eli postinumeroa suuremmille alueille omat vastaavat rakenteensa ($$\beta$$ ja sen priorit). Yksityiskohdat tätä tarkemmin selviävät parhaiten [mallikoodista](https://github.com/reaktor/Neliohinnat/blob/master/source/m4.stan). 
+
+Vapausasteen $$\nu$$ estimaatti on luokkaa 6,5, eli hintojen residuaali on normaalijakaumaa selvästi pitkähäntäisempi. Suoraan mallin parametreista (koodissa matriisi "Omega") nähdään, että hintataso ja trendi korreloivat yli postinumeroalueiden ($$r$$=0,28), samoin trendin muutos ja hintataso ($$r$$=0,43). Halvat alueet ovat siis viimeisen n. kymmenen vuoden aikana halventuneet edelleen, ja kalliit kallistuneet. Tämä liittynee asutuksen keskittymiseen. 
 
 Postinumerokohtaisista estimaateista nähdään, että asukastiheys korreloi niin hintatasoon kuin sen muutoksiinkin:
 
