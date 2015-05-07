@@ -21,7 +21,7 @@ comments: true
 
 ## Mitä teimme?
 
-Mallinsimme osakeasuntojen hintoja ja niiden muutoksia, postinumerotasolla, koko Suomessa, vuosina 2005–2014, perustuen Tilastokeskuksen jakamiin kauppa- ja asukasmäärätietoihin. Mallin arvioita hinnoista voi tarkastella [vuorovaikutteisesta karttavisualisoinnista](http://kannattaakokauppa.fi/). Tuloksista voi lukea lisää [Reaktorin blogista](http://reaktor.com/blog/asuntojen-trendit-ja-miten-niista-tehdaan-luotettavia-ennusteita). Työn takana on Reaktorin [Data Science -tiimi](http://reaktor.com/datascience).
+Mallinsimme osakeasuntojen hintoja ja niiden muutoksia, postinumerotasolla, koko Suomessa, vuosina 2005–2014, perustuen Tilastokeskuksen jakamiin kauppa- ja asukasmäärätietoihin. Mallin arvioita hinnoista voi tarkastella [vuorovaikutteisesta karttavisualisoinnista](http://kannattaakokauppa.fi/). Tuloksista voi lukea lisää [Reaktorin blogista](http://reaktor.com/blog/asuntojen-trendit-ja-miten-niista-tehdaan-luotettavia-ennusteita). Työn takana on Reaktorin [Data Science -tiimi](http://reaktor.com/datascience). Mallinnuksen lähdekoodi löytyy [GitHubista](https://github.com/reaktor/Neliohinnat).
 
 ## Mallinsimme?
 
