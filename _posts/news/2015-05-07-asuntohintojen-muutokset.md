@@ -48,7 +48,7 @@ Alla vasemmalla on kartta postinumeroiden keskihinnoista tarkastelujaksolla 2005
 
 Vielä alla näemme kuvan eräistä Espoon postinumeroalueista. Pisteet kuvaavat Tilastokeskuksen ilmoittamia vuosihintoja, pisteiden koko kauppojen määrää. Viivat ovat mallin arvioita hintatasosta, harmaat alueet arvion epävarmuuksia, mallin itsensä mielestä.
 
-![Raakadataa ja mallin hintoja Espoosta](/figs/e2015-05-07-asuntohintojen-muutokset/spoota.png)
+![Raakadataa ja mallin hintoja Espoosta](/figs/2015-05-07-asuntohintojen-muutokset/espoota.png)
 
 Hinta-arvioita on saatu vähistäkin kaupoista, ja etenkin vuosimuutokset ovat luotettavamman näköisiä kuin mitä melko paljon heittelevistä keskihinnoista suoraan laskien saisi. Hintojen mallintaminen siis kannattaa.
 
