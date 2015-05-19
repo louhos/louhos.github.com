@@ -9,9 +9,9 @@ author: jaakkosarela
 comments: true
 ---
 
-Tiheästi asuttujen alueiden asuntojen hinnat ovat muutamana viime vuotena nousseet harvemmin asuttujen alueiden hintoja nopeammin koko Suomessa ja erityisesti pääkaupunkiseudulla. Tämä on todennäköisesti seurausta siitä, että ihmiset arvostavat nykyään enemmän urbaaneja asuinympäristöjä.   
+Asuntojen hintojen nousu on viime vuosina keskittynyt taajamiin. Ilmiö on havaittavissa koko Suomessa, erityisesti pääkaupunkiseudulla, ja on havaittavissa (alla olevissa kuvissa) asukastiheyden ja hintojen nousunopeuden korrelaationa. Todennäköinen syy hintojen epätasaiselle kehitykselle on urbaanien asuinympäristöjen arvostuksen kasvu.    
 
-Maailmalla on vallannut alaa uusi urbanismin aalto, jossa ihmiset haluavat muuttaa tiiviisiin kaupunkikeskustoihin omakotitalolähiöiden sijaan (ks esim. [NYT](http://www.nytimes.com/2014/04/17/opinion/americas-urban-future.html)). Korkeasta väestötiheydestä sanotaan olevan monia etuja: Se tarjoaa monipuoliset palvelut, työpaikkojen ja palveluiden hyvän saavutettavuuden, mahdollisuuden rakentaa viihtyisää kävely-ympäristöä ja tehokkaasti toimivan joukkoliikenteen. Lisäksi tiivis rakentaminen säästää viheralueita ja luo edellytykset talouskasvulle mm. sen tähden, että saman alan yritykset saavat lähekkäin sijaitsemisesta kasautumisetuja.
+Maailmalla on vallannut alaa uusi urbanismin aalto, jossa ihmiset haluavat muuttaa tiiviisiin kaupunkikeskustoihin omakotitalolähiöiden sijaan (ks esim. [NYT](http://www.nytimes.com/2014/04/17/opinion/americas-urban-future.html)). Korkeasta väestötiheydestä sanotaan olevan monia etuja: Se tarjoaa monipuoliset palvelut, työpaikkojen ja palveluiden hyvän saavutettavuuden, mahdollisuuden rakentaa viihtyisää kävely-ympäristöä ja tehokkaasti toimivan joukkoliikenteen. Lisäksi tiivis rakentaminen säästää viheralueita ja luo edellytykset talouskasvulle, mm. koska saman alan yritykset saavat lähekkäin sijaitsemisesta kasautumisetuja.
 
 Millainen kehitys on Suomessa? Asuntojen hintojen muutokset kuvastavat muutoksia siinä, mitä asukkaan arvostavat, eli millaisssa asunnoissa he haluaisivat asua. [Reaktor Oy:n data scientistit](http://reaktor.fi/datascience), joihin itsekin kuulun, [mallinsivat](http://louhos.github.io/news/2015/05/07/asuntohintojen-muutokset/) asuntojen hintojen kehitystä vuosina 2005-2014 ja tekivät niistä [interaktiivisen kartan](http://kannattaakokauppa.fi). Malli antaa postinumerotasolla asuntojen hinnan kehityksen keskineliöhintana, lineaarisena trendinä ja trendin muutoksena. Näiden perusteella voidaan tutkia asukkaiden arvostusten muutoksia. 
 
@@ -71,7 +71,7 @@ norm.vals <- 10**(log.vals)
 trends %>%
   filter(year < 2015) %>%
   transform(year = factor(year)) %>%
-  ggplot(data = ., aes(x=logtiheys, y=trend.y.mean)) +
+  ggplot(data = ., aes(x=logtiheys, y=100*trend.y.mean)) +
 #ggplot(transform(filter(trends,year<2015), year=factor(year)), ,) + 
   geom_point(size=1.5, alpha=0.2) + 
   geom_smooth(method="rlm", size=1.5, colour=smooth.col) + 
@@ -92,7 +92,7 @@ norm.vals <- 10**(log.vals)
 trends %>%
   filter(kunta == "Helsinki" & year < 2015) %>%
   transform(year = factor(year)) %>%
-  ggplot(data = ., aes(x=logtiheys, y=trend.y.mean)) +
+  ggplot(data = ., aes(x=logtiheys, y=100*trend.y.mean)) +
 # ggplot(transform(filter(trends,kunta==selkunta,year<2015), year=factor(year)), aes(logtiheys,trend.y.mean),) + 
   geom_point(size=1.5, alpha=0.5) + 
   geom_smooth(method="rlm", size=1.5, colour=smooth.col) + 
