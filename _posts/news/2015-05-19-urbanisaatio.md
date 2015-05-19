@@ -1,5 +1,5 @@
 ---
-title: "Suomalaiset arvostavat nyt enemmän urbaaneja asuinympäristöjä kuin aiemmin"
+title: "Urbaanien asuinympäristöjen suosio kasvaa"
 date:   2015-05-19 10:00:00
 layout: news
 category : news
