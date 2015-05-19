@@ -9,7 +9,7 @@ author: jaakkosarela
 comments: true
 ---
 
-Asuntojen hintojen nousu on viime vuosina keskittynyt taajamiin. Ilmiö on havaittavissa koko Suomessa, erityisesti pääkaupunkiseudulla, ja on havaittavissa (alla olevissa kuvissa) asukastiheyden ja hintojen nousunopeuden korrelaationa. Todennäköinen syy hintojen epätasaiselle kehitykselle on urbaanien asuinympäristöjen arvostuksen kasvu.    
+Asuntojen hintojen nousu on viime vuosina keskittynyt taajamiin. Ilmiö on havaittavissa koko Suomessa, erityisesti pääkaupunkiseudulla, ja näkyy asukastiheyden ja hintojen nousunopeuden korrelaationa (alla olevissa kuvissa). Todennäköinen syy hintojen epätasaiselle kehitykselle on urbaanien asuinympäristöjen arvostuksen kasvu.    
 
 Maailmalla on vallannut alaa uusi urbanismin aalto, jossa ihmiset haluavat muuttaa tiiviisiin kaupunkikeskustoihin omakotitalolähiöiden sijaan (ks esim. [NYT](http://www.nytimes.com/2014/04/17/opinion/americas-urban-future.html)). Korkeasta väestötiheydestä sanotaan olevan monia etuja: Se tarjoaa monipuoliset palvelut, työpaikkojen ja palveluiden hyvän saavutettavuuden, mahdollisuuden rakentaa viihtyisää kävely-ympäristöä ja tehokkaasti toimivan joukkoliikenteen. Lisäksi tiivis rakentaminen säästää viheralueita ja luo edellytykset talouskasvulle, mm. koska saman alan yritykset saavat lähekkäin sijaitsemisesta kasautumisetuja.
 
