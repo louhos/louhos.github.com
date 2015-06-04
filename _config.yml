@@ -48,6 +48,7 @@ users :
   markuskainu:
     role: admin
     name : Markus Kainu
+    picture : mkainu.jpg    
     email : markuskainu@gmail.com
     github : muuankarski
     twitter : muuankarski
