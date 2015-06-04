@@ -11,7 +11,7 @@ safe: false
 # so be sure to set them if your theme uses them.
 #
 title : Louhos
-tagline: Open Source Code Repository for Open Data in Finland
+tagline: Open Source Code for Open Data in Finland
 author :
   name : Joona Lehtomäki
   email : joona.lehtomaki@gmail.com
@@ -45,6 +45,12 @@ users :
     github : jlehtoma
     twitter : jlehtoma
     googleplus : https://plus.google.com/112885751907512172261/
+  markuskainu:
+    role: admin
+    name : Markus Kainu
+    email : markuskainu@gmail.com
+    github : muuankarski
+    twitter : muuankarski
   jaakkosarela : 
     role : editor
     name : Jaakko Särelä
