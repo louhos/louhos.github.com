@@ -7,7 +7,7 @@ language: fi
 <div class="sixteen columns">
 	<p>
 
-Tällä sivulla ohjeita <a href="index.html">sorvi</a>-paketin kehittäjille ja kontribuuttoreille. Sivu on työn alla ja ohjeita täydennetään pian. Sorvin kehitys tapahtuu <a href="{{ page.ghurl }}">Lähdekoodi</a> (GitHub). Kehityksen päävaiheet ovat (i) kehitysversion kloonaus; (ii) paketin kääntäminen; (iii) koodin kehittäminen; (iv) virheiden ja varoitusten korjaaminen; (v) uusien kontribuutioiden liittäminen päähaaraan. Tiivis ohjeistus alla:
+Tällä sivulla ohjeita rOpenGov-pakettien kehittäjille. Kehityksen päävaiheet ovat kehitysversion kloonaus, paketin kääntäminen ja tarkistus, koodin kehittäminen, virheiden ja varoitusten korjaaminen, ja uusien kontribuutioiden liittäminen päähaaraan. Tiivis ohjeistus alla:
 
 	</p>
 	
@@ -15,19 +15,15 @@ Tällä sivulla ohjeita <a href="index.html">sorvi</a>-paketin kehittäjille ja 
 
 	<ol>
 		<li>
-		<a href="asennus.html">Asenna R ja sorvin vaatimat riippuvuudet</a>
+		<a href="asennus.html">Asenna [git]() ja [R](http://www.r-project.org)</a>
 		</li>
 
 		<li>
-		<a href="https://help.github.com/articles/fork-a-repo">Forkkaa klooni</a> sorvin <a href="https://github.com/louhos/sorvi">GitHub-kehitysversiosta</a>
+		<a href="https://help.github.com/articles/fork-a-repo">Forkkaa klooni</a> paketin <a href="https://github.com/ropengov/sorvi">GitHub-kehitysversiosta</a>
 		</li>
 
 		<li>
-		Asenna <a href="https://github.com/hadley/devtools">devtools</a> R:stä käsin:
-{% highlight r %}
-install.packages(devtools)
-install.packages(roxygen2)
-{% endhighlight %}
+		Asenna R:n <a href="https://github.com/hadley/devtools">devtools</a> ja roxygen2-paketit.
 		</li>
 
 	</ol>
@@ -36,19 +32,20 @@ install.packages(roxygen2)
 	<h4>Paketin kääntäminen ja asennus</h4>
 
 	<ol>
+	  Lisättyäsi haluamasi funktiot ja niiden roxygen-dokumentoinnin uuteen tiedostoon paketin R-kansiossa, voit testata nämä seuraavasti:
 
 		<li>			
 		Dokumentaatiosivujen (sorvi/man/*.Rd) generointi R:ssä (olettaen, että sorvi sijaitsee työhakemistossa):
 {% highlight r %}
 library(devtools)  
-document("sorvi")  
+document()  
 {% endhighlight %}
 		</li>
 
 		<li>			
 		Paketin validointi (Windows-systeemeissä saatetaan tarvita LaTex-pakettien erillistä asentamista ennen checkiä):
 {% highlight r %}
-check("sorvi")
+check()
 {% endhighlight %}
 		</li>
 
@@ -56,14 +53,14 @@ check("sorvi")
 		<li>					
 		Paketin kääntö:
 {% highlight r %}
-build("sorvi")
+build()
 {% endhighlight %}
 		</li>
 
 		<li>					
 		Paketin asennus:
 {% highlight r %}
-install("sorvi")
+install()
 {% endhighlight %}
 		</li>
 
@@ -71,60 +68,59 @@ install("sorvi")
 
 	<h4>Kontribuointi päähaaraan</h4>
 
+	Tee ensin kaikki kehitystyö omassa kehityshaarassasi:
+	
 	<ol>
 		<li>			
-		Korjaa muutoksiisi liittyvät virheilmoitukset ja varoitukset
+		Korjaa muutoksiisi liittyvät virheilmoitukset ja varoitukset (build ja check antavat usein varoituksia)
 		</li>
 
 
 		<li>			
-		Varmista, että olet lisännyt uuden koodin (pkg/R/*.R) kehityshaarasi alle
-		</li>
-
-		<li>			
-		Varmista, että olet lisännyt uudet dokumentaatiosivut (pkg/man/*.Rd) kehityshaarasi alle
-		</li>
-
-		<li>			
-		  Päivitä pkg/DESCRIPTION (versionumero ja päivämäärä)
+		Varmista (git status-komennolla), että olet lisännyt (git add) uuden koodin paketin R-hakemistoon
 		</li>
 
 		<li>
-		  Päivitä inst/NEWS (tiivistelmä muutoksista)
+		  Päivitä ./NEWS.md (tiivistelmä muutoksista)
 		</li>
 
 		<li>
-		Ylläpidon kannalta kätevin tapa kontribuutioiden vastaanottamiseen on <a href="https://help.github.com/articles/using-pull-requests">GitHubin pull-request-toiminto</a>, jossa teet kehitystyön omassa kehityshaarassasi, ja työn valmistuttua varmistat että se on yhteensopiva päähaaran (master branch) kanssa. Tämän jälkeen voit lähettää ylläpidolle pyynnön vetää muutokset päähaaraan. Tiiviit ohjeet:
+		Kätevin tapa kontribuutioiden vastaanottamiseen on <a href="https://help.github.com/articles/using-pull-requests">GitHubin pull request-toiminto</a>:
 		  <ul>
-		  <li>Tee <a href="https://github.com/bricoleurs/bricolage/wiki/Merging-with-Git">git-merge</a> omaan kehityshaaraasi sorvin <a href="https://github.com/louhos/sorvi">master branchista</a></li>
-		  <li>Lähetä ylläpidolle pull-request esim. <a href="https://github.com/louhos/sorvi">sorvin GitHub-sivuston kautta</a></li>
-		  <li>Lisää ohjeita Gitin käyttöön sorvin <a href="https://github.com/louhos/sorvi/wiki/Devel">kehityswikissä</a>
+		  <li>Tee <a href="https://github.com/bricoleurs/bricolage/wiki/Merging-with-Git">git-merge</a> omaan kehityshaaraasi sorvin <a href="https://github.com/ropengov/sorvi">master branchista</a></li>
+		  <li>Lähetä ylläpidolle <a href="https://github.com/ropengov/sorvi">pull request</a></li>
 		  </ul>
-		  Otamme vastaan kontribuutioita myös muilla tavoin. Jos sinulla on R-kielistä lähdekoodia, jonka olisit halukas kontribuoimaan sorvi-kirjastoon, <a href="http://louhos.github.com/contact.html">ota yhteyttä</a> ja katsotaan yhdessä miten voitaisiin edetä.				  
+		  Jos olisit halukas kontribuoimaan muilla tavoin, <a href="http://ropengov.github.io/contact.html">ota yhteyttä</a> ja mietitään lisää.				  
 		</li>  
-
 		<li>
-		  Lisää yksinkertaiset käyttöesimerkit <a href="https://github.com/louhos/sorvi/wiki">wiki-sivulle</a>. Wikin voi kloonata gitin kanssa omalle koneelle muokkaamista varten: <i>git clone https://github.com/louhos/sorvi.wiki.git</i>. Pyydä kirjoitusoikeudet <a href="http://louhos.github.com/contact.html">ylläpitäjiltä</a>. 
+		  Lisää yksinkertaiset käyttöesimerkit paketin vignettes-kansion tutoriaaliin. Tämä on .Rmd-tiedosto, jonka voi kääntää markdowniksi R:ssä komennolla library(knitr); knit("sorvi_tutorial.Rmd").
 		</li>
 
 		<li>
-		  Laadi halutessasi blogikirjoitus, joka esittelee uuden toiminnon ja sen käyttöesimerkkejä. <a href="https://louhos.wordpress.com/">Louhos-blogi</a> on yksi mahdollinen paikka; pyydä kirjoitusoikeudet <a href="http://louhos.github.com/contact.html">ylläpitäjiltä</a>. 
+		  Laadi halutessasi blogikirjoitus, joka esittelee uuden toiminnon ja sen käyttöesimerkkejä. Voit kirjoittaa omaan blogiisi, tai ylläpitämäämme suomenkieliseen
+		  <a href="https://louhos.github.io/">Louhos-blogiin</a>
+		  tai englanninkieliseen
+		  <a href="https://ropengov.github.io/">rOpenGov-blogiin</a>.
+		  Kirjoitusoikeuksia
+		  annetaan <a href="http://ropengov.github.io/contact.html">pyynnöstä</a>.
 		</li>
 	</ol>	
 	
 	<h4>Yhteisö ja tuki</h4>
 	<p>
-	Hanke on yhteisövetoinen avoimen lähdekoodin projekti, ja siihen on kontribuoinut useampi taho. Pääkehittäjien yhteystiedot löydät täältä <a href="http://louhos.github.com/contact.html"></a>. Uudet tekijät ja palaute ovat tervetulleita. 
+	Hanke on yhteisövetoinen avoimen lähdekoodin projekti. Pääkehittäjien yhteystiedot löydät <a href="http://ropengov.github.io/contact.html">täältä</a>. Uudet tekijät ja palaute ovat tervetulleita. 
 	</p>
+
 	
 	<h4>Lähdekoodi</h4>
 	
 	<p>
-		Kehitysversion lähdekoodi löytyy
-		Louhoksen <a href="https://github.com/louhos/sorvi">github-sivulta</a>.
-		Koodi on julkaistu avoimella <a href="http://en.wikipedia.org/wiki/BSD_licenses">FreeBSD</a>-lisenssillä,
-		joka sallii lähdekoodin vapaan käytön, muokkaamisen ja levittämisen,
-		kunhan samat oikeudet jatkokäytölle taataan uusissakin tuotoksissa.
+		<a href="https://github.com/ropengov/sorvi">Kehitysversion
+		lähdekoodi</a> on julkaistu
+		avoimella <a href="http://en.wikipedia.org/wiki/BSD_licenses">FreeBSD</a>-lisenssillä,
+		joka sallii lähdekoodin vapaan käytön, muokkaamisen ja
+		levittämisen, kunhan samat oikeudet jatkokäytölle
+		taataan uusissakin tuotoksissa.
 	</p>
 
 </div>
