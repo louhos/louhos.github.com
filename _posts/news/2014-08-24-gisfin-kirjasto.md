@@ -1,6 +1,6 @@
 ---
 title:  "gisfin - Avoimen suomalaisen paikkatiedon työkalupakki R-kielelle"
-date:   2014-08-26 20:00:00
+date:   2014-08-24 20:00:00
 layout: news
 category : news
 tags : [news,R,ropengov,gisfin]
@@ -42,22 +42,6 @@ list_mml_datasets()
 
 
 {% highlight text %}
-## $`1_milj_Shape_etrs_shape`
-##  [1] "AVI1_l"   "AVI1_p"   "airport"  "asemat"   "cityp"    "coast_l" 
-##  [7] "coast_p"  "dcont_l"  "dcont_p"  "forest"   "hcont_l"  "hcont_p" 
-## [13] "hpoint"   "kunta1_l" "kunta1_p" "lake_l"   "lake_p"   "maaku1_l"
-## [19] "maaku1_p" "namep"    "pelto"    "railway"  "river"    "rivera_l"
-## [25] "rivera_p" "road"     "suot"     "taajama" 
-## 
-## $`4_5_milj_shape_etrs-tm35fin`
-##  [1] "AVI1_l"   "AVI1_p"   "AVI4_l"   "AVI4_p"   "airport"  "asemat"  
-##  [7] "cityp"    "coast"    "coast_l"  "coast_p"  "dcont_l"  "dcont_p" 
-## [13] "forest"   "hcont_l"  "hcont_p"  "hpoint"   "kunta1_l" "kunta1_p"
-## [19] "kunta4_l" "kunta4_p" "lake"     "lake_l"   "lake_p"   "maaku1_l"
-## [25] "maaku1_p" "maaku4_l" "maaku4_p" "namep"    "pelto"    "railway" 
-## [31] "rajamuu"  "river"    "rivera_l" "rivera_p" "road"     "suot"    
-## [37] "taajama" 
-## 
 ## $`2012`
 ## character(0)
 ## 
@@ -68,15 +52,20 @@ list_mml_datasets()
 ## [1] "N62_p" "N62_s" "N62_t" "N62_v"
 ## 
 ## $`Yleiskartta-1000`
-##  [1] "AmpumaRaja"          "HallintoAlue"        "HallintoalueRaja"   
-##  [4] "KaasuJohto"          "KarttanimiPiste500"  "KarttanimiPiste1000"
-##  [7] "KorkeusAlue"         "KorkeusViiva500"     "KorkeusViiva1000"   
-## [10] "LentokenttaPiste"    "LiikenneAlue"        "MaaAlue"            
-## [13] "Maasto1Reuna"        "Maasto2Alue"         "MetsaRaja"          
-## [16] "PeltoAlue"           "RautatieViiva"       "SahkoLinja"         
-## [19] "SuojaAlue"           "SuojametsaRaja"      "SuojeluAlue"        
-## [22] "TaajamaAlue"         "TaajamaPiste"        "TieViiva"           
-## [25] "VesiAlue"            "VesiViiva"          
+##  [1] "AmpumaRaja"             "HallintoAlue"          
+##  [3] "HallintoAlue_DataFrame" "HallintoalueRaja"      
+##  [5] "KaasuJohto"             "KarttanimiPiste500"    
+##  [7] "KarttanimiPiste1000"    "KorkeusAlue"           
+##  [9] "KorkeusViiva500"        "KorkeusViiva1000"      
+## [11] "LentokenttaPiste"       "LiikenneAlue"          
+## [13] "MaaAlue"                "Maasto1Reuna"          
+## [15] "Maasto2Alue"            "MetsaRaja"             
+## [17] "PeltoAlue"              "RautatieViiva"         
+## [19] "SahkoLinja"             "SuojaAlue"             
+## [21] "SuojametsaRaja"         "SuojeluAlue"           
+## [23] "TaajamaAlue"            "TaajamaPiste"          
+## [25] "TieViiva"               "VesiAlue"              
+## [27] "VesiViiva"             
 ## 
 ## $`Yleiskartta-4500`
 ##  [1] "HallintoAlue"        "HallintoalueRaja"    "KarttanimiPiste2000"
@@ -100,7 +89,7 @@ sp.mml@data$COL <- factor(generate_map_colours(sp.mml))
 spplot(sp.mml, zcol="COL", col.regions=rainbow(length(levels(sp.mml@data$COL))), colorkey=FALSE)
 {% endhighlight %}
 
-![center](/figs/2014-08-24-gisfin-kirjasto/MML_kunnat.png) 
+![center](/figs/2014-08-24-gisfin-kirjasto/MML_kunnat-1.png) 
 
 ### Helsingin äänestysalueet
 
@@ -112,13 +101,24 @@ sp.aanestys <- get_helsinki_aluejakokartat(map.specifier="aanestysalue")
 spplot(sp.aanestys, zcol="KUNTA", col.regions=rainbow(length(levels(sp.aanestys@data$KUNTA))), colorkey=FALSE)
 {% endhighlight %}
 
-![center](/figs/2014-08-24-gisfin-kirjasto/hkk-aanestysalue.png) 
+![center](/figs/2014-08-24-gisfin-kirjasto/hkk-aanestysalue-1.png) 
 
 Seuraava esimerkki puolestaan näyttää, kuinka Helsingin peruspiirijako voidaan piirtää Googlen karttapalvelusta saadun taustakartan päälle. Haetaan ensin aineisto:
 
 
 {% highlight r %}
 library(ggmap)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in library(ggmap): there is no package called 'ggmap'
+{% endhighlight %}
+
+
+
+{% highlight r %}
 library(ggplot2)
 
 sp.piiri <- get_helsinki_spatial(map.type="piirijako", map.specifier="ALUEJAKO_PERUSPIIRI")
@@ -162,14 +162,28 @@ hel.center <- apply(bbox(sp.piiri), 1, mean)
 
 # Haetaan kartta Googlen karttapalvelusta
 hel.map <- ggmap::get_map(location=hel.center, source="google", zoom=10, scale=2)
+{% endhighlight %}
 
+
+
+{% highlight text %}
+## Error in loadNamespace(name): there is no package called 'ggmap'
+{% endhighlight %}
+
+
+
+{% highlight r %}
 # Muokataan paikkatietoaineisto ggplot2:lle sopivaan muotoon ja piirretään
 # aineistot
 df.piiri <- sp2df(sp.piiri, region="NIMI")
 ggmap(hel.map) + geom_polygon(data=df.piiri, aes(x=long, y=lat, fill=NIMI), alpha=0.5) + theme(legend.position="none")
 {% endhighlight %}
 
-![center](/figs/2014-08-24-gisfin-kirjasto/peruspiiri-3.png) 
+
+
+{% highlight text %}
+## Error in eval(expr, envir, enclos): could not find function "ggmap"
+{% endhighlight %}
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 <img alt="Creative Commons -käyttölupa" style="border-width:0"
