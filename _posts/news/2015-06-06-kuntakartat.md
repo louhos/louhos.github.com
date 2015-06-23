@@ -5,7 +5,7 @@ layout: news
 category : news
 tags : [news,R]
 language: fi
-author: antagomir
+author: leo
 comments: true
 ---
 
@@ -43,6 +43,18 @@ healthindex <- GetDataSotkanet(indicators = 244, year = 2010, region.category = 
 healthindex$Sairastavuusindeksi <- healthindex$primary.value
 {% endhighlight %}
 
+Voit tallentaa datat tiedostoon ja lukea ne sieltä takaisin (tai vaihtaa tilalle oman aineistosi):
+
+
+{% highlight r %}
+# Write the data to file
+write.csv(healthindex, file = "mydata.csv", row.names = FALSE)
+
+# Read the same data from file
+# (instead you can just use the original mydata that was written in this file)
+# or alternatively you can replace your own data in the file mydata.csv:
+healthindex <- read.csv(file = "mydata.csv")
+{% endhighlight %}
 
 ### Kuntarajojen lataus Maanmittauslaitokselta
 
