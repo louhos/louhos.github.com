@@ -64,7 +64,14 @@ users :
     role : editor
     name : Janne Sinkkonen
     homepage : https://twitter.com/euxoa
-
+  raimomuurinen:
+    role: editor
+    name : Raimo Muurinen
+    picture :     
+    email : 
+    github : 
+    twitter : 
+    
 projects:
   sorvi : 
     title : sorvi
