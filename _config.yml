@@ -67,10 +67,10 @@ users :
   raimomuurinen:
     role: editor
     name : Raimo Muurinen
-    picture :     
-    email : 
-    github : 
-    twitter : 
+    picture : raimomuurinen.jpg   
+    email : raimo.muurinen@okf.fi
+    github : https://github.com/raimom
+    twitter : https://twitter.com/ra__mu
     
 projects:
   sorvi : 
