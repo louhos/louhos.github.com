@@ -11,7 +11,7 @@ comments: true
 
 Uusien vaaliaineistojen ja sosiaalisen median hyödyntäminen yhteiskuntatieteiden laskennallisiin menetelmiin perustuvassa tutkimuksessa on vasta aluillaan.
 
-![kuva0](\figs\2016-09-29-Louhos\kuva0_verkko.jpg)
+![kuva0](\figs\2016-09-29-politiikan-tutkimuksen-aineistot\kuva0_verkko.jpg)
 
 *Verkosta on alkanut muodostua lupaava aarreaitta myös politiikan tutkijoille. (CC0)*
 
@@ -64,7 +64,7 @@ Todennäköisesti suurin ja käytetyin politiikan tutkimuksen uusi aineistolähd
 
 Tämän artikkelin lähteenä olevissa tutkimuksissa ja kirjoituksissa ei esitelty miltä Twitteristä saatava data näyttää, joten sen havainnollistamiseksi turvaudutaan Wei Xu:n Twitter-tutoriaaliin[(8)](#7) Ensin esitellään kuvakaappaus yksittäisestä twiitistä twitterin selainkäyttöliittymässä:
 
-![kuva1](\figs\2016-09-29-Louhos\kuva1_tweet.png)
+![kuva1](\figs\2016-09-29-politiikan-tutkimuksen-aineistot\kuva1_tweet.png)
 
 *Kuva 1. Yksittäinen twiitti selainkäyttöliittymässä.*
 
@@ -272,7 +272,7 @@ Vaalikoneainestoja on hyödynnetty hyvin monipuolisesti. Tavat vaihtelevat yksin
 
 Yksinkertaisia vastausten jakaumia edustavia tutkimuksia edustavat esimerkiksi Jouni Tuomiston ym. Kansanedustajien arvot -artikkeli, joka selvitti eniten samanmielisyyttä ja toisaalta erimielisyyttä herättäneitä kysymyksiä.[(37)](#36) Ehkä kaikkein suosituin tapa vaalikonevastausten hyödyntämiseen ovat olleet erilaiset visualisoinnit, jotka sijoittavat kansanedustajat arvokartalle eri ristiriitaulottuuvuksien suhteen, kuten kuvassa 2. Ne ovat havainnollistavia, toimivat yksilö- ja puoluetasolla sekä parhaimmillaan visuaalisesti näyttäviä että käytettävyydeltään hyviä, joskus jopa addiktiivisia.[(38)](#37)
 
-![kuva2](\figs\2016-09-29-Louhos\kuva2_arvokartta.png)
+![kuva2](\figs\2016-09-29-politiikan-tutkimuksen-aineistot\kuva2_arvokartta.png)
 *Kuva 2. Martti Leppäsen visualisoima kansanedustajien ja puolueiden arvokartta. Ulla-Maj Wideroosin arvot sijoittuvat aivan keskelle sekä vasemmisto-oikeisto että konservatiivi-arvoliberaali -ulottuvuuksa. Kuvakaappaus Helsingin Sanomien sivuilta.*
 
 Niiden taustalla olevat valinnat eri ristiriitaulottuvuuksien valinnasta, tilastollisista menetelmistä ja tulkinnoista ovat herättäneet paljon keskustelua, kritiikkiä ja vaihtoehtoisia tulkintoja.[(39)](#38) Tarkastelemalla ilmiötä hieman etäämmältä voidaan huomata, että vaalikoneaineistot ovat innoittaneet vilkasta avointa tutkimusta, kun aineistot ovat lähtökohtaisesti avoimia ja osallistujat julkaisevat tutkimuksensa, kritiikkinsä ja menetelmänsä avoimesti.
