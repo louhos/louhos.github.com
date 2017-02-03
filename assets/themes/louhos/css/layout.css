@@ -208,7 +208,7 @@ li.dropdown-item {
 /* Get involved image */
 
 a#ghinvolve {
-	background-image: url('http://octodex.github.com/images/repo.jpg');
+	background-image: url('https://octodex.github.com/images/repo.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	display: block;
